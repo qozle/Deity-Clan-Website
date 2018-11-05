@@ -1,3 +1,14 @@
+/* COLORS /
+/
+
+#0e0b0b - black
+#000A1B - dark bluegray
+#d1d1d1 - light gray
+#001946 - dark blue
+#003391 - blue
+
+*/
+
 /* ====================== FONTS ===================== */
 
 @font-face {
@@ -21,27 +32,27 @@ html {
 
 body {
     min-height: 100%;
-    background-color: #FAF3DD;
+    background-color: #0e0b0b;
 }
 
 
 /* ================== NAVBAR STYLES ================= */
 
 nav {
-    border-bottom: 4px rgba(0,51,145,0.35) solid;
+    border-bottom: 4px #003391 solid;
     background-color: black;
     
 }
 
 .navbar .navbar-nav .nav-item a {
-    color: 4F517D;
+    color: #003391;
     font-family: 'Abolition Regular';
     letter-spacing: .3rem;
     font-size: 1.3rem;
 }
 
 .nav-link:hover {
-    color: #003391 !important;
+    color: #001946 !important;
     text-decoration: overline underline;
 }
     
@@ -64,25 +75,25 @@ nav {
 
 .deity-font-1 {
 	font: 2rem Bugfast;
-	color: #4F517D;
+	color: #003391;
 	letter-spacing: .3rem;
 }
 
 .clan-font-1 {
 	font: 1.9rem Helvetica;
-	color: #4F517D;
+	color: #003391;
 	letter-spacing: .3rem;
 }
 
 .deity-font-2 {
     font: 7rem Bugfast;
-    color: silver;
+    color: #d1d1d1;
     letter-spacing: .3rem;
 }
 
 .clan-font-2 {
     font: 6.5rem Helvetica;
-    color: silver;
+    color: #d1d1d1;
     letter-spacing: .3rem;
 }
 
@@ -101,7 +112,7 @@ nav {
 }
 
 .flex-item-footer {
-    color: #4F517D;
+    color: #003391;
     padding-left: 10px;
     padding-right: 10px;
     min-width: 145px;
@@ -116,17 +127,17 @@ footer {
     padding-top: 10px;
     padding-bottom: 0;
     border-top: 4px solid #003391;
-    background-color: #FAF3DD;
+    background-color: #000a1b;
 }
 
 footer ul li a {
-    color: #4F517D;
+    color: #003391;
     margin-top: 2px;
     padding-top: 2px;
 }
 
 footer ul li a:hover {
-    color: #003391;
+    color: #001946;
     text-decoration: underline overline;
     
 }
@@ -135,12 +146,12 @@ footer ul li a:hover {
 li {
     display: inline-block;
     padding-right: 25px;
-    color: #4F517D;
+    color: #0e0b0b;
 }
 
 #copyright {
     padding-bottom: 10px;
-    color: #4F517D;
+    color: #003391;
     margin-bottom: 0;
 }
 
