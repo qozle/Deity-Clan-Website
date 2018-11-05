@@ -1,0 +1,180 @@
+/* ====================== FONTS ===================== */
+
+@font-face {
+    font-family: 'Abolition Regular';
+        src: url('../fonts/abolition-regular-webfont.eot');
+        src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/abolition-regular-webfont.woff') format('woff'),
+             url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Bugfast;
+        src: url('../fonts/bugfast.otf');
+}
+
+
+/* F O U N D A T I O N */
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: #FAF3DD;
+}
+
+
+/* ================== NAVBAR STYLES ================= */
+
+nav {
+    border-bottom: 4px rgba(0,51,145,0.35) solid;
+    background-color: black;
+    
+}
+
+.navbar .navbar-nav .nav-item a {
+    color: 4F517D;
+    font-family: 'Abolition Regular';
+    letter-spacing: .3rem;
+    font-size: 1.3rem;
+}
+
+.nav-link:hover {
+    color: #003391 !important;
+    text-decoration: overline underline;
+}
+    
+
+/* =================== MAIN STYLES ================== */
+
+.jumbotron {
+	background-image: url('../img/purple-splash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:700px;
+    padding: 0;
+}
+
+.jumbotron div {
+    padding-top: 50px;
+}
+
+
+.deity-font-1 {
+	font: 2rem Bugfast;
+	color: #4F517D;
+	letter-spacing: .3rem;
+}
+
+.clan-font-1 {
+	font: 1.9rem Helvetica;
+	color: #4F517D;
+	letter-spacing: .3rem;
+}
+
+.deity-font-2 {
+    font: 7rem Bugfast;
+    color: silver;
+    letter-spacing: .3rem;
+}
+
+.clan-font-2 {
+    font: 6.5rem Helvetica;
+    color: silver;
+    letter-spacing: .3rem;
+}
+
+
+/* ======================== FOOTER =========================*/
+
+.flex-container-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 25px;
+    border-bottom: 2px solid rgba(142,142,142,.25);
+    
+    
+}
+
+.flex-item-footer {
+    color: #4F517D;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 145px;
+    height: auto;
+    padding-bottom: 10px;
+    font-size: .85em
+    
+}
+
+footer {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0;
+    border-top: 4px solid #003391;
+    background-color: #FAF3DD;
+}
+
+footer ul li a {
+    color: #4F517D;
+    margin-top: 2px;
+    padding-top: 2px;
+}
+
+footer ul li a:hover {
+    color: #003391;
+    text-decoration: underline overline;
+    
+}
+
+
+li {
+    display: inline-block;
+    padding-right: 25px;
+    color: #4F517D;
+}
+
+#copyright {
+    padding-bottom: 10px;
+    color: #4F517D;
+    margin-bottom: 0;
+}
+
+
+/* M E D I A  Q U E R Y  F U N  . . . */
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .flex-container-footer {
+        flex-wrap: wrap;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+
+}

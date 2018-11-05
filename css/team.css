@@ -1,0 +1,28 @@
+/*Team pic styles*/
+
+
+.team-member {
+	width: 100%;
+	height: auto;
+	border-bottom: 5px solid #003391;
+	margin: 0;
+}
+
+.member-pic {
+	width: 50%;
+	border: 3px solid #003391;
+	padding: 2px;
+	padding-right: 10px;
+	border-radius: 0;
+	padding-right: 15px;
+	margin: 5px 15px 5px 5px;
+	float: left;
+
+}
+
+
+
+p {
+	font-size: 1.4em;
+	padding-left: 15px;
+}
