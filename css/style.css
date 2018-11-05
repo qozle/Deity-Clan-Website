@@ -14,17 +14,6 @@
 }
 
 
-/* COLORS */
-/*
-
-#0e0b0b - black
-#747474 - grey
-#d1d1d1 - light grey
-#00276d - dark blue
-#003391 - light blue
-
-*/
-
 /* F O U N D A T I O N */
 html {
     min-height: 100%;
@@ -32,7 +21,7 @@ html {
 
 body {
     min-height: 100%;
-    background-color: #0e0b0b;
+    background-color: #FAF3DD;
 }
 
 
@@ -127,7 +116,7 @@ footer {
     padding-top: 10px;
     padding-bottom: 0;
     border-top: 4px solid #003391;
-    background-color: #0e0b0b;
+    background-color: #FAF3DD;
 }
 
 footer ul li a {
