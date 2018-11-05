@@ -59,6 +59,8 @@
         <!-- M A I N   C O N T E N T -->
         
         <div>
+            
+            
         <?php
             $number_of_posts = 5;
             $args = array( 'numberposts' => $number_of_posts );
