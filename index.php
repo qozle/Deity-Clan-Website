@@ -138,8 +138,10 @@
 
         
         
-        <!-- V I D E O S -->
         
+        
+        
+        <!-- M A I N   V I D E O -->
 <!--
         <div id="test" class="text-center" style="color: silver;">
             I think I can just put one test message here: {{ message}}, and another right here: {{ message2 }}, and everything should work just fine.
@@ -148,12 +150,87 @@
 -->
 
     	<div class="container" style="margin-top: 60px;margin-bottom:60px;border: 2px solid rgba(142,142,142,.25);border-radius:5px;background-color: rgba(209,209,209,.08);">
-            <h4 class="text-center" style="color:white;padding-bottom:20px;padding-top:4px;">Video carousel or something?</h4>
+            <h4 class="text-center" style="color:white;padding-bottom:20px;padding-top:4px;">Featured</h4>
             <div class="row">
                 <div class="col" style="background-color: #0e0b0b;">
                     <div class="embed-responsive embed-responsive-16by9">
                       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qL_Qaqlq_DY" allowfullscreen></iframe>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 60px;margin-bottom:60px;border: 2px solid rgba(142,142,142,.25);border-radius:5px;background-color: rgba(209,209,209,.08);">
+
+            <div class="row">
+                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
+                    <video type="video/mp4" width="100%" controls="controls">
+                        <source src="vids/Fortnite_20180305223616.mp4">
+                    </video>
+
+                </div>
+                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
+                    <video type="video/mp4" width="100%" controls="controls">
+                        <source src="vids/Fortnite_20180321084450.mp4">
+                    </video>                    
+                </div>
+                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
+                    <video type="video/mp4" width="100%" controls="controls">
+                        <source src="vids/Fortnite_20180321183457.mp4">
+                    </video>
+                </div>
+                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
+                    <video type="video/mp4" width="100%" controls="controls">
+                        <source src="vids/Fortnite_20180328232258.mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
+                    <video type="video/mp4" width="100%" controls="controls">
+                        <source src="vids/Fortnite_20180328234556.mp4">
+                    </video>
+
+                </div>
+                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
+                    <video type="video/mp4" width="100%" controls="controls">
+                        <source src="vids/Fortnite_20180405014356.mp4">
+                    </video>                    
+                </div>
+                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
+                    <video type="video/mp4" width="100%" controls="controls">
+                        <source src="vids/Fortnite_20180622002515.mp4">
+                    </video>
+                </div>
+                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
+                    <video type="video/mp4" width="100%" controls="controls">
+                        <source src="vids/Fortnite_20180623033213.mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
+                    <video type="video/mp4" width="100%" controls="controls">
+                        <source src="vids/Fortnite_20180624190340.mp4">
+                    </video>
+
+                </div>
+                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
+                    <video type="video/mp4" width="100%" controls="controls">
+                        <source src="vids/Fortnite_20180817052126.mp4">
+                    </video>                    
+                </div>
+                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
+                    <video type="video/mp4" width="100%" controls="controls">
+                        <source src="vids/Fortnite_20180321084450.mp4">
+                    </video>
+                </div>
+                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
+                    <video type="video/mp4" width="100%" controls="controls">
+                        <source src="vids/Fortnite_20180321183457.mp4">
+                    </video>
                 </div>
             </div>
         </div>
