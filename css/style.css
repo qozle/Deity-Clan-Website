@@ -106,11 +106,16 @@ nav {
     
 }
 
+.col-sm-6 {
+    padding-left:0;
+    padding-right:0;
+}
+
 .blog-item-1 {
     color: silver;
     display: block;
-    padding-left:15px;
-    padding-right: 15px;
+    padding-left: 0;
+    padding-right: 0;
     
 }
 
@@ -137,38 +142,126 @@ nav {
 }
 
 .blog-item-2 {
+    color: silver;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+
+.blog-item-2::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
     background-image: url(../img/blog2.jpeg);
     background-position: center center;
     background-size: cover, cover;
     background-repeat: no-repeat;
+    opacity: .35;
+    z-index: -1;
     
+}
+
+.blog-item-2:hover {
+    text-decoration: none;
     
 }
 
 .blog-item-3 {
+    color: silver;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+
+.blog-item-3::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
     background-image: url(../img/blog3.jpeg);
     background-position: center center;
     background-size: cover, cover;
     background-repeat: no-repeat;
+    opacity: .35;
+    z-index: -1;
     
+}
+
+.blog-item-3:hover {
+    text-decoration: none;
     
 }
 
 .blog-item-4 {
+    color: silver;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+
+.blog-item-4::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
     background-image: url(../img/blog4.jpeg);
     background-position: center center;
     background-size: cover, cover;
     background-repeat: no-repeat;
+    opacity: .35;
+    z-index: -1;
+    
+}
+
+.blog-item-4:hover {
+    text-decoration: none;
     
 }
 
 .blog-item-5 {
+    color: silver;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+
+.blog-item-5::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
     background-image: url(../img/blog5.jpeg);
     background-position: center center;
     background-size: cover, cover;
     background-repeat: no-repeat;
+    opacity: .35;
+    z-index: -1;
     
 }
+
+.blog-item-5:hover {
+    text-decoration: none;
+    
+}
+
+
 
 
 /* ======================== FOOTER =========================*/
