@@ -78,7 +78,7 @@
                     
                     switch (array_search($post,$recent_posts)) {
                         case 0:
-                            echo "<a href='https://01014.org' class='col-sm-6 blog-item-1'>";
+                            echo "<a href='blog/".$post['post_name']."' class='col-sm-6 blog-item-1'>";
                             echo "<h4>".$post['post_title']."</h4> <br>";
                             echo "<span>".$post['post_date']."</span> <br>";
                             echo "<p>".$post['post_excerpt']."</p> <br><br>";
@@ -88,7 +88,7 @@
                             echo "</a>";
                             break;
                         case 1:
-                            echo "<a href='https://01014.org' class='col-sm-6 blog-item-2'>";
+                            echo "<a href='blog/".$post['post_name']."' class='col-sm-6 blog-item-2'>";
                             echo "<h4>".$post['post_title']."</h4> <br>";
                             echo "<span>".$post['post_date']."</span> <br>";
                             echo "<p>".$post['post_excerpt']."</p> <br><br>";
@@ -98,7 +98,7 @@
                             echo "</a>";
                             break;
                         case 2:
-                            echo "<a href='https://01014.org' class='col-sm-4 blog-item-3'>";
+                            echo "<a href='blog/".$post['post_name']."' class='col-sm-4 blog-item-3'>";
                             echo "<h4>".$post['post_title']."</h4> <br>";
                             echo "<span>".$post['post_date']."</span> <br>";
                             echo "<p>".$post['post_excerpt']."</p> <br><br>";
@@ -108,7 +108,7 @@
                             echo "</a>";
                             break;
                         case 3:
-                            echo "<a href='https://01014.org' class='col-sm-4 blog-item-4'>";
+                            echo "<a href='blog/".$post['post_name']."' class='col-sm-4 blog-item-4'>";
                             echo "<h4>".$post['post_title']."</h4> <br>";
                             echo "<span>".$post['post_date']."</span> <br>";
                             echo "<p>".$post['post_excerpt']."</p> <br><br>";
@@ -118,7 +118,7 @@
                             echo "</a>";
                             break;
                         case 4:
-                            echo "<a href='https://01014.org' class='col-sm-4 blog-item-5'>";
+                            echo "<a href='blog/".$post['post_name']."' class='col-sm-4 blog-item-5'>";
                             echo "<h4>".$post['post_title']."</h4> <br>";
                             echo "<span>".$post['post_date']."</span> <br>";
                             echo "<p>".$post['post_excerpt']."</p> <br><br>";
@@ -131,7 +131,7 @@
                     };
                 ?>
                 </div>
-                </div>
+            </div>
                 
             
         

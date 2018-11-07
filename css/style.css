@@ -136,10 +136,16 @@ nav {
     
 }
 
+.blog-item-1::after:hover {
+    opacity: .05;
+}
+
 .blog-item-1:hover {
     text-decoration: none;
     
 }
+
+
 
 .blog-item-2 {
     color: silver;
@@ -166,10 +172,16 @@ nav {
     
 }
 
+.blog-item-2::after:hover {
+    opacity: .05;
+}
+
 .blog-item-2:hover {
     text-decoration: none;
     
 }
+
+
 
 .blog-item-3 {
     color: silver;
@@ -196,10 +208,16 @@ nav {
     
 }
 
+.blog-item-3::after:hover {
+    opacity: .05;
+}
+
 .blog-item-3:hover {
     text-decoration: none;
     
 }
+
+
 
 .blog-item-4 {
     color: silver;
@@ -226,10 +244,16 @@ nav {
     
 }
 
+.blog-item-4::after:hover {
+    opacity: .05;
+}
+
 .blog-item-4:hover {
     text-decoration: none;
     
 }
+
+
 
 .blog-item-5 {
     color: silver;
@@ -256,10 +280,16 @@ nav {
     
 }
 
+.blog-item-5::after:hover {
+    opacity: .05;
+}
+
 .blog-item-5:hover {
     text-decoration: none;
     
 }
+
+
 
 
 
