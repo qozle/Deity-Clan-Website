@@ -1,6 +1,6 @@
 /* COLORS /
 /
-TESTINGTESTINGT
+Balls.  Ballsacks.  Is that one word?  Boobies.  8008135.  
 #0e0b0b - black
 #000A1B - dark bluegray
 #d1d1d1 - light gray
@@ -95,6 +95,79 @@ nav {
     font: 6.5rem Helvetica;
     color: #d1d1d1;
     letter-spacing: .3rem;
+}
+
+.flex-container-blogs {
+    display: flex;
+    height: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-wrap: wrap;
+    
+}
+
+.blog-item-1 {
+    color: silver;
+    display: block;
+    padding-left:15px;
+    padding-right: 15px;
+    
+}
+
+.blog-item-1::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-image: url(../img/blog1.jpeg);
+    background-position: center center;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    opacity: .35;
+    z-index: -1;
+    
+}
+
+.blog-item-1:hover {
+    text-decoration: none;
+    
+}
+
+.blog-item-2 {
+    background-image: url(../img/blog2.jpeg);
+    background-position: center center;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.blog-item-3 {
+    background-image: url(../img/blog3.jpeg);
+    background-position: center center;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.blog-item-4 {
+    background-image: url(../img/blog4.jpeg);
+    background-position: center center;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    
+}
+
+.blog-item-5 {
+    background-image: url(../img/blog5.jpeg);
+    background-position: center center;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    
 }
 
 

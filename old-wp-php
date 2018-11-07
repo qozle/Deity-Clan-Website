@@ -1,0 +1,96 @@
+<div class="row" style="color:silver;">
+                <?php
+                $number_of_posts = 5;
+                $args = array( 'numberposts' => $number_of_posts );
+                $recent_posts = wp_get_recent_posts( $args );
+                foreach($recent_posts as $post ){
+                    switch (array_search($post,$recent_posts)) {
+                        case 0:
+                            echo "<div class='col-sm-6 blog-item-1'>";
+                            echo "<h4>".$recent_post['post_title']."</h4> <br>";
+                            echo "<span>".$recent_post['post_date']."</span> <br>";
+                            echo "<p>".$recent_post['post_content']."</p> <br><br>";
+                            echo "<p>".$recent_post['post_category_name']."</p>";
+                            echo "</div>";
+                            
+                            break;
+                        case 1:
+                            echo "<div class='col-sm-6 blog-item-2'>";
+                            echo "<h4>".$recent_post['post_title']."</h4> <br>";
+                            echo "<span>".$recent_post['post_date']."</span> <br>";
+                            echo "<p>".$recent_post['post_content']."</p> <br><br>";
+                            echo "</div>";
+                            break;
+                        case 2:
+                            echo "<div class='col-sm-4 blog-item-3'>";
+                            echo "<h4>".$recent_post['post_title']."</h4> <br>";
+                            echo "<span>".$recent_post['post_date']."</span> <br>";
+                            echo "<p>".$recent_post['post_content']."</p> <br><br>";
+                            echo "</div>";
+                            break;
+                        case 3:
+                            echo "<div class='col-sm-4 blog-item-4'>";
+                            echo "<h4>".$recent_post['post_title']."</h4> <br>";
+                            echo "<span>".$recent_post['post_date']."</span> <br>";
+                            echo "<p>".$recent_post['post_content']."</p> <br><br>";
+                            echo "</div>";
+                            break;
+                        case 4:
+                            echo "<div class='col-sm-4 blog-item-5'>";
+                            echo "<h4>".$recent_post['post_title']."</h4> <br>";
+                            echo "<span>".$recent_post['post_date']."</span> <br>";
+                            echo "<p>".$recent_post['post_content']."</p> <br><br>";
+                            echo "</div>";
+                            break;
+                        };
+                    };
+                ?>
+                
+                
+            </div>
+
+
+
+
+
+
+<div class="row" style="color:silver;">
+                <?php $posts = get_posts('numberposts=5&order=ASC&orderby=post_title');
+                foreach ($posts as $post) : setup_postdata( $post );
+                switch (array_search($post, $posts)) {
+                    case 0:
+                        echo "<div class='col-sm-6 blog-item-1'>";
+                        echo "<h4>".the_date()."</h4><br>";
+                        echo "<span>".the_title()."</span><br>";
+                        echo "<p>".the_excerpt()."</p><br><br>";
+                        echo "</div>";
+                        break;
+                    case 1:
+                        echo "<div class='col-sm-6 blog-item-2'>";
+                        echo "<h4>".the_date()."</h4><br>";
+                        echo "<span>".the_title()."</span><br>";
+                        echo "<p>".the_excerpt()."</p><br><br>";
+                        echo "</div>";
+                        break;
+                    case 2:
+                        echo "<div class='col-sm-4 blog-item-3'>";
+                        echo "<h4>".the_date()."</h4><br>";
+                        echo "<span>".the_title()."</span><br>";
+                        echo "<p>".the_excerpt()."</p><br><br>";
+                        echo "</div>";
+                        break;
+                    case 3:
+                        echo "<div class='col-sm-4 blog-item-4'>";
+                        echo "<h4>".the_date()."</h4><br>";
+                        echo "<span>".the_title()."</span><br>";
+                        echo "<p>".the_excerpt()."</p><br><br>";
+                        echo "</div>";
+                        break;
+                    case 4:
+                        echo "<div class='col-sm-4 blog-item-5'>";
+                        echo "<h4>".the_date()."</h4><br>";
+                        echo "<span>".the_title()."</span><br>";
+                        echo "<p>".the_excerpt()."</p><br><br>";
+                        echo "</div>";
+                        break; }; endforeach; ?>
+            </div>    

@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
     <head>
         <title>DEITY CLAN</title>
@@ -21,7 +20,7 @@
 
 
         <!-- N A V B A R -->
-        <nav class="navbar navbar-expand-md sticky-top pl-0" style="background-color: rgba(25,25,25,.50);">
+        <nav class="navbar navbar-expand-md sticky-top pl-0" style="background-color: rgb(25,25,25);">
     		
                 <a class="navbar-brand m-0">
                     <img src="img/deitylogo1.png" width=75px>
@@ -58,28 +57,92 @@
 
         <!-- M A I N   C O N T E N T -->
         
-        <div>
-            
-            
-        <?php
-            $number_of_posts = 5;
-            $args = array( 'numberposts' => $number_of_posts );
-            $recent_posts = wp_get_recent_posts( $args );
-            foreach( $recent_posts as $recent_post ){
-            echo "<span>".$recent_post['post_date']."</span> <br>";
-            echo "<h3>".$recent_post['post_title']."</h3>";
-            echo  "<p>".$recent_post['post_content']."</p><br><br>";
-            }
-        ?>
         
+        <!-- B L O G  P O S T S -->
+        
+         
+        <div class="container" style="margin-top: 60px;border: 2px solid rgba(142,142,142,.25);border-radius:5px;">
+            <h4 class="text-center" style="color:white;padding-bottom:15px;padding-top:4px;margin-left:-15px;margin-right:-15px;background-color: rgba(209,209,209,.08);">Latest News</h4>
+            <div class="row" style="color:silver;padding-bottom:0;">
+                <?php
+                $number_of_posts = 5;
+                $args = array( 'numberposts' => $number_of_posts );
+                $recent_posts = wp_get_recent_posts( $args );
+                foreach($recent_posts as $post ){
+                    
+                    switch (array_search($post,$recent_posts)) {
+                        case 0:
+                            echo "<a href='https://01014.org' class='col-sm-6 blog-item-1'>";
+                            echo "<h4>".$post['post_title']."</h4> <br>";
+                            echo "<span>".$post['post_date']."</span> <br>";
+                            echo "<p>".$post['post_excerpt']."</p> <br><br>";
+                            foreach(get_the_category($post['ID']) as $category) {
+                            echo "<p>".$category->name."</p>";
+                            };
+                            echo "</a>";
+                            break;
+                        case 1:
+                            echo "<div class='col-sm-6 blog-item-2'>";
+                            echo "<h4>".$post['post_title']."</h4> <br>";
+                            echo "<span>".$post['post_date']."</span> <br>";
+                            echo "<p>".$post['post_excerpt']."</p> <br><br>";
+                            foreach(get_the_category($post['ID']) as $category) {
+                            echo "<p>".$category->name."</p>";
+                            };
+                            echo "</div>";
+                            break;
+                        case 2:
+                            echo "<div class='col-sm-4 blog-item-3'>";
+                            echo "<h4>".$post['post_title']."</h4> <br>";
+                            echo "<span>".$post['post_date']."</span> <br>";
+                            echo "<p>".$post['post_excerpt']."</p> <br><br>";
+                            foreach(get_the_category($post['ID']) as $category) {
+                            echo "<p>".$category->name."</p>";
+                            };
+                            echo "</div>";
+                            break;
+                        case 3:
+                            echo "<div class='col-sm-4 blog-item-4'>";
+                            echo "<h4>".$post['post_title']."</h4> <br>";
+                            echo "<span>".$post['post_date']."</span> <br>";
+                            echo "<p>".$post['post_excerpt']."</p> <br><br>";
+                            foreach(get_the_category($post['ID']) as $category) {
+                            echo "<p>".$category->name."</p>";
+                            };
+                            echo "</div>";
+                            break;
+                        case 4:
+                            echo "<div class='col-sm-4 blog-item-5'>";
+                            echo "<h4>".$post['post_title']."</h4> <br>";
+                            echo "<span>".$post['post_date']."</span> <br>";
+                            echo "<p>".$post['post_excerpt']."</p> <br><br>";
+                            foreach(get_the_category($post['ID']) as $category) {
+                            echo "<p>".$category->name."</p>";
+                            };
+                            echo "</div>";
+                            break;
+                        };
+                    };
+                ?>
+                
+                
+            </div>
         </div>
         
+
+        
+        
+        <!-- V I D E O S -->
+        
+<!--
         <div id="test" class="text-center" style="color: silver;">
             I think I can just put one test message here: {{ message}}, and another right here: {{ message2 }}, and everything should work just fine.
         
         </div>
+-->
 
-    	<div class="container" style="padding-bottom: 10px;">
+    	<div class="container" style="margin-top: 60px;margin-bottom:60px;border: 2px solid rgba(142,142,142,.25);border-radius:5px;background-color: rgba(209,209,209,.08);">
+            <h4 class="text-center" style="color:white;padding-bottom:20px;padding-top:4px;">Video carousel or something?</h4>
             <div class="row">
                 <div class="col" style="background-color: #0e0b0b;">
                     <div class="embed-responsive embed-responsive-16by9">
@@ -113,7 +176,7 @@
                         </li>
                         
                         <li>
-                            Link 2
+                            Link 3
                         </li>
                     </ul>
                 </div>
