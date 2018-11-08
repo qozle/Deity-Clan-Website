@@ -1,10 +1,9 @@
 <html>
     <head>
-        <title>DEITY CLAN</title>
+        <title>Deity Clan | Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="img/deitylogo1.png">
@@ -20,15 +19,15 @@
 
 
         <!-- N A V B A R -->
-        <nav class="navbar navbar-expand-md sticky-top pl-0" style="background-color: rgb(25,25,25);">
-    		
-                <a class="navbar-brand m-0">
-                    <img src="img/deitylogo1.png" width=75px>
-                </a>
+        <nav class="navbar navbar-expand-md sticky-top pl-0">
+            <a class="navbar-brand m-0">
+                <img src="img/deitylogo1.png" width=75px>
                 <span class="navbar-text">
                     <span class="deity-font-1">DEITY</span>
                     <span class="clan-font-1">CLAN</span>
                 </span>
+            </a>
+                
             
     		<ul class="navbar-nav ml-auto">
     			<li class="nav-item">
@@ -61,7 +60,7 @@
         <!-- B L O G  P O S T S -->
         
          
-        <div class="container" style="margin-top: 60px;border: 2px solid rgba(142,142,142,.25);border-radius:5px;">
+        <div class="container" style="margin-top: 60px;border: 2px solid rgba(142,142,142,.25);border-radius:5px;background-color: #0e0b0b;">
             <div class="row">
                 <div class="col-sm-12" style="padding-left:0;padding-right:0;">
                     <h4 class="text-center" style="color:white;padding-bottom:15px;padding-top:4px;margin-bottom:0;background-color: rgba(209,209,209,.08);">Latest News</h4>
@@ -73,63 +72,54 @@
                 <?php
                 $number_of_posts = 5;
                 $args = array( 'numberposts' => $number_of_posts );
-                $recent_posts = wp_get_recent_posts( $args );
-                foreach($recent_posts as $post ){
-                    
-                    switch (array_search($post,$recent_posts)) {
-                        case 0:
-                            echo "<a href='blog/".$post['post_name']."' class='col-sm-6 blog-item-1'>";
-                            echo "<h4>".$post['post_title']."</h4> <br>";
-                            echo "<span>".$post['post_date']."</span> <br>";
-                            echo "<p>".$post['post_excerpt']."</p> <br><br>";
-                            foreach(get_the_category($post['ID']) as $category) {
-                            echo "<p>".$category->name."</p>";
-                            };
-                            echo "</a>";
-                            break;
-                        case 1:
-                            echo "<a href='blog/".$post['post_name']."' class='col-sm-6 blog-item-2'>";
-                            echo "<h4>".$post['post_title']."</h4> <br>";
-                            echo "<span>".$post['post_date']."</span> <br>";
-                            echo "<p>".$post['post_excerpt']."</p> <br><br>";
-                            foreach(get_the_category($post['ID']) as $category) {
-                            echo "<p>".$category->name."</p>";
-                            };
-                            echo "</a>";
-                            break;
-                        case 2:
-                            echo "<a href='blog/".$post['post_name']."' class='col-sm-4 blog-item-3'>";
-                            echo "<h4>".$post['post_title']."</h4> <br>";
-                            echo "<span>".$post['post_date']."</span> <br>";
-                            echo "<p>".$post['post_excerpt']."</p> <br><br>";
-                            foreach(get_the_category($post['ID']) as $category) {
-                            echo "<p>".$category->name."</p>";
-                            };
-                            echo "</a>";
-                            break;
-                        case 3:
-                            echo "<a href='blog/".$post['post_name']."' class='col-sm-4 blog-item-4'>";
-                            echo "<h4>".$post['post_title']."</h4> <br>";
-                            echo "<span>".$post['post_date']."</span> <br>";
-                            echo "<p>".$post['post_excerpt']."</p> <br><br>";
-                            foreach(get_the_category($post['ID']) as $category) {
-                            echo "<p>".$category->name."</p>";
-                            };
-                            echo "</a>";
-                            break;
-                        case 4:
-                            echo "<a href='blog/".$post['post_name']."' class='col-sm-4 blog-item-5'>";
-                            echo "<h4>".$post['post_title']."</h4> <br>";
-                            echo "<span>".$post['post_date']."</span> <br>";
-                            echo "<p>".$post['post_excerpt']."</p> <br><br>";
-                            foreach(get_the_category($post['ID']) as $category) {
-                            echo "<p>".$category->name."</p>";
-                            };
-                            echo "</a>";
-                            break;
-                        };
-                    };
+                $posts = wp_get_recent_posts( $args );
+                
                 ?>
+                
+                <!-- B L O G  I T E M  1 -->    
+                <?php echo "<a href='blog/index.php/".$posts[0]['post_name']."' class='col-sm-6 blog-item-1'>";?>
+                    <h2 class="blog-title"><?php echo $posts[0]['post_title']?></h2>
+                    <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[0]['ID']);?></p>
+                    <?php foreach(get_the_category($posts[0]['ID']) as $category) {
+                        echo "<p class='blog-category'>".$category->name."</p>";};?>
+                    <div class='overlay'></div>
+                <?php echo "</a>";?>
+                
+                <!-- B L O G  I T E M  2 -->
+                <?php echo "<a href='blog/index.php/".$posts[1]['post_name']."' class='col-sm-6 blog-item-2'>";?>
+                    <h2 class="blog-title"><?php echo $posts[1]['post_title']?></h2>
+                    <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[1]['ID']);?></p>
+                    <?php foreach(get_the_category($posts[1]['ID']) as $category) {
+                        echo "<p class='blog-category'>".$category->name."</p>";};?>
+                    <div class='overlay'></div>
+                <?php echo "</a>";?>
+                
+                <!-- B L O G  I T E M  3 -->
+                <?php echo "<a href='blog/index.php/".$posts[2]['post_name']."' class='col-sm-4 blog-item-3'>";?>
+                    <h3 class="blog-title"><?php echo $posts[2]['post_title']?></h3>
+                    <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[2]['ID']);?></p>
+                    <?php foreach(get_the_category($posts[2]['ID']) as $category) {
+                        echo "<p class='blog-category'>".$category->name."</p>";};?>
+                    <div class='overlay'></div>
+                <?php echo "</a>";?>
+                
+                <!-- B L O G  I T E M  4 -->
+                <?php echo "<a href='blog/index.php/".$posts[3]['post_name']."' class='col-sm-4 blog-item-4'>";?>
+                <h3 class="blog-title"><?php echo $posts[3]['post_title']?></h3>
+                <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[3]['ID']);?></p>
+                <?php foreach(get_the_category($posts[3]['ID']) as $category) {
+                    echo "<p class='blog-category'>".$category->name."</p>";};?>    
+                <div class='overlay'></div>
+                <?php echo "</a>";?>
+                
+                <!-- B L O G  I T E M  5 -->
+                <?php echo "<a href='blog/index.php/".$posts[4]['post_name']."' class='col-sm-4 blog-item-5'>";?>
+                    <h3 class="blog-title"><?php echo $posts[4]['post_title']?></h3>
+                <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[4]['ID']);?></p>
+                    <?php foreach(get_the_category($posts[4]['ID']) as $category) {
+                        echo "<p class='blog-category'>".$category->name."</p>";};?>
+                    <div class='overlay'></div>
+                <?php echo "</a>";?> 
                 </div>
             </div>
                 
@@ -238,68 +228,70 @@
         <!-- F O O T E R -->
         
         <footer>
-            <div class="flex-container-footer">
-                <div class="flex-item-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 footer-item">
                     <h6>Latest Posts</h6>
-                    <p>Lorem ipsum dolor sit amet, illud noster sed ad, mel mucius noster epicurei at. Ad est dolorum referrentur, falli accommodare sed te. Mea ut elitr numquam antiopam. Admodum vulputate cu nam, mei in tota apeirian, mei simul oblique albucius ad. Usu velit labores mediocritatem in. Eam omnesque sensibus maiestatis an, nec ullum omnes tibique ei.</p>
-                </div>
-                <div class="flex-item-footer">
-                    <h6>Our Departments</h6>
-                    <p>Lorem ipsum dolor sit amet, illud noster sed ad, mel mucius noster epicurei at. Ad est dolorum referrentur, falli accommodare sed te. Mea ut elitr numquam antiopam. Admodum vulputate cu nam, mei in tota apeirian, mei simul oblique albucius ad. Usu velit labores mediocritatem in. Eam omnesque sensibus maiestatis an, nec ullum omnes tibique ei.</p>
-                </div>
-                <div class="flex-item-footer">
+                        <p>Lorem ipsum dolor sit amet, illud noster sed ad, mel mucius noster epicurei at. Ad est dolorum referrentur, falli accommodare sed te. Mea ut elitr numquam antiopam. Admodum vulputate cu nam, mei in tota apeirian, mei simul oblique albucius ad. Usu velit labores mediocritatem in. Eam omnesque sensibus maiestatis an, nec ullum omnes tibique ei.</p>
+                    </div>
+                    <div class="col-sm-6 footer-item">
+                        <h6>Our Departments</h6>
+                        <p>Lorem ipsum dolor sit amet, illud noster sed ad, mel mucius noster epicurei at. Ad est dolorum referrentur, falli accommodare sed te. Mea ut elitr numquam antiopam. Admodum vulputate cu nam, mei in tota apeirian, mei simul oblique albucius ad. Usu velit labores mediocritatem in. Eam omnesque sensibus maiestatis an, nec ullum omnes tibique ei.</p>
+                    </div>
+                <div class="col-sm6 footer-item">
                     <h6>Useful Links</h6>
                     <ul>
                         <li>
-                            Link 1
+                            News
                         </li>
-                         
+                            About us
                         <li>
-                            Link 2    
+                            Team
                         </li>
-                        
+                            Media
                         <li>
-                            Link 3
+                            Contact
                         </li>
                     </ul>
                 </div>
-                <div class="flex-item-footer">
+                <div class="col-sm-6 footer-item">
                     <h6>About Us</h6>
                     <p>Lorem ipsum dolor sit amet, illud noster sed ad, mel mucius noster epicurei at. Ad est dolorum referrentur, falli accommodare sed te. Mea ut elitr numquam antiopam. Admodum vulputate cu nam, mei in tota apeirian, mei simul oblique albucius ad. Usu velit labores mediocritatem in. Eam omnesque sensibus maiestatis an, nec ullum omnes tibique ei.</p>
+                </div>
                 </div>
             </div>
             
                 
                 
                 
-                <ul style="list-style: none;margin-bottom:0;">
-                    <li>
+                <ul class="footer-social-list">
+                    <li class="footer-list-item">
                         <a href="#facebook" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                            <i class="fa fa-facebook"></i>
+                            <p class="fa fa-facebook"></p>
                         </a>
                     </li>
-                    <li><a href="#twitter" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                            <i class="fa fa-twitter"></i>
+                    <li class="footer-list-item"><a href="#twitter" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                            <p class="fa fa-twitter"></p>
                         </a>
                     </li>
-                    <li>
+                    <li class="footer-list-item">
                         <a href="#instagram" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                            <i class="fa fa-instagram"></i>
+                            <p class="fa fa-instagram"></p>
                         </a>
                     </li>
-                    <li>
+                    <li class="footer-list-item">
                         <a href="#youtube" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                            <i class="fa fa-youtube"></i>
+                            <p class="fa fa-youtube"></p>
                         </a>
                     </li>
-                    <li>
+                    <li class="footer-list-item">
                         <a href="#twitch" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                            <i class="fa fa-twitch"></i>
+                            <p class="fa fa-twitch"></p>
                         </a>
                     </li>
-                    <li>
+                    <li class="footer-list-item">
                         <a href="#steam" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                            <i class="fa fa-steam"></i>
+                            <p class="fa fa-steam"></p>
                         </a>
                     </li>
                 </ul>

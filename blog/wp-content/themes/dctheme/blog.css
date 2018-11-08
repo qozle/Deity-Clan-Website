@@ -1,0 +1,260 @@
+/* COLORS /
+Balls.  Ballsacks.  Is that one word?  Boobies.  8008135.  Guess where this was copied from
+#0e0b0b - black
+#000A1B - dark bluegray
+#d1d1d1 - light gray
+#001946 - dark blue
+#003391 - blue
+
+*/
+
+/* ====================== FONTS ===================== */
+
+@font-face {
+    font-family: 'Abolition Regular';
+        src: url('/Deity-Clan-Website/fonts/abolition-regular-webfont.eot');
+        src: url('/Deity-Clan-Website/fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+             url('/Deity-Clan-Website/fonts/abolition-regular-webfont.woff') format('woff'),
+             url('/Deity-Clan-Website/fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bugfast';
+        src: url('/Deity-Clan-Website/fonts/bugfast.otf');
+}
+
+
+/*
+ * Globals
+ */
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #555;
+    background-color: #0e0b0b;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+/* ================== NAVBAR STYLES ================= */
+
+nav {
+    border-bottom: 4px #003391 solid;
+    background-color: #0e0b0b;
+    
+}
+
+.navbar .navbar-nav .nav-item a {
+    color: #003391;
+    font-family: 'Abolition Regular';
+    letter-spacing: .3rem;
+    font-size: 1.3rem;
+}
+
+.nav-link:hover {
+    color: #001946 !important;
+    text-decoration: overline underline;
+}
+
+.deity-font-1 {
+	font: 2rem 'Bugfast';
+	color: #003391;
+	letter-spacing: .3rem;
+}
+
+.clan-font-1 {
+	font: 1.9rem Helvetica;
+	color: #003391;
+	letter-spacing: .3rem;
+}
+
+.deity-font-2 {
+    font: 7rem 'Bugfast';
+    color: #d1d1d1;
+    letter-spacing: .3rem;
+}
+
+.clan-font-2 {
+    font: 6.5rem Helvetica;
+    color: #d1d1d1;
+    letter-spacing: .3rem;
+}
+
+
+.navbar-brand {
+    
+}
+
+.navbar-brand:hover {
+    
+}
+
+li {
+    display: inline-block;
+    padding-right: 25px;
+    color: #0e0b0b;
+}
+
+
+.jumbotron {
+	background-image: url('/Deity-Clan-Website/img/purple-splash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:700px;
+    padding: 0;
+}
+
+.jumbotron div {
+    padding-top: 50px;
+}
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+    font-size: 18px;
+    line-height: 1.5;
+    padding-right: 0;
+    
+}
+
+/* Sidebar modules for boxing content */
+.blog-sidebar {
+    background-color: #0e0b0b;
+    overflow: hidden;
+    padding-right: 0;
+    margin-bottom: 60px;
+    
+}
+
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+    margin-bottom: 60px;
+    text-align: center;
+    background-color: #0b0e0e;
+}
+
+.blog-post-title {
+    font-size: 40px;
+    background-color: rgba(209,209,209,.08);
+    margin-bottom: 0;
+}
+
+.blog-post-meta {
+    color: #999;
+    background-color: rgba(209,209,209,.08);
+    border-bottom: 2px solid rgba(142,142,142,.25);
+    margin-bottom: 0;
+}
+
+.blog-content {
+    background-color: #0e0b0b;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #0e0b0b;
+  border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+.blog-nav li {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 500;	
+}
+.blog-nav li a {
+    color: #fff;
+}

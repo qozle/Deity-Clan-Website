@@ -20,7 +20,7 @@ Balls.  Ballsacks.  Is that one word?  Boobies.  8008135.
 }
 
 @font-face {
-    font-family: Bugfast;
+    font-family: 'Bugfast';
         src: url('../fonts/bugfast.otf');
 }
 
@@ -40,7 +40,7 @@ body {
 
 nav {
     border-bottom: 4px #003391 solid;
-    background-color: black;
+    background-color: #0e0b0b;
     
 }
 
@@ -74,7 +74,7 @@ nav {
 
 
 .deity-font-1 {
-	font: 2rem Bugfast;
+	font: 2rem 'Bugfast';
 	color: #003391;
 	letter-spacing: .3rem;
 }
@@ -86,7 +86,7 @@ nav {
 }
 
 .deity-font-2 {
-    font: 7rem Bugfast;
+    font: 7rem 'Bugfast';
     color: #d1d1d1;
     letter-spacing: .3rem;
 }
@@ -97,18 +97,52 @@ nav {
     letter-spacing: .3rem;
 }
 
-.flex-container-blogs {
-    display: flex;
-    height: 300px;
-    padding-left: 10px;
-    padding-right: 10px;
-    flex-wrap: wrap;
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: #001946;
+}
+
+.overlay:hover {
+    opacity: .35;
     
 }
 
-.col-sm-6 {
-    padding-left:0;
-    padding-right:0;
+.blog-title {
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Abolition Regular';
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.35);
+    
+}
+
+.blog-date {
+    font-family: 'Abolition Regular';
+    margin-bottom: 0;
+    
+}
+
+.blog-category {
+    
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    background-color: #001946;
+    font-family: 'Abolition Regular';
+    font-size: 1.1em;
+    padding: 4px;
+    display: inline-block;
+    text-align: center;
+    
+    
 }
 
 .blog-item-1 {
@@ -116,180 +150,108 @@ nav {
     display: block;
     padding-left: 0;
     padding-right: 0;
-    
-}
-
-.blog-item-1::after {
-    display: block;
-    content: "";
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
     background-image: url(../img/blog1.jpeg);
-    background-position: center center;
+    background-position: center;
     background-size: cover, cover;
     background-repeat: no-repeat;
-    opacity: .35;
-    z-index: -1;
+    transition: 1s;
+    height: 300px;
+    text-align: center;
+    margin-bottom: 0;
     
 }
 
-.blog-item-1::after:hover {
-    opacity: .05;
-}
 
 .blog-item-1:hover {
     text-decoration: none;
+    color: silver;
+    
     
 }
-
-
 
 .blog-item-2 {
     color: silver;
     display: block;
     padding-left: 0;
     padding-right: 0;
-    
-}
-
-.blog-item-2::after {
-    display: block;
-    content: "";
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
     background-image: url(../img/blog2.jpeg);
     background-position: center center;
     background-size: cover, cover;
     background-repeat: no-repeat;
-    opacity: .35;
-    z-index: -1;
-    
+    transition: 1s;
+    height: 300px;
+    text-align: center;
 }
 
-.blog-item-2::after:hover {
-    opacity: .05;
-}
 
 .blog-item-2:hover {
     text-decoration: none;
+    color: silver;
     
 }
-
-
 
 .blog-item-3 {
     color: silver;
     display: block;
     padding-left: 0;
     padding-right: 0;
-    
-}
-
-.blog-item-3::after {
-    display: block;
-    content: "";
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
     background-image: url(../img/blog3.jpeg);
     background-position: center center;
     background-size: cover, cover;
     background-repeat: no-repeat;
-    opacity: .35;
-    z-index: -1;
-    
+    transition: 1s;
+    height: 300px;
+    text-align: center;
 }
 
-.blog-item-3::after:hover {
-    opacity: .05;
-}
 
 .blog-item-3:hover {
     text-decoration: none;
+    color: silver;
     
 }
-
-
 
 .blog-item-4 {
     color: silver;
     display: block;
     padding-left: 0;
     padding-right: 0;
-    
-}
-
-.blog-item-4::after {
-    display: block;
-    content: "";
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
     background-image: url(../img/blog4.jpeg);
     background-position: center center;
     background-size: cover, cover;
     background-repeat: no-repeat;
-    opacity: .35;
-    z-index: -1;
-    
+    transition: 1s;
+    height: 300px;
+    text-align: center;
 }
 
-.blog-item-4::after:hover {
-    opacity: .05;
-}
 
 .blog-item-4:hover {
     text-decoration: none;
+    color: silver;
     
 }
-
-
 
 .blog-item-5 {
     color: silver;
     display: block;
     padding-left: 0;
     padding-right: 0;
-    
-}
-
-.blog-item-5::after {
-    display: block;
-    content: "";
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
     background-image: url(../img/blog5.jpeg);
-    background-position: center center;
+    background-position: center;
     background-size: cover, cover;
     background-repeat: no-repeat;
-    opacity: .35;
-    z-index: -1;
-    
+    transition: 1s;
+    height: 300px;
+    text-align: center;
 }
 
-.blog-item-5::after:hover {
-    opacity: .05;
-}
 
 .blog-item-5:hover {
     text-decoration: none;
+    color: silver;
     
 }
-
-
 
 
 
@@ -299,7 +261,7 @@ nav {
 .flex-container-footer {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     padding-top: 25px;
     border-bottom: 2px solid rgba(142,142,142,.25);
@@ -311,10 +273,11 @@ nav {
     color: #003391;
     padding-left: 10px;
     padding-right: 10px;
-    min-width: 145px;
+    min-width: 200px;
+    max-width: 300px;
     height: auto;
     padding-bottom: 10px;
-    font-size: .85em
+    font-size: .85em;
     
 }
 
@@ -326,23 +289,20 @@ footer {
     background-color: #000a1b;
 }
 
-footer ul li a {
-    color: #003391;
-    margin-top: 2px;
-    padding-top: 2px;
-}
-
-footer ul li a:hover {
-    color: #001946;
-    text-decoration: underline overline;
+.footer-item {
+    color: #fff;
     
 }
 
+.footer-social-list {
+    
+    
+}
 
-li {
-    display: inline-block;
+.footer-list-item {
+    display: inline;
     padding-right: 25px;
-    color: #0e0b0b;
+    color: #fff;
 }
 
 #copyright {
