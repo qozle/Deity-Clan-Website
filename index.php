@@ -33,39 +33,40 @@
 
 
         <!-- N A V B A R -->
-        <nav class="navbar navbar-expand-sm sticky-top pl-0">
-            <a class="navbar-brand m-0">
-                <img src="img/deitylogo1.png" width=75px>
-                <span class="navbar-text">
-                    <span class="deity-font-1">DEITY</span>
-                    <span class="clan-font-1">CLAN</span>
-                </span>
-            </a>
+        </header>
+            <nav class="navbar navbar-expand-sm sticky-top pl-0">
+                <a class="navbar-brand m-0">
+                    <img src="img/deitylogo1.png" width=75px>
+                    <span class="navbar-text">
+                        <span class="deity-font-1">DEITY</span>
+                        <span class="clan-font-1">CLAN</span>
+                    </span>
+                </a>
+                    
                 
-            
-    		<ul class="navbar-nav ml-auto">
-    			<li class="nav-item">
-    				<a class="nav-link" href="#">HOME</a>
-    			</li>
-    			<li class="nav-item">
-    				<a class="nav-link" href="#">TEAM</a>
-    			</li>
-    			<li class="nav-item">
-    				<a class="nav-link" href="#">CONTACT</a>
-    			</li>
-    		</ul>
-    	</nav>
+        		<ul class="navbar-nav ml-auto">
+        			<li class="nav-item">
+        				<a class="nav-link" href="#">HOME</a>
+        			</li>
+        			<li class="nav-item">
+        				<a class="nav-link" href="#">TEAM</a>
+        			</li>
+        			<li class="nav-item">
+        				<a class="nav-link" href="#">CONTACT</a>
+        			</li>
+        		</ul>
+        	</nav>
 
 
 
         <!--  H E A D E R -->
-
-        <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
-            <div class="container" style="text-align: center;">
-                <h1 class="deity-font-2 d-inline display-1">DEITY</h1>
-                <h1 class="clan-font-2 d-inline display-1">CLAN</h1>
+                    <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
+                <div class="container" style="text-align: center;">
+                    <h1 class="deity-font-2 d-inline display-1">DEITY</h1>
+                    <h1 class="clan-font-2 d-inline display-1">CLAN</h1>
+                </div>
             </div>
-        </div>
+        </header>
 
 
 

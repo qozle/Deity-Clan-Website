@@ -1,0 +1,10 @@
+.jumbotron {
+	background-image: url('../img/keyboard-gamer.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height:450px;
+    width: 100%;
+    padding: 0;
+}
+
