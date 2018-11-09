@@ -5,12 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="img/deitylogo1.png">
+        <script src="js/custom.js"></script>
+        
         
     </head>
 
     <body>
+        <div class="preloader">
+            <div class="lds-css ng-scope">
+                <div style="margin:auto;margin-top: 200px;" class="lds-double-ring">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <h1 class="preloader-text">L O A D I N G . . .</h1>
+        </div>
+        <div class="the-entire-page">
+        
         <?php 
             define('WP_USE_THEMES', false);
             require('blog/wp-blog-header.php');
@@ -47,8 +61,9 @@
         <!--  H E A D E R -->
 
         <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
-            <div class="container">
-                <h1 class=py-3 style="text-align: center;"><span class="deity-font-2">DEITY</span> <span class="clan-font-2">CLAN</span></h1>
+            <div class="container" style="text-align: center;">
+                <h1 class="deity-font-2 d-inline display-1">DEITY</h1>
+                <h1 class="clan-font-2 d-inline display-1">CLAN</h1>
             </div>
         </div>
 
@@ -150,7 +165,7 @@
             </div>
         </div>
 
-        <div class="container" style="margin-top: 60px;margin-bottom:60px;border: 2px solid rgba(142,142,142,.25);border-radius:5px;background-color: rgba(209,209,209,.08);">
+       <!-- <div class="container" style="margin-top: 60px;margin-bottom:60px;border: 2px solid rgba(142,142,142,.25);border-radius:5px;background-color: rgba(209,209,209,.08);">
 
             <div class="row">
                 <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
@@ -223,7 +238,7 @@
                     </video>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- F O O T E R -->
         
@@ -298,7 +313,11 @@
                 <p id="copyright">Copyright 01014 Web Solutions 2018</p>
             
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-        <script src="js/maxs-vue.js"></script>  
+        
+        
+        
+       
+        
+        </div> 
     </body>
 </html>
