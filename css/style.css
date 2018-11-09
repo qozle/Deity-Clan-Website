@@ -437,6 +437,11 @@ footer {
     .deity-font-2, .clan-font-2 {
         font-size: 4.5rem;
     }
+    
+    .nav-link {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
 
 }
 

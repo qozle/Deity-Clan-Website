@@ -33,7 +33,7 @@
 
 
         <!-- N A V B A R -->
-        <nav class="navbar navbar-expand-md sticky-top pl-0">
+        <nav class="navbar navbar-expand-sm sticky-top pl-0">
             <a class="navbar-brand m-0">
                 <img src="img/deitylogo1.png" width=75px>
                 <span class="navbar-text">
