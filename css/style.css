@@ -44,14 +44,11 @@ body {
 
 /* ================== NAVBAR STYLES ================= */
 
-/*
 nav {
     border-bottom: 4px #003391 solid;
     background-color: #0e0b0b;
     
 }
-
-
 
 .navbar .navbar-nav .nav-item a {
     color: #003391;
@@ -60,15 +57,10 @@ nav {
     font-size: 1.3rem;
 }
 
-.nav-link {
-    padding-top: 1px;
-}
-
 .nav-link:hover {
     color: #001946 !important;
     text-decoration: overline underline;
 }
-*/
     
 
 /* =================== MAIN STYLES ================== */
@@ -90,15 +82,13 @@ nav {
 .deity-font-1 {
 	font: 2rem 'Bugfast';
 	color: #003391;
-	letter-spacing: .2rem;
-    display: inline;
+	letter-spacing: .3rem;
 }
 
 .clan-font-1 {
 	font: 1.9rem Helvetica;
 	color: #003391;
-	letter-spacing: .2rem;
-    display: inline;
+	letter-spacing: .3rem;
 }
 
 .deity-font-2 {

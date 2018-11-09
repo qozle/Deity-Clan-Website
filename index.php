@@ -1,33 +1,11 @@
-<!DOCTYPE html>
 <html>
     <head>
         <title>Deity Clan | Home</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <!-- J Q U E R Y  C D N -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-        <!-- B O O T S T R A P 4  J S -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
-        <!-- B O O T S T R A P 4  C S S -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        
-        
-          
-        
-        
-        <!-- B O O T S T R A P 4  C S S -->
-        
-         <!-- B O O T S T R A P 4  C O M P L E T E  J S  B U N D L E -->
-        
-        
-        
-        
-      
-        
-        
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="img/deitylogo1.png">
         <script src="js/custom.js"></script>
@@ -55,28 +33,29 @@
 
 
         <!-- N A V B A R -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+        <nav class="navbar navbar-expand-sm sticky-top pl-0">
+            <a class="navbar-brand m-0">
+                <img src="img/deitylogo1.png" width=75px>
+                <span class="navbar-text">
+                    <span class="deity-font-1">DEITY</span>
+                    <span class="clan-font-1">CLAN</span>
+                </span>
+            </a>
+                
+            
+    		<ul class="navbar-nav ml-auto">
+    			<li class="nav-item">
+    				<a class="nav-link" href="#">HOME</a>
+    			</li>
+    			<li class="nav-item">
+    				<a class="nav-link" href="#">TEAM</a>
+    			</li>
+    			<li class="nav-item">
+    				<a class="nav-link" href="#">CONTACT</a>
+    			</li>
+    		</ul>
+    	</nav>
+
 
 
         <!--  H E A D E R -->
@@ -340,6 +319,5 @@
        
         
         </div> 
-        
     </body>
 </html>
