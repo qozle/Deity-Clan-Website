@@ -33,43 +33,108 @@ Balls.  Ballsacks.  Is that one word?  Boobies.  8008135.
 /* F O U N D A T I O N */
 html {
     min-height: 100%;
+    
 }
 
 body {
     min-height: 100%;
     background-color: #0e0b0b;
-    
+}
+
+button:focus {
+    outline: 0;
 }
 
 
 /* ================== NAVBAR STYLES ================= */
 
-/*
 nav {
     border-bottom: 4px #003391 solid;
     background-color: #0e0b0b;
     
 }
 
+.navbar-toggler {
+    background-color: #003391;
+    margin-left: auto;
+    text-decoration: none;
+    transition: .25s;
+    margin-bottom: 10px;
+}
+
+.navbar-toggler:hover {
+    background-color: #001946; 
+}
+
+.my-nav-icon {
+    font-size: .90em;
+}
 
 
-.navbar .navbar-nav .nav-item a {
-    color: #003391;
-    font-family: 'Abolition Regular';
-    letter-spacing: .3rem;
-    font-size: 1.3rem;
+.nav-item {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .nav-link {
-    padding-top: 1px;
+    color: #003391;
+    font-family: 'Abolition Regular';
+    letter-spacing: .15rem;
+    font-size: 1rem;
 }
+
 
 .nav-link:hover {
     color: #001946 !important;
     text-decoration: overline underline;
 }
-*/
+
+
+
+.modal-dialog {
+    height: 90%;
     
+}
+
+.modal-content {
+    background-color: rgba(0,0,0,.65);
+    height: 100%;
+}
+
+.modal-body {
+    
+}
+
+.modal-list {
+    list-style: none;
+    display: block;
+    padding-top: 200px;
+    font-family: 'Abolition Regular';
+    padding-left: 0;
+    
+    
+}
+
+.modal-list-item {
+    font-size: 2em;
+    text-align: center;
+    border-radius: 10px;
+    
+    
+}
+
+.modal-list-link {
+    color: #003391;
+    
+    
+    
+}
+
+.modal-list-link:hover {
+    text-decoration: none;
+    color: #003391;
+    
+}
 
 /* =================== MAIN STYLES ================== */
 

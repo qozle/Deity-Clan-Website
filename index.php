@@ -12,22 +12,9 @@
         <!-- B O O T S T R A P 4  C S S -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         
-        
-          
-        
-        
-        <!-- B O O T S T R A P 4  C S S -->
-        
-         <!-- B O O T S T R A P 4  C O M P L E T E  J S  B U N D L E -->
-        
-        
-        
-        
-      
-        
-        
+        <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="img/deitylogo1.png">
         <script src="js/custom.js"></script>
@@ -55,55 +42,99 @@
 
 
         <!-- N A V B A R -->
-<<<<<<< HEAD
-        </header>
-            <nav class="navbar navbar-expand-sm sticky-top pl-0">
-                <a class="navbar-brand m-0">
+
+    
+            <nav class="navbar navbar-expand-lg sticky-top pl-0">
+                <a class="navbar-brand m-0" href="https://deityclan.01014.org">
                     <img src="img/deitylogo1.png" width=75px>
                     <span class="navbar-text">
-                        <span class="deity-font-1">DEITY</span>
-                        <span class="clan-font-1">CLAN</span>
+                        <p class="deity-font-1 align-text-middle">DEITY</p>
+                        <p class="clan-font-1 align-text-middle">CLAN</p>
                     </span>
                 </a>
-                    
-                
-        		<ul class="navbar-nav ml-auto">
-        			<li class="nav-item">
-        				<a class="nav-link" href="#">HOME</a>
-        			</li>
-        			<li class="nav-item">
-        				<a class="nav-link" href="#">TEAM</a>
-        			</li>
-        			<li class="nav-item">
-        				<a class="nav-link" href="#">CONTACT</a>
-        			</li>
-        		</ul>
-        	</nav>
+                <button class="navbar-toggler" type="button" data-toggle="modal" data-target=".menu-modal" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-caret-square-down my-nav-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto align-text-middle pb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">NEWS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TEAM INFO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MATCHES AND STATS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MEDIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+           
 
-=======
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav>
->>>>>>> parent of d54c120... Revert "CDN fun"
+        <!-- Modal -->
+            <div class="modal fade menu-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <ul class="modal-list">
+                                <li class="modal-list-item">
+                                    <a class="modal-list-link" href="#">HOME
+                                    </a>
+                                </li>
+                                <li class="modal-list-item">
+                                    <a class="modal-list-link" href="#">NEWS
+                                    </a>
+                                        
+                                </li>
+                                <li class="modal-list-item">
+                                    <a class="modal-list-link" href="#">TEAM INFO
+                                    </a>
+                                        
+                                </li>
+                                <li class="modal-list-item">
+                                    <a class="modal-list-link" href="#">MATCHES AND STATS</a>
+                                        
+                                </li>
+                                <li class="modal-list-item">
+                                    <a class="modal-list-link" href="#">MEDIA
+                                    </a>
+                                        
+                                </li>
+                                <li class="modal-list-item">
+                                    <a class="modal-list-link" href="#">ABOUT
+                                    </a>
+                                        
+                                </li>
+                                <li class="modal-list-item">
+                                    <a class="modal-list-link" href="#">CONTACT
+                                    </a>
+                                        
+                                </li>
+                      
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+        
+            
+            
+
 
 
         <!--  H E A D E R -->
@@ -113,7 +144,7 @@
                     <h1 class="clan-font-2 d-inline display-1">CLAN</h1>
                 </div>
             </div>
-        </header>
+        
 
 
 
@@ -330,31 +361,31 @@
                 <ul class="footer-social-list">
                     <li class="footer-list-item">
                         <a href="#facebook" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                            <p class="fa fa-facebook"></p>
+                            <p class="fab fa-facebook"></p>
                         </a>
                     </li>
                     <li class="footer-list-item"><a href="#twitter" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                            <p class="fa fa-twitter"></p>
+                            <p class="fab fa-twitter"></p>
                         </a>
                     </li>
                     <li class="footer-list-item">
                         <a href="#instagram" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                            <p class="fa fa-instagram"></p>
+                            <p class="fab fa-instagram"></p>
                         </a>
                     </li>
                     <li class="footer-list-item">
                         <a href="#youtube" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                            <p class="fa fa-youtube"></p>
+                            <p class="fab fa-youtube"></p>
                         </a>
                     </li>
                     <li class="footer-list-item">
                         <a href="#twitch" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                            <p class="fa fa-twitch"></p>
+                            <p class="fab fa-twitch"></p>
                         </a>
                     </li>
                     <li class="footer-list-item">
                         <a href="#steam" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                            <p class="fa fa-steam"></p>
+                            <p class="fab fa-steam"></p>
                         </a>
                     </li>
                 </ul>
