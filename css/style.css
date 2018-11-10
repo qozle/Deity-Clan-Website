@@ -89,16 +89,23 @@ nav {
     text-decoration: overline underline;
 }
 
-
+.modal {
+    
+    
+}
 
 .modal-dialog {
-    height: 90%;
+    
     
 }
 
 .modal-content {
-    background-color: rgba(0,0,0,.65);
-    height: 100%;
+    background-color: rgba(0,0,0,.85);
+    
+}
+
+.modal-header {
+    border-bottom: none;
 }
 
 .modal-body {
@@ -108,7 +115,7 @@ nav {
 .modal-list {
     list-style: none;
     display: block;
-    padding-top: 200px;
+    padding-top: 20px;
     font-family: 'Abolition Regular';
     padding-left: 0;
     

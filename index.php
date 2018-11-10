@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
     <head>
         <title>Deity Clan | Home</title>
@@ -53,7 +53,7 @@
                     </span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="modal" data-target=".menu-modal" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-caret-square-down my-nav-icon"></i>
+                    <i class="fas fa-caret-square-down my-nav-icon"></i> MENU
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto align-text-middle pb-2">
@@ -87,8 +87,14 @@
         <!-- Modal -->
             <div class="modal fade menu-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
-                    <div class="modal-content">
+                    <div class="modal-content" style="margin-top: 200px;">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #003391;">
+                                <span class="fa fa-window-close" aria-hidden="true"></span>
+                            </button>
+                        </div>
                         <div class="modal-body">
+                            
                             <ul class="modal-list">
                                 <li class="modal-list-item">
                                     <a class="modal-list-link" href="#">HOME
