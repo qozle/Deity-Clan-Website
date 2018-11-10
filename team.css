@@ -1,4 +1,4 @@
-/*Team pic styles*/
+/* Team pic styles */
 
 
 .team-member {
@@ -17,12 +17,17 @@
 	padding-right: 15px;
 	margin: 5px 15px 5px 5px;
 	float: left;
-
 }
 
 
 
+
+/* Main Styles */
 p {
 	font-size: 1.4em;
 	padding-left: 15px;
+}
+
+.player-stat {
+	list-style: none;
 }
