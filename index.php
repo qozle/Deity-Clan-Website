@@ -138,11 +138,6 @@
 
            
         
-            
-            
-
-
-
         <!--  H E A D E R -->
                     <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
                 <div class="container" style="text-align: center;">
@@ -179,45 +174,45 @@
                 <!-- B L O G  I T E M  1 -->    
                 <?php echo "<a href='blog/index.php/".$posts[0]['post_name']."' class='col-sm-6 blog-item-1'>";?>
                     <h2 class="blog-title"><?php echo $posts[0]['post_title']?></h2>
-                    <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[0]['ID']);?></p>
                     <?php foreach(get_the_category($posts[0]['ID']) as $category) {
                         echo "<p class='blog-category'>".$category->name."</p>";};?>
+                    <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[0]['ID']);?></p>
                     <div class='overlay'></div>
                 <?php echo "</a>";?>
                 
                 <!-- B L O G  I T E M  2 -->
                 <?php echo "<a href='blog/index.php/".$posts[1]['post_name']."' class='col-sm-6 blog-item-2'>";?>
                     <h2 class="blog-title"><?php echo $posts[1]['post_title']?></h2>
-                    <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[1]['ID']);?></p>
                     <?php foreach(get_the_category($posts[1]['ID']) as $category) {
                         echo "<p class='blog-category'>".$category->name."</p>";};?>
+                    <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[1]['ID']);?></p>
                     <div class='overlay'></div>
                 <?php echo "</a>";?>
                 
                 <!-- B L O G  I T E M  3 -->
-                <?php echo "<a href='blog/index.php/".$posts[2]['post_name']."' class='col-sm-4 blog-item-3'>";?>
+                <?php echo "<a href='blog/index.php/".$posts[2]['post_name']."' class='col-sm-4 col-lg-12 blog-item-3'>";?>
                     <h3 class="blog-title"><?php echo $posts[2]['post_title']?></h3>
-                    <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[2]['ID']);?></p>
                     <?php foreach(get_the_category($posts[2]['ID']) as $category) {
                         echo "<p class='blog-category'>".$category->name."</p>";};?>
+                    <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[2]['ID']);?></p>
                     <div class='overlay'></div>
                 <?php echo "</a>";?>
                 
                 <!-- B L O G  I T E M  4 -->
-                <?php echo "<a href='blog/index.php/".$posts[3]['post_name']."' class='col-sm-4 blog-item-4'>";?>
+                <?php echo "<a href='blog/index.php/".$posts[3]['post_name']."' class='col-sm-4 col-lg-6 blog-item-4'>";?>
                 <h3 class="blog-title"><?php echo $posts[3]['post_title']?></h3>
-                <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[3]['ID']);?></p>
                 <?php foreach(get_the_category($posts[3]['ID']) as $category) {
                     echo "<p class='blog-category'>".$category->name."</p>";};?>    
+                <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[3]['ID']);?></p>
                 <div class='overlay'></div>
                 <?php echo "</a>";?>
                 
                 <!-- B L O G  I T E M  5 -->
-                <?php echo "<a href='blog/index.php/".$posts[4]['post_name']."' class='col-sm-4 blog-item-5'>";?>
+                <?php echo "<a href='blog/index.php/".$posts[4]['post_name']."' class='col-sm-4 col-lg-6 blog-item-5'>";?>
                     <h3 class="blog-title"><?php echo $posts[4]['post_title']?></h3>
-                <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[4]['ID']);?></p>
                     <?php foreach(get_the_category($posts[4]['ID']) as $category) {
                         echo "<p class='blog-category'>".$category->name."</p>";};?>
+                <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[4]['ID']);?></p>
                     <div class='overlay'></div>
                 <?php echo "</a>";?> 
                 </div>

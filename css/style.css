@@ -219,6 +219,7 @@ nav {
 .blog-date {
     font-family: 'Abolition Regular';
     margin-bottom: 0;
+    display: inline-block;
     
 }
 
@@ -245,7 +246,6 @@ nav {
     background-position: center;
     background-size: cover, cover;
     background-repeat: no-repeat;
-    transition: 1s;
     height: 300px;
     text-align: center;
     margin-bottom: 0;
@@ -256,6 +256,7 @@ nav {
 .blog-item-1:hover {
     text-decoration: none;
     color: silver;
+    
     
     
 }
@@ -269,7 +270,6 @@ nav {
     background-position: center center;
     background-size: cover, cover;
     background-repeat: no-repeat;
-    transition: 1s;
     height: 300px;
     text-align: center;
 }
@@ -290,7 +290,6 @@ nav {
     background-position: center center;
     background-size: cover, cover;
     background-repeat: no-repeat;
-    transition: 1s;
     height: 300px;
     text-align: center;
 }
@@ -311,7 +310,6 @@ nav {
     background-position: center center;
     background-size: cover, cover;
     background-repeat: no-repeat;
-    transition: 1s;
     height: 300px;
     text-align: center;
 }
@@ -332,7 +330,6 @@ nav {
     background-position: center;
     background-size: cover, cover;
     background-repeat: no-repeat;
-    transition: 1s;
     height: 300px;
     text-align: center;
 }
@@ -543,7 +540,7 @@ footer {
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
+    
 
 }
 
