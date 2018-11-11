@@ -1,11 +1,79 @@
  </div><!-- /.container -->
 
-    <footer class="blog-footer">
-      <p>Blog template built for <a href="http://deityclan.01014.org">Deity Clan</a> by <a href="https://01014.org">Max Flanagan</a>.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
-    </footer>
+    <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    
+                <div class="col-sm-6 footer-col-3">
+                    <h6 class="footer-h">Useful Links</h6>
+                    <ul class="footer-ul">
+                        <li class="footer-li-item">
+                            <a class="footer-link" href="/Deity-Clan-Website/blog/">News</a>
+                        </li>
+                        <li class="footer-li-item">
+                            <a class="footer-link" href="/Deity-Clan-Website/team.html">Team Info</a>
+                        </li>
+                        <li class="footer-li-item">
+                            <a class="footer-link" href="">Matches/Stats</a>
+                        </li>
+                        <li class="footer-li-item">
+                            <a class="footer-link" href="">Media</a>
+                        </li>
+                        <li class="footer-li-item">
+                            <a class="footer-link" href="">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 footer-col-4">
+                    <h6 class="footer-h">Contact</h6>
+                    <p class="footer-text">Contact form should go here.</p>
+                </div>
+                </div>
+            </div>
+            
+                
+                
+                <!-- F O O T E R  S O C I A L  M E D I A -->
+           
+                <ul class="footer-social-list">
+                    <li class="social-list-item">
+                        <a class="social-list-link" href="#facebook" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                            <p class="fab fa-facebook"></p>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a class="social-list-link" href="#twitter" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                            <p class="fab fa-twitter"></p>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a class="social-list-link" href="#instagram" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                            <p class="fab fa-instagram"></p>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a class="social-list-link" href="#youtube" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                            <p class="fab fa-youtube"></p>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a class="social-list-link" href="#twitch" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                            <p class="fab fa-twitch"></p>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a class="social-list-link" href="#steam" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                            <p class="fab fa-steam"></p>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p id="copyright"><i class="fa fa-copyright" aria-hidden="true"></i>   2018  01014 Web Solutions</p>
+                
+                
+            
+        </footer>
+</div>
 
 
     <!-- Bootstrap core JavaScript

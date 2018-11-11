@@ -45,7 +45,7 @@
 
     
             <nav class="navbar navbar-expand-lg sticky-top pl-0">
-                <a class="navbar-brand m-0" href="https://deityclan.01014.org">
+                <a class="navbar-brand m-0" href="/Deity-Clan-Website/">
                     <img src="img/deitylogo1.png" width=75px>
                     <span class="navbar-text">
                         <p class="deity-font-1 align-text-middle">DEITY</p>
@@ -58,10 +58,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto align-text-middle pb-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/Deity-Clan-Website/">HOME<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">NEWS</a>
+                            <a class="nav-link" href="/Deity-Clan-Website/blog/">NEWS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="team.html">TEAM INFO</a>
@@ -71,9 +71,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">MEDIA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">CONTACT</a>
@@ -97,35 +94,30 @@
                             
                             <ul class="modal-list">
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">HOME
+                                    <a class="modal-list-link" href="/Deity-Clan-Website/">HOME
                                     </a>
                                 </li>
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">NEWS
-                                    </a>
-                                        
-                                </li>
-                                <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">TEAM INFO
+                                    <a class="modal-list-link" href="/Deity-Clan-Website/blog/" data-dismiss="modal">NEWS
                                     </a>
                                         
                                 </li>
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">MATCHES AND STATS</a>
-                                        
-                                </li>
-                                <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">MEDIA
+                                    <a class="modal-list-link" href="/Deity-Clan-Website/team.html" data-dismiss="modal">TEAM INFO
                                     </a>
                                         
                                 </li>
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">ABOUT
+                                    <a class="modal-list-link" href="#" data-dismiss="modal">MATCHES AND STATS</a>
+                                        
+                                </li>
+                                <li class="modal-list-item">
+                                    <a class="modal-list-link" href="#" data-dismiss="modal">MEDIA
                                     </a>
                                         
                                 </li>
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">CONTACT
+                                    <a class="modal-list-link" href="#" data-dismiss="modal">CONTACT
                                     </a>
                                         
                                 </li>
@@ -323,74 +315,98 @@
         <!-- F O O T E R -->
         
         <footer>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-6 footer-item">
-                    <h6>Latest Posts</h6>
-                        <p>Lorem ipsum dolor sit amet, illud noster sed ad, mel mucius noster epicurei at. Ad est dolorum referrentur, falli accommodare sed te. Mea ut elitr numquam antiopam. Admodum vulputate cu nam, mei in tota apeirian, mei simul oblique albucius ad. Usu velit labores mediocritatem in. Eam omnesque sensibus maiestatis an, nec ullum omnes tibique ei.</p>
+                    <div class="col-sm-4 footer-col-1">
+                        <h6 class="footer-h">Recent News</h6>
+                        <div class="footer-blog-div">
+                            <?php echo "<a href='blog/index.php/".$posts[0]['post_name']."' class='footer-blog-link'>";?>
+                            <p class="footer-blog-title"><?php echo $posts[0]['post_title']?></p>
+                            <?php echo "</a>";?>
+                            <?php foreach(get_the_category($posts[0]['ID']) as $category) {
+                                echo "<p class='footer-blog-category'>".$category->name."</p>";};?>
+                            <p class='footer-blog-date'><?php echo get_the_time('F j, Y', $posts[0]['ID']);?></p>
+                        </div>
+                        <div class="footer-blog-div">
+                            <?php echo "<a href='blog/index.php/".$posts[1]['post_name']."' class='footer-blog-link'>";?>
+                            <p class="footer-blog-title"><?php echo $posts[1]['post_title']?></p>
+                            <?php echo "</a>";?>
+                            <?php foreach(get_the_category($posts[1]['ID']) as $category) {
+                                echo "<p class='footer-blog-category'>".$category->name."</p>";};?>
+                            <p class='footer-blog-date'><?php echo get_the_time('F j, Y', $posts[1]['ID']);?></p>
+                        </div>
                     </div>
-                    <div class="col-sm-6 footer-item">
-                        <h6>Our Departments</h6>
-                        <p>Lorem ipsum dolor sit amet, illud noster sed ad, mel mucius noster epicurei at. Ad est dolorum referrentur, falli accommodare sed te. Mea ut elitr numquam antiopam. Admodum vulputate cu nam, mei in tota apeirian, mei simul oblique albucius ad. Usu velit labores mediocritatem in. Eam omnesque sensibus maiestatis an, nec ullum omnes tibique ei.</p>
-                    </div>
-                <div class="col-sm6 footer-item">
-                    <h6>Useful Links</h6>
-                    <ul>
-                        <li>
-                            News
+                    
+                <div class="col-sm-4 footer-col-3">
+                    <h6 class="footer-h">Useful Links</h6>
+                    <ul class="footer-ul">
+                        <li class="footer-li-item">
+                            <a class="footer-link" href="#">Back to Top</a>
                         </li>
-                            About us
-                        <li>
-                            Team
+                        <li class="footer-li-item">
+                            <a class="footer-link" href="/Deity-Clan-Website/blog">News</a>
                         </li>
-                            Media
-                        <li>
-                            Contact
+                        <li class="footer-li-item">
+                            <a class="footer-link" href="/Deity-Clan-Website/team.html">Team Info</a>
+                        </li>
+                        <li class="footer-li-item">
+                            <a class="footer-link" href="#">Matches/Stats</a>
+                        </li>
+                        <li class="footer-li-item">
+                            <a class="footer-link" href="#">Media</a>
+                        </li>
+                        <li class="footer-li-item">
+                            <a class="footer-link" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-6 footer-item">
-                    <h6>About Us</h6>
-                    <p>Lorem ipsum dolor sit amet, illud noster sed ad, mel mucius noster epicurei at. Ad est dolorum referrentur, falli accommodare sed te. Mea ut elitr numquam antiopam. Admodum vulputate cu nam, mei in tota apeirian, mei simul oblique albucius ad. Usu velit labores mediocritatem in. Eam omnesque sensibus maiestatis an, nec ullum omnes tibique ei.</p>
+                <div class="col-sm-4 footer-col-4">
+                    <h6 class="footer-h">Contact</h6>
+                    <p class="footer-text">A contact form should go here.  </p>
                 </div>
                 </div>
             </div>
             
                 
                 
-                
+                <!-- F O O T E R  S O C I A L  M E D I A -->
+           
                 <ul class="footer-social-list">
-                    <li class="footer-list-item">
-                        <a href="#facebook" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                    <li class="social-list-item">
+                        <a class="social-list-link" href="#facebook" target="_blank" style="padding-right: 10px; font-size: 100%;">
                             <p class="fab fa-facebook"></p>
                         </a>
                     </li>
-                    <li class="footer-list-item"><a href="#twitter" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                    <li class="social-list-item">
+                        <a class="social-list-link" href="#twitter" target="_blank" style="padding-right: 10px; font-size: 100%;">
                             <p class="fab fa-twitter"></p>
                         </a>
                     </li>
-                    <li class="footer-list-item">
-                        <a href="#instagram" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                    <li class="social-list-item">
+                        <a class="social-list-link" href="#instagram" target="_blank" style="padding-right: 10px; font-size: 100%;">
                             <p class="fab fa-instagram"></p>
                         </a>
                     </li>
-                    <li class="footer-list-item">
-                        <a href="#youtube" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                    <li class="social-list-item">
+                        <a class="social-list-link" href="#youtube" target="_blank" style="padding-right: 10px; font-size: 100%;">
                             <p class="fab fa-youtube"></p>
                         </a>
                     </li>
-                    <li class="footer-list-item">
-                        <a href="#twitch" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                    <li class="social-list-item">
+                        <a class="social-list-link" href="#twitch" target="_blank" style="padding-right: 10px; font-size: 100%;">
                             <p class="fab fa-twitch"></p>
                         </a>
                     </li>
-                    <li class="footer-list-item">
-                        <a href="#steam" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                    <li class="social-list-item">
+                        <a class="social-list-link" href="#steam" target="_blank" style="padding-right: 10px; font-size: 100%;">
                             <p class="fab fa-steam"></p>
                         </a>
                     </li>
+                    
                 </ul>
-                <p id="copyright">Copyright 01014 Web Solutions 2018</p>
+                <p id="copyright"><i class="fa fa-copyright" aria-hidden="true"></i>   2018  01014 Web Solutions</p>
+            
+                
             
         </footer>
         
