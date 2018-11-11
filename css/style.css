@@ -131,9 +131,7 @@ nav {
 }
 
 .modal-list-link {
-    color: #003391;
-    
-    
+    color: #003391;    
     
 }
 
@@ -346,57 +344,136 @@ nav {
 
 /* ======================== FOOTER =========================*/
 
-.flex-container-footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 25px;
-    border-bottom: 2px solid rgba(142,142,142,.25);
-    
-    
-}
-
-.flex-item-footer {
-    color: #003391;
-    padding-left: 10px;
-    padding-right: 10px;
-    min-width: 200px;
-    max-width: 300px;
-    height: auto;
-    padding-bottom: 10px;
-    font-size: .85em;
-    
-}
-
 footer {
-    text-align: center;
     padding-top: 10px;
     padding-bottom: 0;
     border-top: 4px solid #003391;
     background-color: #000a1b;
 }
 
-.footer-item {
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
     color: #fff;
+    text-align: center;
     
+}
+
+.footer-col-2 {
+    
+}
+
+.footer-col-3 {
+    
+}
+
+.footer-col-4 {
+    
+}
+
+.footer-h {
+    margin-bottom: 20px;
+    padding: 0;
+    padding-bottom: 3px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(209,209,209,0.1);
+    
+}
+
+.footer-blog-div {
+    
+}
+
+.footer-blog-category {
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    background-color: #001946;
+    font-family: 'Abolition Regular';
+    font-size: 1.1em;
+    padding: 4px;
+    margin-bottom: 0;
+    display: inline-block;
+    width: auto;
+    letter-spacing: .5px;
+    
+}
+
+.footer-blog-link {
+    color: blue;
+}
+
+.footer-blog-link:hover {
+    text-decoration: none;
+}
+
+.footer-blog-title {
+    font-size:.9em;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.footer-blog-date {
+    font-size: .7em;
+    
+}
+
+
+.footer-text {
+    font-size: .8em;
+}
+
+.footer-ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    font-size: .9em;
+}
+
+.footer-li-item {
+    margin-bottom: 10px;
+    
+}
+
+.footer-link {
+    
+}
+
+.footer-link:hover {
+    text-decoration: none;
 }
 
 .footer-social-list {
-    
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 16px;
+    border-top: 1px solid rgba(209,209,209,0.05);
+    padding-top: 5px;
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
-.footer-list-item {
+.social-list-item {
     display: inline;
     padding-right: 25px;
     color: #fff;
+}
+
+.social-list-link {
+    text-decoration: none;
+}
+
+.social-list-link:hover {
+    text-decoration: none;
 }
 
 #copyright {
     padding-bottom: 10px;
     color: #003391;
     margin-bottom: 0;
+    text-align: center;
+    font-size: .8em
 }
 
 /* P R E L O A D E R  D I V */
