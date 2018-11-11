@@ -16,6 +16,7 @@ d<!DOCTYPE html>
 
 
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/team.css">
         <link rel="icon" href="img/deitylogo1.png">
         <script src="js/custom.js"></script>
         
@@ -23,6 +24,10 @@ d<!DOCTYPE html>
     </head>
 
     <body>
+        <?php 
+            define('WP_USE_THEMES', false);
+            require('blog/wp-blog-header.php');
+        ?>
 
         <!-- N A V B A R -->
 
@@ -76,33 +81,29 @@ d<!DOCTYPE html>
                         <div class="modal-body">
                             
                             <ul class="modal-list">
+
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/">HOME
-                                    </a>
+                                    <a class="modal-list-link" href="/">HOME</a>
                                 </li>
+
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/blog/" >NEWS
-                                    </a>
-                                        
+                                    <a class="modal-list-link" href="/blog/" >NEWS</a>                                        
                                 </li>
+
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/team.html">TEAM INFO
-                                    </a>
-                                        
+                                    <a class="modal-list-link" href="/team.html">TEAM INFO</a>                                        
                                 </li>
+
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">MATCHES AND STATS</a>
-                                        
+                                    <a class="modal-list-link" href="#">MATCHES AND STATS</a>                                        
                                 </li>
+
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">MEDIA
-                                    </a>
-                                        
+                                    <a class="modal-list-link" href="#">MEDIA</a>                                        
                                 </li>
+
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">CONTACT
-                                    </a>
-                                        
+                                    <a class="modal-list-link" href="#">CONTACT</a>                                        
                                 </li>
                       
                             </ul>
@@ -130,6 +131,12 @@ d<!DOCTYPE html>
 
 
         <!-- M A I N   C O N T E N T -->
+        <?php
+                $number_of_posts = 5;
+                $args = array( 'numberposts' => $number_of_posts );
+                $posts = wp_get_recent_posts( $args );
+                
+                ?>
 
 
         <!-- F O O T E R -->
@@ -140,12 +147,28 @@ d<!DOCTYPE html>
                     <div class="col-sm-4 footer-col-1">
                         <h6 class="footer-h">Recent News</h6>
                         <div class="footer-blog-div">
-                            <a href='blog/index.php/test-post-5' class='footer-blog-link'>                            <p class="footer-blog-title">DC Scores Big!</p>
-                            </a>                            <p class='footer-blog-category'>Competition</p>                            <p class='footer-blog-date'>November 7, 2018</p>
+                            <?php echo "<a href='blog/index.php/".$posts[0]['post_name']."' class='footer-blog-link'>";?>
+                            <p class="footer-blog-title"><?php echo $posts[0]['post_title']?></p>
+                            <?php echo "</a>";?>
+                            <?php foreach(get_the_category($posts[0]['ID']) as $category) {
+                                echo "<p class='footer-blog-category'>".$category->name."</p>";};?>
+                            <p class='footer-blog-date'><?php echo get_the_time('F j, Y', $posts[0]['ID']);?></p>
                         </div>
                         <div class="footer-blog-div">
-                            <a href='blog/index.php/test-post-4' class='footer-blog-link'>                            <p class="footer-blog-title">New Member Joins!</p>
-                            </a>                            <p class='footer-blog-category'>Stream Update</p>                            <p class='footer-blog-date'>November 7, 2018</p>
+                            <?php echo "<a href='blog/index.php/".$posts[1]['post_name']."' class='footer-blog-link'>";?>
+                            <p class="footer-blog-title"><?php echo $posts[1]['post_title']?></p>
+                            <?php echo "</a>";?>
+                            <?php foreach(get_the_category($posts[1]['ID']) as $category) {
+                                echo "<p class='footer-blog-category'>".$category->name."</p>";};?>
+                            <p class='footer-blog-date'><?php echo get_the_time('F j, Y', $posts[1]['ID']);?></p>
+                        </div>
+                        <div class="footer-blog-div">
+                            <?php echo "<a href='blog/index.php/".$posts[2]['post_name']."' class='footer-blog-link'>";?>
+                            <p class="footer-blog-title"><?php echo $posts[2]['post_title']?></p>
+                            <?php echo "</a>";?>
+                            <?php foreach(get_the_category($posts[2]['ID']) as $category) {
+                                echo "<p class='footer-blog-category'>".$category->name."</p>";};?>
+                            <p class='footer-blog-date'><?php echo get_the_time('F j, Y', $posts[0]['ID']);?></p>
                         </div>
                     </div>
                     
@@ -174,7 +197,21 @@ d<!DOCTYPE html>
                 </div>
                 <div class="col-sm-4 footer-col-4">
                     <h6 class="footer-h">Contact</h6>
-                    <p class="footer-text">A contact form should go here.  </p>
+                    <form action="#" id="contact-form">
+                        
+                        <input type="text" class="contact-form-text" id="fname" name="firstname" placeholder="First Name">
+
+                       
+                        <input type="text" class="contact-form-text" id="lname" name="lastname" placeholder="Last Name">
+
+                        
+                        <input type="text" class="contact-form-text" id="email" name="email" placeholder="Email">
+
+                        
+                        <textarea id="subject" name="subject" placeholder="Tell us what you need!" class="contact-form-textarea"></textarea>
+
+                        <input class="contact-form-submit" type="submit" value="Submit">
+                    </form>
                 </div>
                 </div>
             </div>

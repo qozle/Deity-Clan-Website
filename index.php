@@ -16,6 +16,7 @@
 
 
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="team/style.css">
         <link rel="icon" href="img/deitylogo1.png">
         <script src="js/custom.js"></script>
         
@@ -41,9 +42,9 @@
     	
 
 
-        <!-- N A V B A R -->
-
+                <!--  H E A D E R -->
     
+            <!-- N A V B A R -->
             <nav class="navbar navbar-expand-lg sticky-top pl-0">
                 <a class="navbar-brand m-0" href="/Deity-Clan-Website/">
                     <img src="img/deitylogo1.png" width=75px>
@@ -130,7 +131,7 @@
 
            
         
-        <!--  H E A D E R -->
+            <!-- J U M B O T R O N  -->
                     <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
                 <div class="container" style="text-align: center;">
                     <h1 class="deity-font-2 d-inline display-1">DEITY</h1>

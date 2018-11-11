@@ -381,7 +381,8 @@ footer {
 }
 
 .footer-blog-div {
-    
+    margin-bottom: 2px;
+    border: 1px solid rgba(209,209,209,0.1);
 }
 
 .footer-blog-category {
@@ -414,6 +415,7 @@ footer {
 
 .footer-blog-date {
     font-size: .7em;
+    margin-bottom: 5px;
     
 }
 
@@ -426,17 +428,17 @@ footer {
     list-style: none;
     padding-left: 0;
     text-align: center;
-    font-size: .9em;
+    
 }
 
 .footer-li-item {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     
 }
 
 .footer-link {
-    font-family: 'abolition regular';
-    font-size: 2rem;
+    font-family: 'Abolition Regular';
+    font-size: 1.1rem;
     
 }
 
@@ -444,6 +446,55 @@ footer {
     text-decoration: none;
 }
 
+
+/* ======================== CONTACT FORM ========================= */
+
+/* Style inputs with type="text", select elements and textareas */
+.contact-form-text {
+    width: 90%; /* Full width */
+    padding: 1px; /* Some padding */
+    padding-left: 4px;
+    border: 1px solid #003391; /* Blue border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-bottom: 12px; /* Bottom margin */
+    height: 22px;
+    
+}
+
+.contact-form-textarea {
+    width: 90%; /* Full width */
+    padding: 1px; /* Some padding */ 
+    padding-left: 4px;
+    border: 1px solid #003391; /* Blue border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-bottom: 12px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    height: 100px;
+}
+
+/* Style the submit button with a specific background color etc */
+.contact-form-submit {
+    background-color: #003391;
+    color: white;
+    padding: 1px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker blue color */
+input[type=submit]:hover {
+    background-color: #001946;
+}
+
+#fname, #lname, #email, #subject {
+        outline-color: #blue;
+    }
+
+
+/* FO O T E R  S O C I A L  M E D I A  L I N K S */
 .footer-social-list {
     text-align: center;
     margin-bottom: 0;
@@ -478,45 +529,6 @@ footer {
     text-align: center;
     font-size: .8em
 }
-
-/* ======================== CONTACT FORM ========================= */
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */  
-    border: 1px solid #003391; /* Blue border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #003391;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker blue color */
-input[type=submit]:hover {
-    background-color: #001946;
-}
-
-#fname, #lname, #email, #subject {
-        outline-color: #blue;
-    }
-
-
-
-
-
-
 
 
 /* P R E L O A D E R  D I V */

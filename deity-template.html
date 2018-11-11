@@ -24,6 +24,10 @@ d<!DOCTYPE html>
     </head>
 
     <body>
+        <?php 
+            define('WP_USE_THEMES', false);
+            require('/blog/wp-blog-header.php');
+        ?>
 
         <!-- N A V B A R -->
 
@@ -137,12 +141,28 @@ d<!DOCTYPE html>
                     <div class="col-sm-4 footer-col-1">
                         <h6 class="footer-h">Recent News</h6>
                         <div class="footer-blog-div">
-                            <a href='blog/index.php/test-post-5' class='footer-blog-link'>                            <p class="footer-blog-title">DC Scores Big!</p>
-                            </a>                            <p class='footer-blog-category'>Competition</p>                            <p class='footer-blog-date'>November 7, 2018</p>
+                            <?php echo "<a href='blog/index.php/".$posts[0]['post_name']."' class='footer-blog-link'>";?>
+                            <p class="footer-blog-title"><?php echo $posts[0]['post_title']?></p>
+                            <?php echo "</a>";?>
+                            <?php foreach(get_the_category($posts[0]['ID']) as $category) {
+                                echo "<p class='footer-blog-category'>".$category->name."</p>";};?>
+                            <p class='footer-blog-date'><?php echo get_the_time('F j, Y', $posts[0]['ID']);?></p>
                         </div>
                         <div class="footer-blog-div">
-                            <a href='blog/index.php/test-post-4' class='footer-blog-link'>                            <p class="footer-blog-title">New Member Joins!</p>
-                            </a>                            <p class='footer-blog-category'>Stream Update</p>                            <p class='footer-blog-date'>November 7, 2018</p>
+                            <?php echo "<a href='blog/index.php/".$posts[1]['post_name']."' class='footer-blog-link'>";?>
+                            <p class="footer-blog-title"><?php echo $posts[1]['post_title']?></p>
+                            <?php echo "</a>";?>
+                            <?php foreach(get_the_category($posts[1]['ID']) as $category) {
+                                echo "<p class='footer-blog-category'>".$category->name."</p>";};?>
+                            <p class='footer-blog-date'><?php echo get_the_time('F j, Y', $posts[1]['ID']);?></p>
+                        </div>
+                        <div class="footer-blog-div">
+                            <?php echo "<a href='blog/index.php/".$posts[2]['post_name']."' class='footer-blog-link'>";?>
+                            <p class="footer-blog-title"><?php echo $posts[2]['post_title']?></p>
+                            <?php echo "</a>";?>
+                            <?php foreach(get_the_category($posts[2]['ID']) as $category) {
+                                echo "<p class='footer-blog-category'>".$category->name."</p>";};?>
+                            <p class='footer-blog-date'><?php echo get_the_time('F j, Y', $posts[0]['ID']);?></p>
                         </div>
                     </div>
                     
@@ -172,19 +192,19 @@ d<!DOCTYPE html>
                 <div class="col-sm-4 footer-col-4">
                     <h6 class="footer-h">Contact</h6>
                     <form action="#" id="contact-form">
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="First Name">
+                        
+                        <input type="text" class="contact-form-text" id="fname" name="firstname" placeholder="First Name">
 
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                       
+                        <input type="text" class="contact-form-text" id="lname" name="lastname" placeholder="Last Name">
 
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="Email">
+                        
+                        <input type="text" class="contact-form-text" id="email" name="email" placeholder="Email">
 
-                        <label for="subject">Subject</label>
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        
+                        <textarea id="subject" name="subject" placeholder="Tell us what you need!" class="contact-form-textarea"></textarea>
 
-                        <input type="submit" value="Submit">
+                        <input class="contact-form-submit" type="submit" value="Submit">
                     </form>
                 </div>
                 </div>
