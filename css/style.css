@@ -509,7 +509,7 @@ input[type=submit]:hover {
 }
 
 #fname, #lname, #email, #subject {
-        outline-color: #blue;
+        outline-color: blue;
     }
 
 
