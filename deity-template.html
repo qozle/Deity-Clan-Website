@@ -16,6 +16,7 @@ d<!DOCTYPE html>
 
 
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/team.css">
         <link rel="icon" href="img/deitylogo1.png">
         <script src="js/custom.js"></script>
         
@@ -174,7 +175,21 @@ d<!DOCTYPE html>
                 </div>
                 <div class="col-sm-4 footer-col-4">
                     <h6 class="footer-h">Contact</h6>
-                    <p class="footer-text">A contact form should go here.  </p>
+                    <form action="#" id="contact-form">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="First Name">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Last Name">
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Email">
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
                 </div>
                 </div>
             </div>
