@@ -21,6 +21,7 @@
         <script src="js/custom.js"></script>
         
         
+        
     </head>
 
     <body>
@@ -65,7 +66,7 @@
                             <a class="nav-link" href="/Deity-Clan-Website/blog/">NEWS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="team.html">TEAM INFO</a>
+                            <a class="nav-link" href="team.php">TEAM INFO</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">MATCHES AND STATS</a>
@@ -74,7 +75,7 @@
                             <a class="nav-link" href="#">MEDIA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link" href="/Deity-Clan-Website/contact-form.php">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -104,7 +105,7 @@
                                         
                                 </li>
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/Deity-Clan-Website/team.html" data-dismiss="modal">TEAM INFO
+                                    <a class="modal-list-link" href="/Deity-Clan-Website/team.php" data-dismiss="modal">TEAM INFO
                                     </a>
                                         
                                 </li>
@@ -118,7 +119,7 @@
                                         
                                 </li>
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#" data-dismiss="modal">CONTACT
+                                    <a class="modal-list-link" href="/Deity-Clan-Website/contact-form.php" data-dismiss="modal">CONTACT
                                     </a>
                                         
                                 </li>
@@ -211,114 +212,68 @@
                 </div>
             </div>
                 
+
+        
             
-        
-
-        
-        
-        
-        
-        
-        <!-- M A I N   V I D E O -->
-<!--
-        <div id="test" class="text-center" style="color: silver;">
-            I think I can just put one test message here: {{ message}}, and another right here: {{ message2 }}, and everything should work just fine.
-        
-        </div>
--->
-
+        <!-- M E D I A  G R I D -->
+            
+            
     	<div class="container" style="margin-top: 60px;margin-bottom:60px;border: 2px solid rgba(142,142,142,.25);border-radius:5px;background-color: rgba(209,209,209,.08);">
-            <h4 class="text-center" style="color:white;padding-bottom:20px;padding-top:4px;">Featured</h4>
+            <h4 class="text-center" style="color:white;padding-bottom:20px;padding-top:4px;">Highlights</h4>
             <div class="row">
-                <div class="col" style="background-color: #0e0b0b;">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qL_Qaqlq_DY" allowfullscreen></iframe>
+                
+                
+                <div class="col-sm-4 video-col">
+                    <div class="embed-responsive embed-responsive-16by9 media">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qL_Qaqlq_DY?modestbranding=1"></iframe> 
+                      
+                    </div>
+                </div>
+
+                <div class="col-sm-4 video-col">
+                    <div class="embed-responsive embed-responsive-16by9 media">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jPTIhXQ1Q7Q?modestbranding=1"></iframe>
+                    </div>
+                </div>
+            
+                
+            
+                <div class="col-sm-4 video-col">
+                    <div class="embed-responsive embed-responsive-16by9 media">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/J_XWe6RXNag?modestbranding=1"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 video-col">
+                    <div class="embed-responsive embed-responsive-16by9 media">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/X2PHL87hmBA?modestbranding=1"></iframe>
+                    </div>
+                </div>
+            
+
+            
+                <div class="col-sm-4 video-col">
+                    <div class="embed-responsive embed-responsive-16by9 media">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZrxOp_PKZdg?modestbranding=1"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 video-col">
+                    <div class="embed-responsive embed-responsive-16by9 media">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/I6th486JaXU?modestbranding=1"></iframe>
                     </div>
                 </div>
             </div>
         </div>
 
-       <!-- <div class="container" style="margin-top: 60px;margin-bottom:60px;border: 2px solid rgba(142,142,142,.25);border-radius:5px;background-color: rgba(209,209,209,.08);">
-
-            <div class="row">
-                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
-                    <video type="video/mp4" width="100%" controls="controls">
-                        <source src="vids/Fortnite_20180305223616.mp4">
-                    </video>
-
-                </div>
-                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
-                    <video type="video/mp4" width="100%" controls="controls">
-                        <source src="vids/Fortnite_20180321084450.mp4">
-                    </video>                    
-                </div>
-                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
-                    <video type="video/mp4" width="100%" controls="controls">
-                        <source src="vids/Fortnite_20180321183457.mp4">
-                    </video>
-                </div>
-                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
-                    <video type="video/mp4" width="100%" controls="controls">
-                        <source src="vids/Fortnite_20180328232258.mp4">
-                    </video>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
-                    <video type="video/mp4" width="100%" controls="controls">
-                        <source src="vids/Fortnite_20180328234556.mp4">
-                    </video>
-
-                </div>
-                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
-                    <video type="video/mp4" width="100%" controls="controls">
-                        <source src="vids/Fortnite_20180405014356.mp4">
-                    </video>                    
-                </div>
-                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
-                    <video type="video/mp4" width="100%" controls="controls">
-                        <source src="vids/Fortnite_20180622002515.mp4">
-                    </video>
-                </div>
-                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
-                    <video type="video/mp4" width="100%" controls="controls">
-                        <source src="vids/Fortnite_20180623033213.mp4">
-                    </video>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
-                    <video type="video/mp4" width="100%" controls="controls">
-                        <source src="vids/Fortnite_20180624190340.mp4">
-                    </video>
-
-                </div>
-                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
-                    <video type="video/mp4" width="100%" controls="controls">
-                        <source src="vids/Fortnite_20180817052126.mp4">
-                    </video>                    
-                </div>
-                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
-                    <video type="video/mp4" width="100%" controls="controls">
-                        <source src="vids/Fortnite_20180321084450.mp4">
-                    </video>
-                </div>
-                <div class="col-3" style="background-color: #0e0b0b; color: #d1d1d1">
-                    <video type="video/mp4" width="100%" controls="controls">
-                        <source src="vids/Fortnite_20180321183457.mp4">
-                    </video>
-                </div>
-            </div>
-        </div> -->
+     
 
         <!-- F O O T E R -->
         
         <footer>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-4 footer-col-1">
+                    <div class="col-sm-4 col-xl-6 footer-col-1">
                         <h6 class="footer-h">Recent News</h6>
                         <div class="footer-blog-div">
                             <?php echo "<a href='blog/index.php/".$posts[0]['post_name']."' class='footer-blog-link'>";?>
@@ -336,19 +291,27 @@
                                 echo "<p class='footer-blog-category'>".$category->name."</p>";};?>
                             <p class='footer-blog-date'><?php echo get_the_time('F j, Y', $posts[1]['ID']);?></p>
                         </div>
+                        <div class="footer-blog-div">
+                            <?php echo "<a href='blog/index.php/".$posts[2]['post_name']."' class='footer-blog-link'>";?>
+                            <p class="footer-blog-title"><?php echo $posts[2]['post_title']?></p>
+                            <?php echo "</a>";?>
+                            <?php foreach(get_the_category($posts[2]['ID']) as $category) {
+                                echo "<p class='footer-blog-category'>".$category->name."</p>";};?>
+                            <p class='footer-blog-date'><?php echo get_the_time('F j, Y', $posts[0]['ID']);?></p>
+                        </div>
                     </div>
                     
-                <div class="col-sm-4 footer-col-3">
+                <div class="col-sm-4 col-xl-6 footer-col-3">
                     <h6 class="footer-h">Useful Links</h6>
                     <ul class="footer-ul">
                         <li class="footer-li-item">
                             <a class="footer-link" href="#">Back to Top</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="/Deity-Clan-Website/blog">News</a>
+                            <a class="footer-link" href="/blog">News</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="/Deity-Clan-Website/team.html">Team Info</a>
+                            <a class="footer-link" href="/team.php">Team Info</a>
                         </li>
                         <li class="footer-li-item">
                             <a class="footer-link" href="#">Matches/Stats</a>
@@ -357,55 +320,69 @@
                             <a class="footer-link" href="#">Media</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="#">Contact</a>
+                            <a class="footer-link" href="/Deity-Clan-Website/contact-form.php">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-4 footer-col-4">
+                <div class="col-sm-4 col-xl-12 footer-col-4">
                     <h6 class="footer-h">Contact</h6>
-                    <p class="footer-text">A contact form should go here.  </p>
+                    <form action="#" id="contact-form">
+                        
+                        <input type="text" class="contact-form-text" id="fname" name="firstname" placeholder="First Name">
+
+                       
+                        <input type="text" class="contact-form-text" id="lname" name="lastname" placeholder="Last Name">
+
+                        
+                        <input type="text" class="contact-form-text" id="email" name="email" placeholder="Email">
+
+                        
+                        <textarea id="subject" name="subject" placeholder="Tell us what you need!" class="contact-form-textarea"></textarea>
+
+                        <input class="contact-form-submit" type="submit" value="Submit">
+                    </form>
                 </div>
                 </div>
             </div>
             
                 
                 
-                <!-- F O O T E R  S O C I A L  M E D I A -->
-           
-                <ul class="footer-social-list">
-                    <li class="social-list-item">
-                        <a class="social-list-link" href="#facebook" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                            <p class="fab fa-facebook"></p>
-                        </a>
-                    </li>
-                    <li class="social-list-item">
-                        <a class="social-list-link" href="#twitter" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                            <p class="fab fa-twitter"></p>
-                        </a>
-                    </li>
-                    <li class="social-list-item">
-                        <a class="social-list-link" href="#instagram" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                            <p class="fab fa-instagram"></p>
-                        </a>
-                    </li>
-                    <li class="social-list-item">
-                        <a class="social-list-link" href="#youtube" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                            <p class="fab fa-youtube"></p>
-                        </a>
-                    </li>
-                    <li class="social-list-item">
-                        <a class="social-list-link" href="#twitch" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                            <p class="fab fa-twitch"></p>
-                        </a>
-                    </li>
-                    <li class="social-list-item">
-                        <a class="social-list-link" href="#steam" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                            <p class="fab fa-steam"></p>
-                        </a>
-                    </li>
-                    
-                </ul>
-                <p id="copyright"><i class="fa fa-copyright" aria-hidden="true"></i>   2018  01014 Web Solutions</p>
+            <!-- F O O T E R  S O C I A L  M E D I A -->
+       
+            <ul class="footer-social-list">
+                <li class="social-list-item">
+                    <a class="social-list-link" href="#facebook" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                        <p class="fab fa-facebook"></p>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a class="social-list-link" href="#twitter" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                        <p class="fab fa-twitter"></p>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a class="social-list-link" href="#instagram" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                        <p class="fab fa-instagram"></p>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a class="social-list-link" href="#youtube" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                        <p class="fab fa-youtube"></p>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a class="social-list-link" href="#twitch" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                        <p class="fab fa-twitch"></p>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a class="social-list-link" href="#steam" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                        <p class="fab fa-steam"></p>
+                    </a>
+                </li>
+                
+            </ul>
+            <p id="copyright"><i class="fa fa-copyright" aria-hidden="true"></i>   2018  01014 Web Solutions</p>
             
                 
             

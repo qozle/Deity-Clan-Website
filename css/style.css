@@ -51,7 +51,6 @@ button:focus {
 nav {
     border-bottom: 4px #003391 solid;
     background-color: #0e0b0b;
-    
 }
 
 .navbar-toggler {
@@ -62,14 +61,32 @@ nav {
     margin-bottom: 10px;
 }
 
+.navbar {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    
+}
+
 .navbar-toggler:hover {
     background-color: #001946; 
+}
+
+.navbar-brand {
+    transition: 1s;
+}
+
+.navbar-brand:hover {
+    background-color: rgba(0,25,70, 0.50);
+    transition: 1s;
 }
 
 .my-nav-icon {
     font-size: .90em;
 }
 
+.navbar-text {
+    padding-top: 15px;
+}
 
 .nav-item {
     margin-left: 5px;
@@ -186,7 +203,7 @@ nav {
     
 }
 
-
+/* L A T E S T  N E W S */
 .overlay {
     position: absolute;
     top: 0;
@@ -339,6 +356,15 @@ nav {
     
 }
 
+/* M E D I A  G R I D */
+
+.video-col {
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+    height: auto;
+}
+
 
 
 
@@ -366,7 +392,7 @@ footer {
 }
 
 .footer-col-4 {
-    
+  
 }
 
 .footer-h {
@@ -375,14 +401,14 @@ footer {
     padding: 0;
     padding-bottom: 3px;
     font-size: 1.5rem;
-    font-weight: bold;
+    
     border-bottom: 1px solid rgba(209,209,209,0.1);
     
 }
 
 .footer-blog-div {
     margin-bottom: 2px;
-    border: 1px solid rgba(209,209,209,0.1);
+    
 }
 
 .footer-blog-category {
@@ -472,6 +498,9 @@ footer {
     margin-bottom: 12px; /* Bottom margin */
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
     height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Style the submit button with a specific background color etc */
@@ -673,12 +702,16 @@ input[type=submit]:hover {
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    
+    .contact-form-text, .contact-form-textarea {
+        width: 50%;
+    }
 
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-
+    .contact-form-text, .contact-form-textarea {
+        width: 50%;
+    }
 
 }

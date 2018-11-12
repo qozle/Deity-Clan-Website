@@ -1,10 +1,11 @@
-d<!DOCTYPE html>
+<!DOCTYPE html>
+
 <html>
+
     <head>
-        <title>Deity Clan | Home</title>
+        <title>Deity Clan | Team</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
         <!-- J Q U E R Y  C D N -->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
         <!-- B O O T S T R A P 4  J S -->
@@ -14,27 +15,25 @@ d<!DOCTYPE html>
         
         <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
-
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/team.css">
         <link rel="icon" href="img/deitylogo1.png">
-        <script src="js/custom.js"></script>
-        
         
     </head>
 
-    <body>
+    <body> 
         <?php 
             define('WP_USE_THEMES', false);
-            require('/blog/wp-blog-header.php');
+            require('blog/wp-blog-header.php');
         ?>
-
-        <!-- N A V B A R -->
-
+        
+        
+        <!--  H E A D E R -->
     
+            <!-- N A V B A R -->
             <nav class="navbar navbar-expand-lg sticky-top pl-0">
-                <a class="navbar-brand m-0" href="/">
-                    <img src="/img/deitylogo1.png" width=75px>
+                <a class="navbar-brand m-0" href="/Deity-Clan-Website/">
+                    <img src="img/deitylogo1.png" width=75px>
                     <span class="navbar-text">
                         <p class="deity-font-1 align-text-middle">DEITY</p>
                         <p class="clan-font-1 align-text-middle">CLAN</p>
@@ -46,13 +45,13 @@ d<!DOCTYPE html>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto align-text-middle pb-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="/">HOME<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/Deity-Clan-Website/">HOME<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blog/">NEWS</a>
+                            <a class="nav-link" href="/Deity-Clan-Website/blog/">NEWS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/team.html">TEAM INFO</a>
+                            <a class="nav-link" href="team.html">TEAM INFO</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">MATCHES AND STATS</a>
@@ -61,7 +60,7 @@ d<!DOCTYPE html>
                             <a class="nav-link" href="#">MEDIA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link" href="/Deity-Clan-Website/contact-form.php">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -81,29 +80,33 @@ d<!DOCTYPE html>
                         <div class="modal-body">
                             
                             <ul class="modal-list">
-
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/">HOME</a>
+                                    <a class="modal-list-link" href="/Deity-Clan-Website/">HOME
+                                    </a>
                                 </li>
-
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/blog/" >NEWS</a>                                        
+                                    <a class="modal-list-link" href="/Deity-Clan-Website/blog/" data-dismiss="modal">NEWS
+                                    </a>
+                                        
                                 </li>
-
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/team.html">TEAM INFO</a>                                        
+                                    <a class="modal-list-link" href="/Deity-Clan-Website/team.html" data-dismiss="modal">TEAM INFO
+                                    </a>
+                                        
                                 </li>
-
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">MATCHES AND STATS</a>                                        
+                                    <a class="modal-list-link" href="#" data-dismiss="modal">MATCHES AND STATS</a>
+                                        
                                 </li>
-
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">MEDIA</a>                                        
+                                    <a class="modal-list-link" href="#" data-dismiss="modal">MEDIA
+                                    </a>
+                                        
                                 </li>
-
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">CONTACT</a>                                        
+                                    <a class="modal-list-link" href="/Deity-Clan-Website/contact-form.php" data-dismiss="modal">CONTACT
+                                    </a>
+                                        
                                 </li>
                       
                             </ul>
@@ -114,13 +117,8 @@ d<!DOCTYPE html>
 
            
         
-            
-            
-
-
-
-        <!--  H E A D E R -->
-            <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
+            <!-- J U M B O T R O N  -->
+                    <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
                 <div class="container" style="text-align: center;">
                     <h1 class="deity-font-2 d-inline display-1">DEITY</h1>
                     <h1 class="clan-font-2 d-inline display-1">CLAN</h1>
@@ -130,7 +128,119 @@ d<!DOCTYPE html>
 
 
 
-        <!-- M A I N   C O N T E N T -->
+
+        <!-- P L A Y E R S  G R I D -->
+        <div class="container players-cont">
+            <h1 class="display-3 players-heading">Meet The Team</h1>
+            <div class='row players-row'>
+                <div class='col-sm-12 col-lg-4 player-col'>
+                    <img src="img/team-members/Member_Calling_Card_Ghost3.png" class="img-fluid">
+                    <ul class="player-info-list">
+                        <li class="player-info-list-item">Handle:
+                        </li>
+                        <li class="player-info-list-item">Twitter:
+                        </li>
+                        <li class="player-info-list-item">Rank:
+                        </li>
+                        <li class="player-info-list-item">Favorite Color:
+                        </li>
+                        <li class="player-info-list-item">Blood Type:
+                        </li>
+                    </ul>
+                </div>
+                <div class='col-sm-6 col-lg-4 player-col'>
+                    <img src="img/team-members/Member_Calling_Card_Hanzo3.png" class="img-fluid">
+                    <ul class="player-info-list">
+                        <li class="player-info-list-item">Handle:
+                        </li>
+                        <li class="player-info-list-item">Twitter:
+                        </li>
+                        <li class="player-info-list-item">Rank:
+                        </li>
+                        <li class="player-info-list-item">Favorite Color:
+                        </li>
+                        <li class="player-info-list-item">Blood Type:
+                        </li>
+                    </ul>
+                </div>
+                <div class='col-sm-6 col-lg-4 player-col'>
+                    <img src="img/team-members/Member_Calling_Card_Liro3.png" class="img-fluid">
+                    <ul class="player-info-list">
+                        <li class="player-info-list-item">Handle:
+                        </li>
+                        <li class="player-info-list-item">Twitter:
+                        </li>
+                        <li class="player-info-list-item">Rank:
+                        </li>
+                        <li class="player-info-list-item">Favorite Color:
+                        </li>
+                        <li class="player-info-list-item">Blood Type:
+                        </li>
+                    </ul>
+                </div>
+                <div class='col-sm-6 col-lg-4 player-col'>
+                    <img src="img/team-members/Member_Calling_Card_Nukem3.png" class="img-fluid">
+                    <ul class="player-info-list">
+                        <li class="player-info-list-item">Handle:
+                        </li>
+                        <li class="player-info-list-item">Twitter:
+                        </li>
+                        <li class="player-info-list-item">Rank:
+                        </li>
+                        <li class="player-info-list-item">Favorite Color:
+                        </li>
+                        <li class="player-info-list-item">Blood Type:
+                        </li>
+                    </ul>
+                </div>
+                <div class='col-sm-6 col-lg-4 player-col'>
+                    <img src="img/team-members/Member_Calling_Card_Warrior3.png" class="img-fluid">
+                    <ul class="player-info-list">
+                        <li class="player-info-list-item">Handle:
+                        </li>
+                        <li class="player-info-list-item">Twitter:
+                        </li>
+                        <li class="player-info-list-item">Rank:
+                        </li>
+                        <li class="player-info-list-item">Favorite Color:
+                        </li>
+                        <li class="player-info-list-item">Blood Type:
+                        </li>
+                    </ul>
+                </div>
+                <div class='col-sm-6 col-lg-4 player-col'>
+                    <img src="img/team-members/Member_Calling_Card_Wolf_Eye3.png" class="img-fluid">
+                    <ul class="player-info-list">
+                        <li class="player-info-list-item">Handle:
+                        </li>
+                        <li class="player-info-list-item">Twitter:
+                        </li>
+                        <li class="player-info-list-item">Rank:
+                        </li>
+                        <li class="player-info-list-item">Favorite Color:
+                        </li>
+                        <li class="player-info-list-item">Blood Type:
+                        </li>
+                    </ul>
+                </div>
+                <div class='col-sm-6 col-lg-4 player-col'>
+                    <img src="img/team-members/Member_Calling_Card_Xcite3.png" class="img-fluid">
+                    <ul class="player-info-list">
+                        <li class="player-info-list-item">Handle:
+                        </li>
+                        <li class="player-info-list-item">Twitter:
+                        </li>
+                        <li class="player-info-list-item">Rank:
+                        </li>
+                        <li class="player-info-list-item">Favorite Color:
+                        </li>
+                        <li class="player-info-list-item">Blood Type:
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
 
 
         <!-- F O O T E R -->
@@ -140,6 +250,12 @@ d<!DOCTYPE html>
                 <div class="row">
                     <div class="col-sm-4 footer-col-1">
                         <h6 class="footer-h">Recent News</h6>
+                        <?php
+                $number_of_posts = 5;
+                $args = array( 'numberposts' => $number_of_posts );
+                $posts = wp_get_recent_posts( $args );
+                
+                ?>
                         <div class="footer-blog-div">
                             <?php echo "<a href='blog/index.php/".$posts[0]['post_name']."' class='footer-blog-link'>";?>
                             <p class="footer-blog-title"><?php echo $posts[0]['post_title']?></p>
@@ -173,10 +289,10 @@ d<!DOCTYPE html>
                             <a class="footer-link" href="#">Back to Top</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="/blog">News</a>
+                            <a class="footer-link" href="/Deity-Clan-Website/blog">News</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="/team.html">Team Info</a>
+                            <a class="footer-link" href="/Deity-Clan-Website/team.html">Team Info</a>
                         </li>
                         <li class="footer-li-item">
                             <a class="footer-link" href="#">Matches/Stats</a>
@@ -185,7 +301,7 @@ d<!DOCTYPE html>
                             <a class="footer-link" href="#">Media</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="#">Contact</a>
+                            <a class="footer-link" href="/Deity-Clan-Website/contact-form.php">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -251,9 +367,8 @@ d<!DOCTYPE html>
             
                 
             
-        </footer> 
-    </body>
-</html>    
+        </footer>
 
+  </body>
 
-
+</html>

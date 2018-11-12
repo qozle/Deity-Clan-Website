@@ -25,7 +25,7 @@
         <!-- Custom styles for this template -->
         <link href="<?php echo get_bloginfo('template_directory'); ?>/blog.css" rel="stylesheet">
         
-        <script src="<?php echo get_bloginfo('template_directory'); ?>/custom.js"></script>
+        
         
         
 
@@ -60,7 +60,7 @@
                             <a class="nav-link" href="/Deity-Clan-Website/blog/">NEWS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Deity-Clan-Website/team.html">TEAM INFO</a>
+                            <a class="nav-link" href="/Deity-Clan-Website/team.php">TEAM INFO</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">MATCHES AND STATS</a>
@@ -69,7 +69,7 @@
                             <a class="nav-link" href="#">MEDIA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link" href="/Deity-Clan-Website/contact-form.php">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -99,7 +99,7 @@
                                         
                                 </li>
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/Deity-Clan-Website/team.html">TEAM INFO
+                                    <a class="modal-list-link" href="/Deity-Clan-Website/team.php">TEAM INFO
                                     </a>
                                         
                                 </li>
@@ -113,7 +113,7 @@
                                         
                                 </li>
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">CONTACT
+                                    <a class="modal-list-link" href="/Deity-Clan-Website/contact-form.php">CONTACT
                                     </a>
                                         
                                 </li>

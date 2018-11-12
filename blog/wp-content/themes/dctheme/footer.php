@@ -8,10 +8,13 @@
                     <h6 class="footer-h">Useful Links</h6>
                     <ul class="footer-ul">
                         <li class="footer-li-item">
+                            <a class="footer-link" href="/Deity-Clan-Website/">Home</a>
+                        </li>
+                        <li class="footer-li-item">
                             <a class="footer-link" href="/Deity-Clan-Website/blog/">News</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="/Deity-Clan-Website/team.html">Team Info</a>
+                            <a class="footer-link" href="/Deity-Clan-Website/team.php">Team Info</a>
                         </li>
                         <li class="footer-li-item">
                             <a class="footer-link" href="">Matches/Stats</a>
@@ -20,13 +23,27 @@
                             <a class="footer-link" href="">Media</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="">Contact</a>
+                            <a class="footer-link" href="/Deity-Clan-Contact/contact-form.php">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-6 footer-col-4">
+                <div class="col-sm-4 footer-col-4">
                     <h6 class="footer-h">Contact</h6>
-                    <p class="footer-text">Contact form should go here.</p>
+                    <form action="#" id="contact-form">
+                        
+                        <input type="text" class="contact-form-text" id="fname" name="firstname" placeholder="First Name">
+
+                       
+                        <input type="text" class="contact-form-text" id="lname" name="lastname" placeholder="Last Name">
+
+                        
+                        <input type="text" class="contact-form-text" id="email" name="email" placeholder="Email">
+
+                        
+                        <textarea id="subject" name="subject" placeholder="Tell us what you need!" class="contact-form-textarea"></textarea>
+
+                        <input class="contact-form-submit" type="submit" value="Submit">
+                    </form>
                 </div>
                 </div>
             </div>
