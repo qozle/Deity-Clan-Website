@@ -12,20 +12,20 @@ Balls.  Ballsacks.  Is that one word?  Boobies.  8008135.  Guess where this was 
 
 @font-face {
     font-family: 'Abolition Regular';
-        src: url('../fonts/abolition-regular-webfont.eot');
-        src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
-             url('../fonts/abolition-regular-webfont.woff') format('woff'),
-             url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+        src: url('/fonts/abolition-regular-webfont.eot');
+        src: url('/fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+             url('/fonts/abolition-regular-webfont.woff') format('woff'),
+             url('/fonts/abolition-regular-webfont.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Bugfast';
-        src: url('../fonts/bugfast.otf');
+        src: url('/fonts/bugfast.otf');
 }
 
 @font-face {
     font-family: 'data';
-        src: url('../fonts/data-latin.ttf');    
+        src: url('/fonts/data-latin.ttf');    
 }
 
 
@@ -193,7 +193,7 @@ nav {
 
 
 .jumbotron {
-	background-image: url('/Deity-Clan-Website/img/keyboard-gamer.jpg');
+	background-image: url('/img/keyboard-gamer.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover cover;
