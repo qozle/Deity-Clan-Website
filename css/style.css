@@ -1,3 +1,14 @@
+/* COLORS /
+/
+Balls.  Ballsacks.  Is that one word?  Boobies.  8008135.  
+#0e0b0b - black
+#000A1B - dark bluegray
+#d1d1d1 - light gray
+#001946 - dark blue
+#003391 - blue
+
+*/
+
 /* ====================== FONTS ===================== */
 
 @font-face {
@@ -9,42 +20,143 @@
 }
 
 @font-face {
-    font-family: Bugfast;
+    font-family: 'Bugfast';
         src: url('../fonts/bugfast.otf');
+}
+
+@font-face {
+    font-family: 'data';
+        src: url('../fonts/data-latin.ttf');    
 }
 
 
 /* F O U N D A T I O N */
 html {
     min-height: 100%;
+    
 }
 
 body {
     min-height: 100%;
-    background-color: #FAF3DD;
+    background-color: #0e0b0b;
+}
+
+button:focus {
+    outline: 0;
 }
 
 
 /* ================== NAVBAR STYLES ================= */
 
 nav {
-    border-bottom: 4px rgba(0,51,145,0.35) solid;
-    background-color: black;
+    border-bottom: 4px #003391 solid;
+    background-color: #0e0b0b;
+}
+
+.navbar-toggler {
+    background-color: #003391;
+    margin-left: auto;
+    text-decoration: none;
+    transition: .25s;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    padding-bottom: 0px;
+    padding-top: 0px;
     
 }
 
-.navbar .navbar-nav .nav-item a {
-    color: 4F517D;
-    font-family: 'Abolition Regular';
-    letter-spacing: .3rem;
-    font-size: 1.3rem;
+.navbar-toggler:hover {
+    background-color: #001946; 
 }
+
+.navbar-brand {
+    transition: 1s;
+}
+
+.navbar-brand:hover {
+    background-color: rgba(0,25,70, 0.50);
+    transition: 1s;
+}
+
+.my-nav-icon {
+    font-size: .90em;
+}
+
+.navbar-text {
+    padding-top: 15px;
+}
+
+.nav-item {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav-link {
+    color: #003391;
+    font-family: 'Abolition Regular';
+    letter-spacing: .15rem;
+    font-size: 1.7rem;
+}
+
 
 .nav-link:hover {
-    color: #003391 !important;
+    color: #001946 !important;
     text-decoration: overline underline;
 }
+
+.modal {
     
+    
+}
+
+.modal-dialog {
+    
+    
+}
+
+.modal-content {
+    background-color: rgba(0,0,0,.85);
+    
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-body {
+    
+}
+
+.modal-list {
+    list-style: none;
+    display: block;
+    padding-top: 20px;
+    font-family: 'Abolition Regular';
+    padding-left: 0;
+    
+    
+}
+
+.modal-list-item {
+    font-size: 2em;
+    text-align: center;
+    border-radius: 10px;
+    
+    
+}
+
+.modal-list-link {
+    color: #003391;    
+    
+}
+
+.modal-list-link:hover {
+    text-decoration: none;
+    color: #003391;
+    
+}
 
 /* =================== MAIN STYLES ================== */
 
@@ -63,94 +175,513 @@ nav {
 
 
 .deity-font-1 {
-	font: 2rem Bugfast;
-	color: #4F517D;
-	letter-spacing: .3rem;
+	font: 2rem 'Bugfast';
+	color: #003391;
+	letter-spacing: .2rem;
+    display: inline;
 }
 
 .clan-font-1 {
 	font: 1.9rem Helvetica;
-	color: #4F517D;
-	letter-spacing: .3rem;
+	color: #003391;
+	letter-spacing: .2rem;
+    display: inline;
 }
 
 .deity-font-2 {
-    font: 7rem Bugfast;
-    color: silver;
+    font-family: 'Bugfast';
+    color: #d1d1d1;
     letter-spacing: .3rem;
+    
 }
 
 .clan-font-2 {
-    font: 6.5rem Helvetica;
-    color: silver;
+    font-family: Helvetica;
+    color: #d1d1d1;
     letter-spacing: .3rem;
-}
-
-
-/* ======================== FOOTER =========================*/
-
-.flex-container-footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    padding-top: 25px;
-    border-bottom: 2px solid rgba(142,142,142,.25);
     
     
 }
 
-.flex-item-footer {
-    color: #4F517D;
-    padding-left: 10px;
-    padding-right: 10px;
-    min-width: 145px;
+/* L A T E S T  N E W S */
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: #001946;
+}
+
+.overlay:hover {
+    opacity: .35;
+    
+}
+
+.blog-title {
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Abolition Regular';
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.35);
+    
+}
+
+.blog-date {
+    font-family: 'Abolition Regular';
+    margin-bottom: 0;
+    display: inline-block;
+    
+}
+
+.blog-category {
+    
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    background-color: #001946;
+    font-family: 'Abolition Regular';
+    font-size: 1.1em;
+    padding: 4px;
+    display: inline-block;
+    text-align: center;
+    
+    
+}
+
+.blog-item-1 {
+    color: silver;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url(../img/blog1.jpeg);
+    background-position: center;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    text-align: center;
+    margin-bottom: 0;
+    
+}
+
+
+.blog-item-1:hover {
+    text-decoration: none;
+    color: silver;
+    
+    
+    
+}
+
+.blog-item-2 {
+    color: silver;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url(../img/blog2.jpeg);
+    background-position: center center;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    text-align: center;
+}
+
+
+.blog-item-2:hover {
+    text-decoration: none;
+    color: silver;
+    
+}
+
+.blog-item-3 {
+    color: silver;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url(../img/blog3.jpeg);
+    background-position: center center;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    text-align: center;
+}
+
+
+.blog-item-3:hover {
+    text-decoration: none;
+    color: silver;
+    
+}
+
+.blog-item-4 {
+    color: silver;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url(../img/blog4.jpeg);
+    background-position: center center;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    text-align: center;
+}
+
+
+.blog-item-4:hover {
+    text-decoration: none;
+    color: silver;
+    
+}
+
+.blog-item-5 {
+    color: silver;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url(../img/blog5.jpeg);
+    background-position: center;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    text-align: center;
+}
+
+
+.blog-item-5:hover {
+    text-decoration: none;
+    color: silver;
+    
+}
+
+/* M E D I A  G R I D */
+
+.video-col {
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
     height: auto;
-    padding-bottom: 10px;
-    font-size: .85em
-    
 }
+
+
+
+
+/* ======================== FOOTER ========================= */
 
 footer {
-    text-align: center;
     padding-top: 10px;
     padding-bottom: 0;
     border-top: 4px solid #003391;
-    background-color: #FAF3DD;
+    background-color: #000a1b;
 }
 
-footer ul li a {
-    color: #4F517D;
-    margin-top: 2px;
-    padding-top: 2px;
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+    color: #fff;
+    text-align: center;
+    
 }
 
-footer ul li a:hover {
-    color: #003391;
-    text-decoration: underline overline;
+.footer-col-2 {
+    
+}
+
+.footer-col-3 {
+    
+}
+
+.footer-col-4 {
+  
+}
+
+.footer-h {
+    font-family: 'abolition regular';
+    margin-bottom: 20px;
+    padding: 0;
+    padding-bottom: 3px;
+    font-size: 1.5rem;
+    
+    border-bottom: 1px solid rgba(209,209,209,0.1);
+    
+}
+
+.footer-blog-div {
+    margin-bottom: 2px;
+    
+}
+
+.footer-blog-category {
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    background-color: #001946;
+    font-family: 'Abolition Regular';
+    font-size: 1.1em;
+    padding: 4px;
+    margin-bottom: 0;
+    display: inline-block;
+    width: auto;
+    letter-spacing: .5px;
+    
+}
+
+.footer-blog-link {
+    color: blue;
+}
+
+.footer-blog-link:hover {
+    text-decoration: none;
+}
+
+.footer-blog-title {
+    font-size:.9em;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.footer-blog-date {
+    font-size: .7em;
+    margin-bottom: 5px;
     
 }
 
 
-li {
-    display: inline-block;
+.footer-text {
+    font-size: .8em;
+}
+
+.footer-ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    
+}
+
+.footer-li-item {
+    margin-bottom: 15px;
+    
+}
+
+.footer-link {
+    font-family: 'Abolition Regular';
+    font-size: 1.1rem;
+    
+}
+
+.footer-link:hover {
+    text-decoration: none;
+}
+
+
+/* ======================== CONTACT FORM ========================= */
+
+/* Style inputs with type="text", select elements and textareas */
+.contact-form-text {
+    width: 90%; /* Full width */
+    padding: 1px; /* Some padding */
+    padding-left: 4px;
+    border: 1px solid #003391; /* Blue border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-bottom: 12px; /* Bottom margin */
+    height: 22px;
+    
+}
+
+.contact-form-textarea {
+    width: 90%; /* Full width */
+    padding: 1px; /* Some padding */ 
+    padding-left: 4px;
+    border: 1px solid #003391; /* Blue border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-bottom: 12px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style the submit button with a specific background color etc */
+.contact-form-submit {
+    background-color: #003391;
+    color: white;
+    padding: 1px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker blue color */
+input[type=submit]:hover {
+    background-color: #001946;
+}
+
+#fname, #lname, #email, #subject {
+        outline-color: #blue;
+    }
+
+
+/* FO O T E R  S O C I A L  M E D I A  L I N K S */
+.footer-social-list {
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 16px;
+    border-top: 1px solid rgba(209,209,209,0.05);
+    padding-top: 5px;
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.social-list-item {
+    display: inline;
     padding-right: 25px;
-    color: #4F517D;
+    color: #fff;
+}
+
+.social-list-link {
+    text-decoration: none;
+}
+
+.social-list-link:hover {
+    text-decoration: none;
 }
 
 #copyright {
     padding-bottom: 10px;
-    color: #4F517D;
+    color: #003391;
     margin-bottom: 0;
+    text-align: center;
+    font-size: .8em
 }
+
+
+
+/* P R E L O A D E R  D I V */
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+/*    background-image: url('../img/deitylogo1.png');*/
+    background-repeat: no-repeat; 
+    background-color: #0e0b0b;
+    background-position: center;
+    background-size: contain;
+}
+
+.the-entire-page {
+    display: none;
+    transition: 1s ease;
+}
+
+.preloader-text {
+    text-align: center;
+    margin-left:50px;
+    font-family: 'data';
+    color: #001946;
+}
+ 
+
+/* P R E L O A D E R  A N I M A T I O N */
+
+@keyframes lds-double-ring {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes lds-double-ring {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-double-ring_reverse {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes lds-double-ring_reverse {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+.lds-double-ring {
+  position: relative;
+}
+
+.lds-double-ring div {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 20px;
+  left: 20px;
+  border-radius: 50%;
+  border: 8px solid #000;
+  border-color: #001946 transparent #001946 transparent;
+  -webkit-animation: lds-double-ring 1s linear infinite;
+  animation: lds-double-ring 1s linear infinite;
+}
+
+.lds-double-ring div:nth-child(2) {
+  width: 140px;
+  height: 140px;
+  top: 30px;
+  left: 30px;
+  border-color: transparent #003391 transparent #003391;
+  -webkit-animation: lds-double-ring_reverse 1s linear infinite;
+  animation: lds-double-ring_reverse 1s linear infinite;
+}
+
+.lds-double-ring {
+  width: 200px !important;
+  height: 200px !important;
+  -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+  transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+}
+
 
 
 /* M E D I A  Q U E R Y  F U N  . . . */
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-    .flex-container-footer {
-        flex-wrap: wrap;
+    .deity-font-2, .clan-font-2 {
+        font-size: 4.5rem;
+    }
+    
+    .nav-link {
+        padding-top: 3px;
+        padding-bottom: 3px;
     }
 
 }
@@ -163,18 +694,24 @@ li {
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-
+    .deity-font-2, .clan-font-2 {
+        font-size: 6rem;
+    }
 
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
+    .contact-form-text, .contact-form-textarea {
+        width: 50%;
+    }
 
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-
+    .contact-form-text, .contact-form-textarea {
+        width: 50%;
+    }
 
 }

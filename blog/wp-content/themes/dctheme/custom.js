@@ -1,10 +1,9 @@
 $(document).ready(function() {
-    window.onload = function() {
-    $('.preloader').fadeOut('slow');
-    $('.the-entire-page').css('display','block');
-    $('.the-entire-page').fadeIn('slow');
-    }
-    
+    setTimeout(function() {
+        $('.preloader').fadeOut('slow');
+        $('.the-entire-page').css('display','block');
+        $('.the-entire-page').fadeIn('slow');
+        }, 800);
     
     $('.modal-list-link').hover(function() {
         $(this).parent().css('background-color','#000A1B');
@@ -16,3 +15,4 @@ $(document).ready(function() {
         $('.menu-modal').modal('toggle');
     })
     });
+
