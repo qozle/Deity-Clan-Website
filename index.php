@@ -47,7 +47,7 @@
     
             <!-- N A V B A R -->
             <nav class="navbar navbar-expand-lg sticky-top pl-0">
-                <a class="navbar-brand m-0" href="/Deity-Clan-Website/">
+                <a class="navbar-brand m-0" href="/">
                     <img src="img/deitylogo1.png" width=75px>
                     <span class="navbar-text">
                         <p class="deity-font-1 align-text-middle">DEITY</p>
@@ -60,13 +60,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto align-text-middle pb-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="/Deity-Clan-Website/">HOME<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/">HOME<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Deity-Clan-Website/blog/">NEWS</a>
+                            <a class="nav-link" href="/blog/">NEWS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="team.php">TEAM INFO</a>
+                            <a class="nav-link" href="/team.php">TEAM INFO</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">MATCHES AND STATS</a>
@@ -75,7 +75,7 @@
                             <a class="nav-link" href="#">MEDIA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Deity-Clan-Website/contact-form.php">CONTACT</a>
+                            <a class="nav-link" href="/contact-form.php">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -96,16 +96,16 @@
                             
                             <ul class="modal-list">
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/Deity-Clan-Website/">HOME
+                                    <a class="modal-list-link" href="/">HOME
                                     </a>
                                 </li>
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/Deity-Clan-Website/blog/" data-dismiss="modal">NEWS
+                                    <a class="modal-list-link" href="/blog/" data-dismiss="modal">NEWS
                                     </a>
                                         
                                 </li>
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/Deity-Clan-Website/team.php" data-dismiss="modal">TEAM INFO
+                                    <a class="modal-list-link" href="/team.php" data-dismiss="modal">TEAM INFO
                                     </a>
                                         
                                 </li>
@@ -119,7 +119,7 @@
                                         
                                 </li>
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/Deity-Clan-Website/contact-form.php" data-dismiss="modal">CONTACT
+                                    <a class="modal-list-link" href="/contact-form.php" data-dismiss="modal">CONTACT
                                     </a>
                                         
                                 </li>
@@ -320,7 +320,7 @@
                             <a class="footer-link" href="#">Media</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="/Deity-Clan-Website/contact-form.php">Contact</a>
+                            <a class="footer-link" href="/contact-form.php">Contact</a>
                         </li>
                     </ul>
                 </div>

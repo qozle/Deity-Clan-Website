@@ -8,13 +8,13 @@
                     <h6 class="footer-h">Useful Links</h6>
                     <ul class="footer-ul">
                         <li class="footer-li-item">
-                            <a class="footer-link" href="/Deity-Clan-Website/">Home</a>
+                            <a class="footer-link" href="/">Home</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="/Deity-Clan-Website/blog/">News</a>
+                            <a class="footer-link" href="/blog/">News</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="/Deity-Clan-Website/team.php">Team Info</a>
+                            <a class="footer-link" href="/team.php">Team Info</a>
                         </li>
                         <li class="footer-li-item">
                             <a class="footer-link" href="">Matches/Stats</a>
@@ -23,7 +23,7 @@
                             <a class="footer-link" href="">Media</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="/Deity-Clan-Contact/contact-form.php">Contact</a>
+                            <a class="footer-link" href="/contact-form.php">Contact</a>
                         </li>
                     </ul>
                 </div>
