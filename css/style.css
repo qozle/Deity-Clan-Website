@@ -702,16 +702,11 @@ input[type=submit]:hover {
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .contact-form-text, .contact-form-textarea {
-        width: 50%;
-    }
-
+   
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-    .contact-form-text, .contact-form-textarea {
-        width: 50%;
-    }
+   
 
 }

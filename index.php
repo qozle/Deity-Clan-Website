@@ -273,7 +273,7 @@
         <footer>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-4 col-xl-6 footer-col-1">
+                    <div class="col-sm-4 footer-col-1">
                         <h6 class="footer-h">Recent News</h6>
                         <div class="footer-blog-div">
                             <?php echo "<a href='blog/index.php/".$posts[0]['post_name']."' class='footer-blog-link'>";?>
@@ -301,7 +301,7 @@
                         </div>
                     </div>
                     
-                <div class="col-sm-4 col-xl-6 footer-col-3">
+                <div class="col-sm-4 footer-col-3">
                     <h6 class="footer-h">Useful Links</h6>
                     <ul class="footer-ul">
                         <li class="footer-li-item">
@@ -324,7 +324,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-4 col-xl-12 footer-col-4">
+                <div class="col-sm-4 footer-col-4">
                     <h6 class="footer-h">Contact</h6>
                     <form action="#" id="contact-form">
                         
