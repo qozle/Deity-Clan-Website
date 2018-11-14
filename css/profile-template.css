@@ -1,6 +1,6 @@
 .jumbotron {
 	background-image: url('../img/team-members/Member_Calling_Card_Ghost3.png');
-	background-position: top;
+	background-position: right top;
     height:800px;
 }
 
@@ -13,6 +13,7 @@
 .heading {
 	font-family: helvetica;
 	color: #d1d1d1;
+	font-weight: bold;
 }
 
 .row {
@@ -22,3 +23,12 @@
 hr {
 	border-color: #003391;
 }
+
+
+@media (max-width: 553px) {
+	.jumbotron{
+		height: auto;
+		width: auto;
+	}
+}
+

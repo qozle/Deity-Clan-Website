@@ -153,6 +153,41 @@
                     <p class="heading">GAME</p>
                 </div>
             </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h3 class="info">USA</h3>
+                    <p class="heading">COUNTRY</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li class="social-list-item">
+                            <a class="social-list-link" href="#facebook" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                                <p class="fab fa-facebook"></p>
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a class="social-list-link" href="#twitter" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                                <p class="fab fa-twitter"></p>
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a class="social-list-link" href="#instagram" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                                <p class="fab fa-instagram"></p>
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a class="social-list-link" href="#twitch" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                                <p class="fab fa-twitch"></p>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="heading">CONNECT WITH GHOST</p>
+                </div>
+            </div>
 
         </div>
 
