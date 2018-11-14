@@ -1,0 +1,24 @@
+.jumbotron {
+	background-image: url('../img/team-members/Member_Calling_Card_Ghost3.png');
+	background-position: top;
+    height:800px;
+}
+
+.info {
+	font-family: 'Abolition Regular';
+	color: #003391;
+	font-size: 5rem;
+}
+
+.heading {
+	font-family: helvetica;
+	color: #d1d1d1;
+}
+
+.row {
+	margin-bottom: 20px;
+}
+
+hr {
+	border-color: #003391;
+}
