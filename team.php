@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/team.css">
         <link rel="icon" href="img/deitylogo1.png">
+        <script src="js/team.js"></script>
         
     </head>
 
@@ -137,108 +138,26 @@
             <div class='row players-row'>                
                 <div class='col-sm-12 col-lg-4 player-col'>
                     <img src="img/team-members/Member_Calling_Card_Ghost3.png" class="img-fluid">
-                    <ul class="player-info-list">
-                        <li class="player-info-list-item">Handle:
-                        </li>
-                        <li class="player-info-list-item">Twitter:
-                        </li>
-                        <li class="player-info-list-item">Rank:
-                        </li>
-                        <li class="player-info-list-item">Favorite Color:
-                        </li>
-                        <li class="player-info-list-item">Blood Type:
-                        </li>
-                    </ul>
+                    <a href="#" class="player-link">Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></a>
                 </div>
                 <div class='col-sm-6 col-lg-4 player-col'>
                     <img src="img/team-members/Member_Calling_Card_Hanzo3.png" class="img-fluid">
-                    <ul class="player-info-list">
-                        <li class="player-info-list-item">Handle:
-                        </li>
-                        <li class="player-info-list-item">Twitter:
-                        </li>
-                        <li class="player-info-list-item">Rank:
-                        </li>
-                        <li class="player-info-list-item">Favorite Color:
-                        </li>
-                        <li class="player-info-list-item">Blood Type:
-                        </li>
-                    </ul>
+                    <a href="#" class="player-link">Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></a>
                 </div>
                 <div class='col-sm-6 col-lg-4 player-col'>
-                    <img src="img/team-members/Member_Calling_Card_Liro3.png" class="img-fluid">
-                    <ul class="player-info-list">
-                        <li class="player-info-list-item">Handle:
-                        </li>
-                        <li class="player-info-list-item">Twitter:
-                        </li>
-                        <li class="player-info-list-item">Rank:
-                        </li>
-                        <li class="player-info-list-item">Favorite Color:
-                        </li>
-                        <li class="player-info-list-item">Blood Type:
-                        </li>
-                    </ul>
+                    <img src="img/team-members/Member_Calling_Card_Liro3.png" class="img-fluid"><a href="#" class="player-link">Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></a>
                 </div>
                 <div class='col-sm-6 col-lg-4 player-col'>
-                    <img src="img/team-members/Member_Calling_Card_Nukem3.png" class="img-fluid">
-                    <ul class="player-info-list">
-                        <li class="player-info-list-item">Handle:
-                        </li>
-                        <li class="player-info-list-item">Twitter:
-                        </li>
-                        <li class="player-info-list-item">Rank:
-                        </li>
-                        <li class="player-info-list-item">Favorite Color:
-                        </li>
-                        <li class="player-info-list-item">Blood Type:
-                        </li>
-                    </ul>
+                    <img src="img/team-members/Member_Calling_Card_Nukem3.png" class="img-fluid"><a href="#" class="player-link">Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></a>
                 </div>
                 <div class='col-sm-6 col-lg-4 player-col'>
-                    <img src="img/team-members/Member_Calling_Card_Warrior3.png" class="img-fluid">
-                    <ul class="player-info-list">
-                        <li class="player-info-list-item">Handle:
-                        </li>
-                        <li class="player-info-list-item">Twitter:
-                        </li>
-                        <li class="player-info-list-item">Rank:
-                        </li>
-                        <li class="player-info-list-item">Favorite Color:
-                        </li>
-                        <li class="player-info-list-item">Blood Type:
-                        </li>
-                    </ul>
+                    <img src="img/team-members/Member_Calling_Card_Warrior3.png" class="img-fluid"><a href="#" class="player-link">Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></a>
                 </div>
                 <div class='col-sm-6 col-lg-4 player-col'>
-                    <img src="img/team-members/Member_Calling_Card_Wolf_Eye3.png" class="img-fluid">
-                    <ul class="player-info-list">
-                        <li class="player-info-list-item">Handle:
-                        </li>
-                        <li class="player-info-list-item">Twitter:
-                        </li>
-                        <li class="player-info-list-item">Rank:
-                        </li>
-                        <li class="player-info-list-item">Favorite Color:
-                        </li>
-                        <li class="player-info-list-item">Blood Type:
-                        </li>
-                    </ul>
+                    <img src="img/team-members/Member_Calling_Card_Wolf_Eye3.png" class="img-fluid"><a href="#" class="player-link">Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></a>
                 </div>
                 <div class='col-sm-6 col-lg-4 player-col'>
-                    <img src="img/team-members/Member_Calling_Card_Xcite3.png" class="img-fluid">
-                    <ul class="player-info-list">
-                        <li class="player-info-list-item">Handle:
-                        </li>
-                        <li class="player-info-list-item">Twitter:
-                        </li>
-                        <li class="player-info-list-item">Rank:
-                        </li>
-                        <li class="player-info-list-item">Favorite Color:
-                        </li>
-                        <li class="player-info-list-item">Blood Type:
-                        </li>
-                    </ul>
+                    <img src="img/team-members/Member_Calling_Card_Xcite3.png" class="img-fluid"><a href="#" class="player-link">Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></a>
                 </div>
             </div>
         </div>

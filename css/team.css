@@ -190,13 +190,35 @@ nav {
     padding-bottom: 16px;
 }
 
+.player-link {
+    position: absolute;
+    top: 55px;
+    bottom: 16px;
+    left: 9px;
+    right: 9px;
+    font-family: "Abolition Regular";
+    font-size: 1.3rem;
+    padding-left: 10px;
+    padding-top: 50px;
+}
+
+.player-link:hover {
+    text-decoration: none;
+}
+
+.player-arrow {
+    padding-left: 5px;
+}
+
 .players-row {
     border: 1px solid rgba(209,209,209,.1);
 }
 
 .player-col {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     
 }
 
@@ -206,19 +228,6 @@ nav {
     
 }
 
-.player-info-list {
-    list-style: none;
-    color: #003391;
-    padding-left: 5px;
-    font-family: "Abolition Regular";
-    font-size: 1.1rem;
-    background-color: rgba(0,25,70,.15);
-    
-}
-
-.player-info-list-item {
-    
-}
 
 /* ======================== FOOTER ========================= */
 
