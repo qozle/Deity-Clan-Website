@@ -16,7 +16,7 @@
 
 
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/team.css">
+        
         <link rel="icon" href="img/deitylogo1.png">
         <script src="js/custom.js"></script>
         
@@ -51,9 +51,15 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/blog/">NEWS</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/team.html">TEAM INFO</a>
-                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Teams</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">MATCHES AND STATS</a>
                         </li>
@@ -91,7 +97,7 @@
                                 </li>
 
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/team.html">TEAM INFO</a>                                        
+                                    <a class="modal-list-link" href="/team.html">TEAMS</a>                                        
                                 </li>
 
                                 <li class="modal-list-item">

@@ -138,7 +138,7 @@
             <div class='row players-row'>                
                 <div class='col-sm-12 col-lg-4 player-col'>
                     <img src="img/team-members/Member_Calling_Card_Ghost3.png" class="img-fluid">
-                    <a href="#" class="player-link">Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></a>
+                    <a href="#" class="player-link player-link-1">Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></a>
                 </div>
                 <div class='col-sm-6 col-lg-4 player-col'>
                     <img src="img/team-members/Member_Calling_Card_Hanzo3.png" class="img-fluid">
