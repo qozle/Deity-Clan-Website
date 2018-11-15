@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html>
-    
     <head>
-        <title>Deity Clan | Team</title>
+        <title>Deity Clan | Home</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
         <!-- J Q U E R Y  C D N -->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
         <!-- B O O T S T R A P 4  J S -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
         <!-- B O O T S T R A P 4  C S S -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        
+        <!-- F O N T  A W E S O M E -->
         <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
+        <!-- O U R  C S S -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/contact-form.css">
         <link rel="icon" href="img/deitylogo1.png">
+        <script src="js/custom.js"></script>
+        
         
     </head>
-    
-    
-    
-    
+
     <body>
-    <?php 
+        <?php 
             define('WP_USE_THEMES', false);
             require('blog/wp-blog-header.php');
         ?>
-        
-        
-        <!--  H E A D E R -->
+
+        <!-- N A V B A R -->
+
     
-            <!-- N A V B A R -->
             <nav class="navbar navbar-expand-lg sticky-top pl-0">
                 <a class="navbar-brand m-0" href="/Deity-Clan-Website/">
                     <img src="img/deitylogo1.png" width=75px>
@@ -45,16 +44,21 @@
                     <i class="fas fa-caret-square-down my-nav-icon"></i> MENU
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto align-text-middle pb-2">
+                    <ul class="navbar-nav ml-auto align-text-middle pb-2">
                         <li class="nav-item">
                             <a class="nav-link" href="/Deity-Clan-Website/">HOME<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/Deity-Clan-Website/blog/">NEWS</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="team.html">TEAM INFO</a>
-                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Teams</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/Deity-Clan-Website/fortnite.php">Fortnite</a>
+                                <a class="dropdown-item" href="#">Black Ops 4</a>
+                                <a class="dropdown-item" href="#">Overwatch</a>
+                            </div>
+                          </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">MATCHES AND STATS</a>
                         </li>
@@ -82,33 +86,29 @@
                         <div class="modal-body">
                             
                             <ul class="modal-list">
+
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/Deity-Clan-Website/">HOME
-                                    </a>
+                                    <a class="modal-list-link" href="/Deity-Clan-Website/">HOME</a>
                                 </li>
+
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/Deity-Clan-Website/blog/" data-dismiss="modal">NEWS
-                                    </a>
-                                        
+                                    <a class="modal-list-link" href="/Deity-Clan-Website/blog/" >NEWS</a>                                        
                                 </li>
+
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/Deity-Clan-Website/team.html" data-dismiss="modal">TEAM INFO
-                                    </a>
-                                        
+                                    <a class="modal-list-link" href="/Deity-Clan-Website/teams-page.php">TEAMS</a>                                        
                                 </li>
+
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#" data-dismiss="modal">MATCHES AND STATS</a>
-                                        
+                                    <a class="modal-list-link" href="#">MATCHES AND STATS</a>                                        
                                 </li>
+
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#" data-dismiss="modal">MEDIA
-                                    </a>
-                                        
+                                    <a class="modal-list-link" href="#">MEDIA</a>                                        
                                 </li>
+
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/Deity-Clan-Website/contact-form.php" data-dismiss="modal">CONTACT
-                                    </a>
-                                        
+                                    <a class="modal-list-link" href="/Deity-Clan-Website/contact-form.php">CONTACT</a>                                        
                                 </li>
                       
                             </ul>
@@ -119,13 +119,26 @@
 
            
         
-            <!-- J U M B O T R O N  -->
-                    <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
+            
+            
+
+
+
+        <!--  H E A D E R -->
+            <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
                 <div class="container" style="text-align: center;">
                     <h1 class="deity-font-2 d-inline display-1">DEITY</h1>
                     <h1 class="clan-font-2 d-inline display-1">CLAN</h1>
                 </div>
             </div>
+        
+        <!-- s e c o n d a r y  h e a d e r 
+        <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
+            <div class="container" style="text-align: center;">
+                <h1 class="deity-font-2 d-inline display-1">DEITY</h1>
+                <h1 class="clan-font-2 d-inline display-1">CLAN</h1>
+            </div>
+        </div> -->
 
 <style>
 /* Style inputs with type="text", select elements and textareas */
@@ -189,19 +202,18 @@ input[type=submit]:hover {
         </div>
     
     
-    <!-- F O O T E R -->
-        
-        <footer>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6 footer-col-1">
-                        <h6 class="footer-h">Recent News</h6>
-                        <?php
+   <!-- F O O T E R -->
+        <?php
                 $number_of_posts = 5;
                 $args = array( 'numberposts' => $number_of_posts );
                 $posts = wp_get_recent_posts( $args );
                 
                 ?>
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4 footer-col-1">
+                        <h6 class="footer-h">Recent News</h6>
                         <div class="footer-blog-div">
                             <?php echo "<a href='blog/index.php/".$posts[0]['post_name']."' class='footer-blog-link'>";?>
                             <p class="footer-blog-title"><?php echo $posts[0]['post_title']?></p>
@@ -228,7 +240,7 @@ input[type=submit]:hover {
                         </div>
                     </div>
                     
-                <div class="col-sm-6 footer-col-3">
+                <div class="col-sm-4 footer-col-3">
                     <h6 class="footer-h">Useful Links</h6>
                     <ul class="footer-ul">
                         <li class="footer-li-item">
@@ -238,7 +250,7 @@ input[type=submit]:hover {
                             <a class="footer-link" href="/Deity-Clan-Website/blog">News</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="/Deity-Clan-Website/team.html">Team Info</a>
+                            <a class="footer-link" href="/Deity-Clan-Website/teams-page.php">Teams</a>
                         </li>
                         <li class="footer-li-item">
                             <a class="footer-link" href="#">Matches/Stats</a>
@@ -251,7 +263,24 @@ input[type=submit]:hover {
                         </li>
                     </ul>
                 </div>
-                
+                <div class="col-sm-4 footer-col-4">
+                    <h6 class="footer-h">Contact</h6>
+                    <form action="#" id="contact-form">
+                        
+                        <input type="text" class="contact-form-text" id="fname" name="firstname" placeholder="First Name">
+
+                       
+                        <input type="text" class="contact-form-text" id="lname" name="lastname" placeholder="Last Name">
+
+                        
+                        <input type="text" class="contact-form-text" id="email" name="email" placeholder="Email">
+
+                        
+                        <textarea id="subject" name="subject" placeholder="Tell us what you need!" class="contact-form-textarea"></textarea>
+
+                        <input class="contact-form-submit" type="submit" value="Submit">
+                    </form>
+                </div>
                 </div>
             </div>
             
@@ -296,7 +325,6 @@ input[type=submit]:hover {
             
                 
             
-        </footer>
-        </body>
-
-</html>
+        </footer> 
+    </body>
+</html>  

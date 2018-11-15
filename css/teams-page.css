@@ -1,0 +1,42 @@
+.teams-container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+}
+
+.teams-row {
+    border: 1px solid rgba(209,209,209,0.2);
+}
+
+.teams-col {
+    width: 150px;
+    height: 150px;    
+    text-align: center;
+    background-color: blue;
+    padding-top: 70px;
+    transition: .3s;
+    
+}
+
+.teams-col:hover {
+    background-color: darkblue;
+}
+
+.teams-link {
+    
+}
+
+.teams-link:hover {
+    text-decoration: none;
+    
+}
+
+.jumbotron {
+	background-image: url('../img/keyboard-gamer.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height:450px;
+    width: 100%;
+    padding: 0;
+}

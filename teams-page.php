@@ -16,9 +16,10 @@
 
         <!-- O U R  C S S -->
         <link rel="stylesheet" href="css/style.css">
-        
+        <link rel="stylesheet" href="css/teams-page.css">
         <link rel="icon" href="img/deitylogo1.png">
         <script src="js/custom.js"></script>
+        
         
         
     </head>
@@ -124,141 +125,39 @@
 
 
 
-        <!--  H E A D E R -->
-            <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
-                <div class="container" style="text-align: center;">
-                    <h1 class="deity-font-2 d-inline display-1">DEITY</h1>
-                    <h1 class="clan-font-2 d-inline display-1">CLAN</h1>
-                </div>
-            </div>
+        
+        
         
 
 
 
         <!-- M A I N   C O N T E N T -->
-        
-        
-        <!-- B L O G  P O S T S -->
-        
-         
-        <div class="container" style="margin-top: 60px;border: 2px solid rgba(142,142,142,.25);border-radius:5px;background-color: #0e0b0b;">
-            <div class="row">
-                <div class="col-sm-12" style="padding-left:0;padding-right:0;">
-                    <h4 class="text-center" style="color:white;padding-bottom:15px;padding-top:4px;margin-bottom:0;background-color: rgba(209,209,209,.08);">Latest News</h4>
-                </div>
-            </div>
-                
-            <div class="row" style="color:silver;padding-bottom:0;">
-            
-                <?php
+        <?php
                 $number_of_posts = 5;
                 $args = array( 'numberposts' => $number_of_posts );
                 $posts = wp_get_recent_posts( $args );
                 
                 ?>
-                
-                <!-- B L O G  I T E M  1 -->    
-                <?php echo "<a href='blog/index.php/".$posts[0]['post_name']."' class='col-sm-6 blog-item-1'>";?>
-                    <h2 class="blog-title"><?php echo $posts[0]['post_title']?></h2>
-                    <?php foreach(get_the_category($posts[0]['ID']) as $category) {
-                        echo "<p class='blog-category'>".$category->name."</p>";};?>
-                    <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[0]['ID']);?></p>
-                    <div class='overlay'></div>
-                <?php echo "</a>";?>
-                
-                <!-- B L O G  I T E M  2 -->
-                <?php echo "<a href='blog/index.php/".$posts[1]['post_name']."' class='col-sm-6 blog-item-2'>";?>
-                    <h2 class="blog-title"><?php echo $posts[1]['post_title']?></h2>
-                    <?php foreach(get_the_category($posts[1]['ID']) as $category) {
-                        echo "<p class='blog-category'>".$category->name."</p>";};?>
-                    <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[1]['ID']);?></p>
-                    <div class='overlay'></div>
-                <?php echo "</a>";?>
-                
-                <!-- B L O G  I T E M  3 -->
-                <?php echo "<a href='blog/index.php/".$posts[2]['post_name']."' class='col-sm-4 col-lg-12 blog-item-3'>";?>
-                    <h3 class="blog-title"><?php echo $posts[2]['post_title']?></h3>
-                    <?php foreach(get_the_category($posts[2]['ID']) as $category) {
-                        echo "<p class='blog-category'>".$category->name."</p>";};?>
-                    <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[2]['ID']);?></p>
-                    <div class='overlay'></div>
-                <?php echo "</a>";?>
-                
-                <!-- B L O G  I T E M  4 -->
-                <?php echo "<a href='blog/index.php/".$posts[3]['post_name']."' class='col-sm-4 col-lg-6 blog-item-4'>";?>
-                <h3 class="blog-title"><?php echo $posts[3]['post_title']?></h3>
-                <?php foreach(get_the_category($posts[3]['ID']) as $category) {
-                    echo "<p class='blog-category'>".$category->name."</p>";};?>    
-                <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[3]['ID']);?></p>
-                <div class='overlay'></div>
-                <?php echo "</a>";?>
-                
-                <!-- B L O G  I T E M  5 -->
-                <?php echo "<a href='blog/index.php/".$posts[4]['post_name']."' class='col-sm-4 col-lg-6 blog-item-5'>";?>
-                    <h3 class="blog-title"><?php echo $posts[4]['post_title']?></h3>
-                    <?php foreach(get_the_category($posts[4]['ID']) as $category) {
-                        echo "<p class='blog-category'>".$category->name."</p>";};?>
-                <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[4]['ID']);?></p>
-                    <div class='overlay'></div>
-                <?php echo "</a>";?> 
-                </div>
-            </div>
-                
-
         
-            
-        <!-- M E D I A  G R I D -->
-            
-            
-    	<div class="container" style="margin-top: 60px;margin-bottom:60px;border: 2px solid rgba(142,142,142,.25);border-radius:5px;background-color: rgba(209,209,209,.08);">
-            <h4 class="text-center" style="color:white;padding-bottom:20px;padding-top:4px;">Highlights</h4>
-            <div class="row">
-                
-                
-                <div class="col-sm-4 video-col">
-                    <div class="embed-responsive embed-responsive-16by9 media">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qL_Qaqlq_DY?modestbranding=1"></iframe> 
-                      
-                    </div>
+        
+           <!-- T E A M S  G R I D  -->
+        <div class="container teams-container">
+            <div class="row teams-row">
+                <div class="col-sm-6 teams-col">
+                    <a class="teams-link" href="/Deity-Clan-Website/fortnite.php">Fortnite</a>
                 </div>
-
-                <div class="col-sm-4 video-col">
-                    <div class="embed-responsive embed-responsive-16by9 media">
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jPTIhXQ1Q7Q?modestbranding=1"></iframe>
-                    </div>
+                <div class="col-sm-6 teams-col">
+                    <a class="teams-link" href="#">team 2</a>
                 </div>
-            
-                
-            
-                <div class="col-sm-4 video-col">
-                    <div class="embed-responsive embed-responsive-16by9 media">
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/J_XWe6RXNag?modestbranding=1"></iframe>
-                    </div>
+                <div class="col-sm-6 teams-col">
+                    <a class="teams-link" href="#">team 3</a>
                 </div>
-
-                <div class="col-sm-4 video-col">
-                    <div class="embed-responsive embed-responsive-16by9 media">
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/X2PHL87hmBA?modestbranding=1"></iframe>
-                    </div>
-                </div>
-            
-
-            
-                <div class="col-sm-4 video-col">
-                    <div class="embed-responsive embed-responsive-16by9 media">
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZrxOp_PKZdg?modestbranding=1"></iframe>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 video-col">
-                    <div class="embed-responsive embed-responsive-16by9 media">
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/I6th486JaXU?modestbranding=1"></iframe>
-                    </div>
+                <div class="col-sm-6 teams-col">
+                    <a class="teams-link" href="#">team 4</a>
                 </div>
             </div>
         </div>
 
-     
 
         <!-- F O O T E R -->
         
@@ -379,6 +278,5 @@
                 
             
         </footer> 
-        </div>
     </body>
 </html>    

@@ -60,7 +60,7 @@ nav {
 .navbar {
     padding-bottom: 0px;
     padding-top: 0px;
-    padding-right: 0px;
+    
     
 }
 
@@ -95,12 +95,35 @@ nav {
     font-family: 'Abolition Regular';
     letter-spacing: .15rem;
     font-size: 1.7rem;
+    border-radius: 10px;
 }
 
 
 .nav-link:hover {
     color: #001946 !important;
     text-decoration: overline underline;
+}
+
+.dropdown {
+    border-radius: 10px;
+}
+
+.dropdown-menu {
+    background-color: #0b0e0e;
+    padding-bottom: 0;
+    padding-top:0;
+    
+    
+}
+
+.dropdown-item {
+    color: silver;
+    
+}
+
+.dropdown-item:hover {
+    background-color: #001946;
+    color: silver;
 }
 
 .modal {
@@ -670,11 +693,21 @@ input[type=submit]:hover {
 
 /* M E D I A  Q U E R Y  F U N  . . . */
 
-@media (max-width: 434.98px)
+@media (max-width: 434.98px){
     .navbar {
-        padding-right: 0;
-}
+        padding-right: 10px;
+    }
 
+    .deity-font-1 {
+        font-size: 1.4rem;
+    }
+
+    .clan-font-1 {
+        font-size: 1.3rem;
+    }
+}
+    
+    
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (min-width: 435px) and (max-width: 575.98px) {
     .deity-font-2, .clan-font-2 {
