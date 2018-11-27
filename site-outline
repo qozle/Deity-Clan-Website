@@ -1,0 +1,77 @@
+// T A S K S  F O R  D E I T Y  C L A N 
+
+// * = extra.  we don't have to do this.  'if possible'.  would be nice to add in.
+
+
+********///===>>>   !important SEE POINT 3-a-3  <<<====\\\*********** 
+
+
+1) TEAMS PAGE, TEAM PAGES, PLAYER PROFILE PAGES:
+
+    a)  TEAMS PAGE
+        1) Secondary header template
+        2) Two coloumn grid with the left coloumn being a picture of the team (or place holder) with a link to that team's TEAM PAGE, and the right coloumn being some basic stats about the team:
+            a) year formed
+            b) upcoming matches
+            c) *titles, ranks, achievements, whatever the kids call it.
+        3) Footer template
+        
+    b)  TEAM PAGES:
+        1) Secondary header template
+        2) Photo of each team member (or place holder) with link to that member's profile page.  
+        3) Some basic stats about the team
+        4) Footer template
+        
+    c) PLAYER PROFILE PAGE:
+        1) Secondary header template
+        2) Photo of player
+        3) Basic stats about player:
+            a) handle
+            b) age
+            c) country
+            d) game
+        4) *Latest tweets
+        5) Social media links
+        6) *Gear used
+        7) Links to next team member / to explore other teams
+        8) Footer template
+        
+        
+2) HOMEPAGE MEDIA CONTENT, MEDIA PAGE?:
+        
+    a) HOMEPAGE MEDIA CONTENT
+        1) Secondary header template
+        2) 
+            case a) Highlights from their twitch team channel?  They need to be informed of this.  
+            
+            case b) The video assets they gave us?  I know they have better assets than those, I don't like this.
+
+            case c) Some other assets they give us?  
+
+            case d) Instagram feed?  May not be impossible.  I keep flip flopping on this- either that or I keep looking at it and deciding it's not realistic.  I prefer case a.
+
+            case e) Something else, I'm open to ideas.
+            
+        3) *Recent tweets / instagram / fb posts or something
+        4) Maybe some recent blog posts, like two or something
+        5) Footer template
+
+    b) MEDIA PAGE?
+        1) Secondary header template
+        2) 
+            case a) a grid of assorted pictures and clips, ideally twitch highlights.
+
+            case b) Don't even make a media page.  Just have a link to their team twitch. 
+            
+        3) Footer template
+        
+3) BASIC CLEANUP, QUESTIONS:
+    
+    a) BASIC CLEANUP
+        1) Is everything tight with the media queries?  Good on all browsers? Good on all devices?
+        2) Does the contact form actually work?  >_>
+        3) *****REFORMAT TO USE TEMPLATES******
+        4) ^^ This will just make our life easier, and is worth making a second, dramatic bullet for.  This should be done first.
+    
+    b) QUESTIONS
+        1) Image assets?  I mean we have these placeholder images and they look alright but we should really use something else?  The easiest solution might be to see if dave can make some cool images that will fill that space and match the aesthetic.
