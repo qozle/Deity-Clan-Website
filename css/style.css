@@ -376,14 +376,49 @@ nav {
     
 }
 
-/* M E D I A  G R I D */
+.media-cont {
+    margin-bottom: 24px;
+}
+
+#media-heading {
+    text-align: center;
+    font-family: 'Abolition Regular';
+    margin-top: 48px;
+    margin-bottom: 36px;
+    color: #003391;
+    border-bottom: 1px solid rgba(209,209,209,0.1);
+}
+
+
+.media {
+    padding: 0;
+}
+
+.yt-col {
+    padding:0;
+}
+
+.img-1 {
+    height: 100%;
+    
+}
+
+.img-1-col {
+    padding: 0;
+    height: 250px;
+/*
+    background-image: url('../img/controller.jpg_large');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+*/
+}
 
 .video-col {
-    padding-left: 0;
-    padding-right: 0;
-    width: auto;
-    height: auto;
+    padding: 0;
 }
+
 
 
 

@@ -1,63 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Deity Clan | Home</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <!-- J Q U E R Y  C D N -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-        <!-- B O O T S T R A P 4  J S -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
-        <!-- B O O T S T R A P 4  C S S -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <!-- F O N T  A W E S O M E -->
-        <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
-
-        <!-- O U R  C S S -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/teams-page.css">
-        <link rel="icon" href="img/deitylogo1.png">
-        <script src="js/custom.js"></script>
-        
-        
-        
-    </head>
-
-    <body>
-       <?php include 'header-template.html'?>
-
-
-        <!-- M A I N   C O N T E N T -->
+<!-- F O O T E R -->
         <?php
                 $number_of_posts = 5;
                 $args = array( 'numberposts' => $number_of_posts );
                 $posts = wp_get_recent_posts( $args );
                 
                 ?>
-        
-        
-           <!-- T E A M S  G R I D  -->
-        <div class="container teams-container">
-            <div class="row teams-row">
-                <div class="col-sm-6 teams-col">
-                    <a class="teams-link" href="/Deity-Clan-Website/fortnite.php">Fortnite</a>
-                </div>
-                <div class="col-sm-6 teams-col">
-                    <a class="teams-link" href="#">team 2</a>
-                </div>
-                <div class="col-sm-6 teams-col">
-                    <a class="teams-link" href="#">team 3</a>
-                </div>
-                <div class="col-sm-6 teams-col">
-                    <a class="teams-link" href="#">team 4</a>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- F O O T E R -->
-        
         <footer>
             <div class="container-fluid">
                 <div class="row">
@@ -105,7 +52,7 @@
                             <a class="footer-link" href="#">Matches/Stats</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="#">Media</a>
+                            <a class="footer-link" href="/Deity-Clan-Website/media.php">Media</a>
                         </li>
                         <li class="footer-li-item">
                             <a class="footer-link" href="/Deity-Clan-Website/contact-form.php">Contact</a>
@@ -175,5 +122,3 @@
                 
             
         </footer> 
-    </body>
-</html>    

@@ -1,3 +1,76 @@
+.jumbotron {
+	background-image: url('../img/keyboard-gamer.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain contain;
+    height:350px;
+    width: 100%;
+    padding: 0;
+}
+
+.media-cont {
+    margin-bottom: 24px;
+}
+
+#media-heading {
+    text-align: center;
+    font-family: 'Abolition Regular';
+    margin-top: 48px;
+    margin-bottom: 36px;
+    color: #003391;
+    border-bottom: 1px solid rgba(209,209,209,0.1);
+}
+
+.media-row {
+    margin-top: 24px;
+}
+
 .media {
-	margin: 12px;
+    padding: 0;
+}
+
+.yt-col {
+    padding:0;
+}
+
+.img-1-col {
+    padding: 0;
+    background-image: url('../img/blog5.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+
+video-col {
+    padding: 0;
+}
+
+
+/* M E D I A  Q U E R Y  F U N  . . . */
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+       
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  
+
 }
