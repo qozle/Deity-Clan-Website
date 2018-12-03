@@ -36,7 +36,7 @@
                 
                 ?>
         
-        
+        <h1 class='display-2' id="teams-heading">Explore the Teams</h1>
            <!-- T E A M S  G R I D  -->
         <div class="container teams-container">
             <div class="row teams-row">
@@ -44,13 +44,16 @@
                     <a class="teams-link" href="/Deity-Clan-Website/fortnite.php">Fortnite</a>
                 </div>
                 <div class="col-sm-6 teams-col">
-                    <a class="teams-link" href="#">team 2</a>
+                    <a class="teams-link" href="#">Call of Duty</a>
                 </div>
-                <div class="col-sm-6 teams-col">
-                    <a class="teams-link" href="#">team 3</a>
+                <div class="col-sm-4 teams-col">
+                    <a class="teams-link" href="#">NBA2K</a>
                 </div>
-                <div class="col-sm-6 teams-col">
-                    <a class="teams-link" href="#">team 4</a>
+                <div class="col-sm-4 teams-col">
+                    <a class="teams-link" href="#">Super Smash Bros</a>
+                </div>
+                <div class="col-sm-4 teams-col">
+                    <a class="teams-link" href="#">Overwatch</a>
                 </div>
             </div>
         </div>

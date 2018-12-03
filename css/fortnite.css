@@ -33,7 +33,6 @@
 
 .team-intro-text {
     color: #d1d1d1;
-    font-size: 1.1em;
     border-bottom: 1px solid rgba(209,209,209,.1);
     padding-bottom: 20px;
     padding-left: 20px;
@@ -79,8 +78,18 @@
     padding-right: 10px;
     padding-top: 8px;
     padding-bottom: 8px;
-    
     border-radius: 10px;
+}
+
+.player-img-1 {
+    
+}
+
+.player-col-2 {
+    
+}
+
+.player-col-3 {
     
 }
 
@@ -95,10 +104,12 @@
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
+/*
     .player-link-1 {
         top: 100;
         padding-top: 100px;
     }
+*/
 }
 
 /* Small devices (landscape phones, 576px and up)*/
