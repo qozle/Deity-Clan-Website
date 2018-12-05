@@ -31,13 +31,9 @@ Balls.  Ballsacks.  Is that one word?  Boobies.  8008135.
 
 
 /* F O U N D A T I O N */
-html {
-    min-height: 100%;
-    
-}
+
 
 body {
-    min-height: 100%;
     background-color: #0e0b0b;
 }
 
@@ -64,6 +60,7 @@ nav {
 .navbar {
     padding-bottom: 0px;
     padding-top: 0px;
+    
     
 }
 
@@ -98,12 +95,35 @@ nav {
     font-family: 'Abolition Regular';
     letter-spacing: .15rem;
     font-size: 1.7rem;
+    border-radius: 10px;
 }
 
 
 .nav-link:hover {
     color: #001946 !important;
     text-decoration: overline underline;
+}
+
+.dropdown {
+    border-radius: 10px;
+}
+
+.dropdown-menu {
+    background-color: #0b0e0e;
+    padding-bottom: 0;
+    padding-top:0;
+    
+    
+}
+
+.dropdown-item {
+    color: silver;
+    
+}
+
+.dropdown-item:hover {
+    background-color: #001946;
+    color: silver;
 }
 
 .modal {
@@ -356,14 +376,49 @@ nav {
     
 }
 
-/* M E D I A  G R I D */
+.media-cont {
+    margin-bottom: 24px;
+}
+
+#media-heading {
+    text-align: center;
+    font-family: 'Abolition Regular';
+    margin-top: 48px;
+    margin-bottom: 36px;
+    color: #003391;
+    border-bottom: 1px solid rgba(209,209,209,0.1);
+}
+
+
+.media {
+    padding: 0;
+}
+
+.yt-col {
+    padding:0;
+}
+
+.img-1 {
+    height: 100%;
+    
+}
+
+.img-1-col {
+    padding: 0;
+    height: 250px;
+/*
+    background-image: url('../img/controller.jpg_large');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+*/
+}
 
 .video-col {
-    padding-left: 0;
-    padding-right: 0;
-    width: auto;
-    height: auto;
+    padding: 0;
 }
+
 
 
 
@@ -673,8 +728,23 @@ input[type=submit]:hover {
 
 /* M E D I A  Q U E R Y  F U N  . . . */
 
+@media (max-width: 434.98px){
+    .navbar {
+        padding-right: 10px;
+    }
+
+    .deity-font-1 {
+        font-size: 1.4rem;
+    }
+
+    .clan-font-1 {
+        font-size: 1.3rem;
+    }
+}
+    
+    
 /* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
+@media (min-width: 435px) and (max-width: 575.98px) {
     .deity-font-2, .clan-font-2 {
         font-size: 4.5rem;
     }
@@ -683,12 +753,18 @@ input[type=submit]:hover {
         padding-top: 3px;
         padding-bottom: 3px;
     }
+    
+    .navbar {
+        padding-right: 16px;
+    }   
 
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-    
+    .navbar {
+        padding-right: 16px;
+    }
 
 }
 
@@ -697,21 +773,20 @@ input[type=submit]:hover {
     .deity-font-2, .clan-font-2 {
         font-size: 6rem;
     }
+    
+    .navbar {
+        padding-right: 16px;
+    }
 
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .contact-form-text, .contact-form-textarea {
-        width: 50%;
-    }
-
+   
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-    .contact-form-text, .contact-form-textarea {
-        width: 50%;
-    }
+   
 
 }

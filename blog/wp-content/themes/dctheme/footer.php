@@ -8,13 +8,13 @@
                     <h6 class="footer-h">Useful Links</h6>
                     <ul class="footer-ul">
                         <li class="footer-li-item">
-                            <a class="footer-link" href="/">Home</a>
+                            <a class="footer-link" href="/Deity-Clan-Website/">Home</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="/blog/">News</a>
+                            <a class="footer-link" href="/Deity-Clan-Website/blog/">News</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="/team.php">Team Info</a>
+                            <a class="footer-link" href="/Deity-Clan-Website/teams-page.php">Team Info</a>
                         </li>
                         <li class="footer-li-item">
                             <a class="footer-link" href="">Matches/Stats</a>
@@ -23,11 +23,11 @@
                             <a class="footer-link" href="">Media</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="/contact-form.php">Contact</a>
+                            <a class="footer-link" href="/Deity-Clan-Contact/contact-form.php">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-4 footer-col-4">
+                <div class="col-sm-6 footer-col-4">
                     <h6 class="footer-h">Contact</h6>
                     <form action="#" id="contact-form">
                         
@@ -93,10 +93,6 @@
 </div>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   
   </body>
 </html>

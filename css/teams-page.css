@@ -1,0 +1,53 @@
+.jumbotron {
+	background-image: url('../img/keyboard-gamer.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain contain;
+    height:350px;
+    width: 100%;
+    padding: 0;
+}
+
+#teams-heading {
+    text-align: center;
+    padding-top: 36px;
+    color: #003391;
+    font-family: 'Abolition Regular';
+    border-bottom: 1px solid rgba(209,209,209,0.1);
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.teams-container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+}
+
+.teams-row {
+    border: 1px solid rgba(209,209,209,0.2);
+}
+
+.teams-col {
+    width: 150px;
+    height: 150px;    
+    text-align: center;
+    background-color: blue;
+    padding-top: 70px;
+    transition: .3s;
+    
+}
+
+.teams-col:hover {
+    background-color: darkblue;
+}
+
+.teams-link {
+    
+}
+
+.teams-link:hover {
+    text-decoration: none;
+    
+}
+

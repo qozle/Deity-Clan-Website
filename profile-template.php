@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-
 <html>
-
     <head>
-        <title>Deity Clan | Team</title>
+        <title>Deity Clan | Profile Template</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
         <!-- J Q U E R Y  C D N -->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
         <!-- B O O T S T R A P 4  J S -->
@@ -15,25 +14,27 @@
         
         <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
+
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/team.css">
+        <link rel="stylesheet" href="css/profile-template.css">
         <link rel="icon" href="img/deitylogo1.png">
+        <script src="js/custom.js"></script>
+        
         
     </head>
 
-    <body> 
+    <body>
         <?php 
             define('WP_USE_THEMES', false);
             require('blog/wp-blog-header.php');
         ?>
         
-        
-        <!--  H E A D E R -->
+        <!-- N A V B A R -->
+
     
-            <!-- N A V B A R -->
             <nav class="navbar navbar-expand-lg sticky-top pl-0">
                 <a class="navbar-brand m-0" href="/">
-                    <img src="/img/deitylogo1.png" width=75px>
+                    <img src="img/deitylogo1.png" width=75px>
                     <span class="navbar-text">
                         <p class="deity-font-1 align-text-middle">DEITY</p>
                         <p class="clan-font-1 align-text-middle">CLAN</p>
@@ -43,7 +44,7 @@
                     <i class="fas fa-caret-square-down my-nav-icon"></i> MENU
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto align-text-middle pb-2">
+                    <ul class="navbar-nav ml-auto align-text-middle pb-2">
                         <li class="nav-item">
                             <a class="nav-link" href="/">HOME<span class="sr-only">(current)</span></a>
                         </li>
@@ -51,7 +52,7 @@
                             <a class="nav-link" href="/blog/">NEWS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/team.php">TEAM INFO</a>
+                            <a class="nav-link" href="/team.html">TEAM INFO</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">MATCHES AND STATS</a>
@@ -60,7 +61,7 @@
                             <a class="nav-link" href="#">MEDIA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact-form.php">CONTACT</a>
+                            <a class="nav-link" href="#">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -80,33 +81,29 @@
                         <div class="modal-body">
                             
                             <ul class="modal-list">
+
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/">HOME
-                                    </a>
+                                    <a class="modal-list-link" href="/">HOME</a>
                                 </li>
+
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/blog/" >NEWS
-                                    </a>
-                                        
+                                    <a class="modal-list-link" href="/blog/" >NEWS</a>                                        
                                 </li>
+
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/team.html">TEAM INFO
-                                    </a>
-                                        
+                                    <a class="modal-list-link" href="/team.html">TEAM INFO</a>                                        
                                 </li>
+
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">MATCHES AND STATS</a>
-                                        
+                                    <a class="modal-list-link" href="#">MATCHES AND STATS</a>                                        
                                 </li>
+
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">MEDIA
-                                    </a>
-                                        
+                                    <a class="modal-list-link" href="#">MEDIA</a>                                        
                                 </li>
+
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/contact-form.php">CONTACT
-                                    </a>
-                                        
+                                    <a class="modal-list-link" href="#">CONTACT</a>                                        
                                 </li>
                       
                             </ul>
@@ -117,130 +114,89 @@
 
            
         
-            <!-- J U M B O T R O N  -->
-                    <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
+            
+            
+
+
+
+        <!--  H E A D E R -->
+            <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
                 <div class="container" style="text-align: center;">
-                    <h1 class="deity-font-2 d-inline display-1">DEITY</h1>
-                    <h1 class="clan-font-2 d-inline display-1">CLAN</h1>
+                    <h1 class="deity-font-2 d-inline display-1" style="color:#003391;">DEITY</h1>
+                    <h1 class="clan-font-2 d-inline display-1" style="color:#003391;">CLAN</h1>
                 </div>
             </div>
         
 
 
 
+        <!-- M A I N   C O N T E N T -->
 
-        <!-- P L A Y E R S  G R I D -->
-        <div class="container players-cont">
-            <h1 class="display-3 players-heading">Meet The Team</h1>
-            <div class='row players-row'>
-                <div class='col-sm-12 col-lg-4 player-col'>
-                    <img src="img/team-members/Member_Calling_Card_Ghost3.png" class="img-fluid">
-                    <ul class="player-info-list">
-                        <li class="player-info-list-item">Handle:
-                        </li>
-                        <li class="player-info-list-item">Twitter:
-                        </li>
-                        <li class="player-info-list-item">Rank:
-                        </li>
-                        <li class="player-info-list-item">Favorite Color:
-                        </li>
-                        <li class="player-info-list-item">Blood Type:
-                        </li>
-                    </ul>
-                </div>
-                <div class='col-sm-6 col-lg-4 player-col'>
-                    <img src="img/team-members/Member_Calling_Card_Hanzo3.png" class="img-fluid">
-                    <ul class="player-info-list">
-                        <li class="player-info-list-item">Handle:
-                        </li>
-                        <li class="player-info-list-item">Twitter:
-                        </li>
-                        <li class="player-info-list-item">Rank:
-                        </li>
-                        <li class="player-info-list-item">Favorite Color:
-                        </li>
-                        <li class="player-info-list-item">Blood Type:
-                        </li>
-                    </ul>
-                </div>
-                <div class='col-sm-6 col-lg-4 player-col'>
-                    <img src="img/team-members/Member_Calling_Card_Liro3.png" class="img-fluid">
-                    <ul class="player-info-list">
-                        <li class="player-info-list-item">Handle:
-                        </li>
-                        <li class="player-info-list-item">Twitter:
-                        </li>
-                        <li class="player-info-list-item">Rank:
-                        </li>
-                        <li class="player-info-list-item">Favorite Color:
-                        </li>
-                        <li class="player-info-list-item">Blood Type:
-                        </li>
-                    </ul>
-                </div>
-                <div class='col-sm-6 col-lg-4 player-col'>
-                    <img src="img/team-members/Member_Calling_Card_Nukem3.png" class="img-fluid">
-                    <ul class="player-info-list">
-                        <li class="player-info-list-item">Handle:
-                        </li>
-                        <li class="player-info-list-item">Twitter:
-                        </li>
-                        <li class="player-info-list-item">Rank:
-                        </li>
-                        <li class="player-info-list-item">Favorite Color:
-                        </li>
-                        <li class="player-info-list-item">Blood Type:
-                        </li>
-                    </ul>
-                </div>
-                <div class='col-sm-6 col-lg-4 player-col'>
-                    <img src="img/team-members/Member_Calling_Card_Warrior3.png" class="img-fluid">
-                    <ul class="player-info-list">
-                        <li class="player-info-list-item">Handle:
-                        </li>
-                        <li class="player-info-list-item">Twitter:
-                        </li>
-                        <li class="player-info-list-item">Rank:
-                        </li>
-                        <li class="player-info-list-item">Favorite Color:
-                        </li>
-                        <li class="player-info-list-item">Blood Type:
-                        </li>
-                    </ul>
-                </div>
-                <div class='col-sm-6 col-lg-4 player-col'>
-                    <img src="img/team-members/Member_Calling_Card_Wolf_Eye3.png" class="img-fluid">
-                    <ul class="player-info-list">
-                        <li class="player-info-list-item">Handle:
-                        </li>
-                        <li class="player-info-list-item">Twitter:
-                        </li>
-                        <li class="player-info-list-item">Rank:
-                        </li>
-                        <li class="player-info-list-item">Favorite Color:
-                        </li>
-                        <li class="player-info-list-item">Blood Type:
-                        </li>
-                    </ul>
-                </div>
-                <div class='col-sm-6 col-lg-4 player-col'>
-                    <img src="img/team-members/Member_Calling_Card_Xcite3.png" class="img-fluid">
-                    <ul class="player-info-list">
-                        <li class="player-info-list-item">Handle:
-                        </li>
-                        <li class="player-info-list-item">Twitter:
-                        </li>
-                        <li class="player-info-list-item">Rank:
-                        </li>
-                        <li class="player-info-list-item">Favorite Color:
-                        </li>
-                        <li class="player-info-list-item">Blood Type:
-                        </li>
-                    </ul>
+        <div class="container-fluid" style="margin-top: 20px; text-align: center;">
+            <div class="row">
+                <div class="col">
+                    <h3 class="info">GHOST</h3>
+                    <p class="heading">GAMER HANDLE</p>
                 </div>
             </div>
+            <hr>
+             <div class="row">
+                <div class="col">
+                    <h3 class="info">JULISS MARTINEZ</h3>
+                    <p class="heading">PLAYER NAME</p>
+                </div>
+            </div>
+            <hr>
+             <div class="row">
+                <div class="col">
+                    <h3 class="info">FORTNITE</h3>
+                    <p class="heading">GAME</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h3 class="info">USA</h3>
+                    <p class="heading">COUNTRY</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li class="social-list-item">
+                            <a class="social-list-link" href="#facebook" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                                <p class="fab fa-facebook"></p>
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a class="social-list-link" href="#twitter" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                                <p class="fab fa-twitter"></p>
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a class="social-list-link" href="#instagram" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                                <p class="fab fa-instagram"></p>
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a class="social-list-link" href="#twitch" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                                <p class="fab fa-twitch"></p>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="heading">CONNECT WITH GHOST</p>
+                </div>
+            </div>
+
         </div>
 
+       <!--  <?php
+                 $number_of_posts = 5;
+                 $args = array( 'numberposts' => $number_of_posts );
+                 $posts = wp_get_recent_posts( $args );
+                
+                ?> -->
 
 
         <!-- F O O T E R -->
@@ -250,12 +206,6 @@
                 <div class="row">
                     <div class="col-sm-4 footer-col-1">
                         <h6 class="footer-h">Recent News</h6>
-                        <?php
-                $number_of_posts = 5;
-                $args = array( 'numberposts' => $number_of_posts );
-                $posts = wp_get_recent_posts( $args );
-                
-                ?>
                         <div class="footer-blog-div">
                             <?php echo "<a href='blog/index.php/".$posts[0]['post_name']."' class='footer-blog-link'>";?>
                             <p class="footer-blog-title"><?php echo $posts[0]['post_title']?></p>
@@ -301,7 +251,7 @@
                             <a class="footer-link" href="#">Media</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="/contact-form.php">Contact</a>
+                            <a class="footer-link" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -367,8 +317,10 @@
             
                 
             
-        </footer>
+        </footer> 
+    
+    </body>
+</html>    
 
-  </body>
 
-</html>
+

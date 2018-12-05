@@ -16,130 +16,16 @@
 
         <!-- O U R  C S S -->
         <link rel="stylesheet" href="css/style.css">
-        
+        <link rel="stylesheet" href="css/teams-page.css">
         <link rel="icon" href="img/deitylogo1.png">
         <script src="js/custom.js"></script>
+        
         
         
     </head>
 
     <body>
-        <?php 
-            define('WP_USE_THEMES', false);
-            require('blog/wp-blog-header.php');
-        ?>
-
-        <!-- N A V B A R -->
-
-    
-            <nav class="navbar navbar-expand-lg sticky-top pl-0">
-                <a class="navbar-brand m-0" href="/Deity-Clan-Website/">
-                    <img src="img/deitylogo1.png" width=75px>
-                    <span class="navbar-text">
-                        <p class="deity-font-1 align-text-middle">DEITY</p>
-                        <p class="clan-font-1 align-text-middle">CLAN</p>
-                    </span>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="modal" data-target=".menu-modal" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-caret-square-down my-nav-icon"></i> MENU
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto align-text-middle pb-2">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Deity-Clan-Website/">HOME<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Deity-Clan-Website/blog/">NEWS</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Teams</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="/Deity-Clan-Website/fortnite.php">Fortnite</a>
-                                <a class="dropdown-item" href="#">Black Ops 4</a>
-                                <a class="dropdown-item" href="#">Overwatch</a>
-                            </div>
-                          </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">MATCHES AND STATS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">MEDIA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Deity-Clan-Website/contact-form.php">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            
-           
-
-        <!-- Modal -->
-            <div class="modal fade menu-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content" style="margin-top: 200px;">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #003391;">
-                                <span class="fa fa-window-close" aria-hidden="true"></span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            
-                            <ul class="modal-list">
-
-                                <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/Deity-Clan-Website/">HOME</a>
-                                </li>
-
-                                <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/Deity-Clan-Website/blog/" >NEWS</a>                                        
-                                </li>
-
-                                <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/Deity-Clan-Website/teams-page.php">TEAMS</a>                                        
-                                </li>
-
-                                <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">MATCHES AND STATS</a>                                        
-                                </li>
-
-                                <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">MEDIA</a>                                        
-                                </li>
-
-                                <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/Deity-Clan-Website/contact-form.php">CONTACT</a>                                        
-                                </li>
-                      
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-           
-        
-            
-            
-
-
-
-        <!--  H E A D E R -->
-            <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
-                <div class="container" style="text-align: center;">
-                    <h1 class="deity-font-2 d-inline display-1">DEITY</h1>
-                    <h1 class="clan-font-2 d-inline display-1">CLAN</h1>
-                </div>
-            </div>
-        
-        <!-- s e c o n d a r y  h e a d e r 
-        <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
-            <div class="container" style="text-align: center;">
-                <h1 class="deity-font-2 d-inline display-1">DEITY</h1>
-                <h1 class="clan-font-2 d-inline display-1">CLAN</h1>
-            </div>
-        </div> -->
-
+       <?php include 'header-template.html'?>
 
 
         <!-- M A I N   C O N T E N T -->
@@ -149,15 +35,32 @@
                 $posts = wp_get_recent_posts( $args );
                 
                 ?>
+        
+        <h1 class='display-2' id="teams-heading">Explore the Teams</h1>
+           <!-- T E A M S  G R I D  -->
+        <div class="container teams-container">
+            <div class="row teams-row">
+                <div class="col-sm-6 teams-col">
+                    <a class="teams-link" href="/Deity-Clan-Website/fortnite.php">Fortnite</a>
+                </div>
+                <div class="col-sm-6 teams-col">
+                    <a class="teams-link" href="#">Call of Duty</a>
+                </div>
+                <div class="col-sm-4 teams-col">
+                    <a class="teams-link" href="#">NBA2K</a>
+                </div>
+                <div class="col-sm-4 teams-col">
+                    <a class="teams-link" href="#">Super Smash Bros</a>
+                </div>
+                <div class="col-sm-4 teams-col">
+                    <a class="teams-link" href="#">Overwatch</a>
+                </div>
+            </div>
+        </div>
 
 
-       <!-- F O O T E R -->
-        <?php
-                $number_of_posts = 5;
-                $args = array( 'numberposts' => $number_of_posts );
-                $posts = wp_get_recent_posts( $args );
-                
-                ?>
+        <!-- F O O T E R -->
+        
         <footer>
             <div class="container-fluid">
                 <div class="row">
