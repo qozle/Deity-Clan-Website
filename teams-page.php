@@ -41,7 +41,7 @@
         <div class="container teams-container">
             <div class="row teams-row">
                 <div class="col-sm-6 teams-col">
-                    <a class="teams-link" href="/Deity-Clan-Website/fortnite.php">Fortnite</a>
+                    <a class="teams-link" href="/fortnite.php">Fortnite</a>
                 </div>
                 <div class="col-sm-6 teams-col">
                     <a class="teams-link" href="#">Call of Duty</a>
