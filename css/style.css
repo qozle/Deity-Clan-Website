@@ -180,19 +180,19 @@ nav {
 
 /* =================== MAIN STYLES ================== */
 
-.jumbotron {
+.splash-img-div {
+    height: calc(100vh - 89px);
 	background-image: url('../img/purple-splash.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height:700px;
     padding: 0;
+    margin-bottom: 0;
 }
 
-.jumbotron div {
-    padding-top: 50px;
+#header-text-div {
+    text-align: center;
 }
-
 
 .deity-font-1 {
 	font: 2rem 'Bugfast';
@@ -277,7 +277,7 @@ nav {
     display: block;
     padding-left: 0;
     padding-right: 0;
-    background-image: url(../img/blog1.jpeg);
+    background-image: url(../img/filler.png);
     background-position: center;
     background-size: cover, cover;
     background-repeat: no-repeat;
@@ -301,7 +301,7 @@ nav {
     display: block;
     padding-left: 0;
     padding-right: 0;
-    background-image: url(../img/blog2.jpeg);
+    background-image: url(../img/filler.png);
     background-position: center center;
     background-size: cover, cover;
     background-repeat: no-repeat;
@@ -321,7 +321,7 @@ nav {
     display: block;
     padding-left: 0;
     padding-right: 0;
-    background-image: url(../img/blog3.jpeg);
+    background-image: url(../img/filler.png);
     background-position: center center;
     background-size: cover, cover;
     background-repeat: no-repeat;
@@ -341,7 +341,7 @@ nav {
     display: block;
     padding-left: 0;
     padding-right: 0;
-    background-image: url(../img/blog4.jpeg);
+    background-image: url(../img/filler.png);
     background-position: center center;
     background-size: cover, cover;
     background-repeat: no-repeat;
@@ -361,7 +361,7 @@ nav {
     display: block;
     padding-left: 0;
     padding-right: 0;
-    background-image: url(../img/blog5.jpeg);
+    background-image: url(../img/filler.png);
     background-position: center;
     background-size: cover, cover;
     background-repeat: no-repeat;
@@ -435,6 +435,7 @@ footer {
 .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
     color: #fff;
     text-align: center;
+    padding-bottom: 24px;
     
 }
 
@@ -457,12 +458,12 @@ footer {
     padding-bottom: 3px;
     font-size: 1.5rem;
     
-    border-bottom: 1px solid rgba(209,209,209,0.1);
+    border-bottom: 1px solid rgba(209,209,209,0.15);
     
 }
 
 .footer-blog-div {
-    margin-bottom: 2px;
+    margin-bottom: 16px;
     
 }
 
@@ -471,7 +472,7 @@ footer {
     border-radius: 10px;
     background-color: #001946;
     font-family: 'Abolition Regular';
-    font-size: 1.1em;
+    font-size: .9em;
     padding: 4px;
     margin-bottom: 0;
     display: inline-block;
@@ -481,7 +482,6 @@ footer {
 }
 
 .footer-blog-link {
-    color: blue;
 }
 
 .footer-blog-link:hover {
@@ -489,7 +489,7 @@ footer {
 }
 
 .footer-blog-title {
-    font-size:.9em;
+    font-size: .95em;
     margin-bottom: 0;
     font-weight: bold;
 }
@@ -519,7 +519,7 @@ footer {
 
 .footer-link {
     font-family: 'Abolition Regular';
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     
 }
 
@@ -583,18 +583,16 @@ input[type=submit]:hover {
     text-align: center;
     margin-bottom: 0;
     padding-bottom: 16px;
-    border-top: 1px solid rgba(209,209,209,0.05);
-    padding-top: 5px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(209,209,209,0.15);
+    margin-top: 32px;
     width: 95%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
 }
 
 .social-list-item {
     display: inline;
-    padding-right: 25px;
+    padding-right: 5px;
     color: #fff;
 }
 

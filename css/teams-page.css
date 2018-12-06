@@ -21,18 +21,24 @@
 .teams-container {
     margin-top: 60px;
     margin-bottom: 60px;
+    padding: 0;
     
 }
 
 .teams-row {
     border: 1px solid rgba(209,209,209,0.2);
+    padding: 0;
+    margin: 0;
 }
 
 .teams-col {
-    width: 150px;
+    width: 100%;
     height: 150px;    
     text-align: center;
-    background-color: blue;
+    background-image: url('../img/filler.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding-top: 70px;
     transition: .3s;
     
@@ -43,11 +49,42 @@
 }
 
 .teams-link {
-    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 50px;
 }
 
 .teams-link:hover {
     text-decoration: none;
+    
+}
+
+.team-info-col {
+    background-color: #0b0e0e;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.team-members-list {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    font-family: 'Abolition Regular';
+    font-size: 3em;
+    color: blue;
+}
+
+.team-members-list-item {
+    font-family: helvecta;
+    font-size: .32em;
+}
+
+.team-member-link {
     
 }
 
