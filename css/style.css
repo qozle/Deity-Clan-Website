@@ -69,12 +69,12 @@ nav {
 }
 
 .navbar-brand {
-    transition: 1s;
+    transition: .3s;
 }
 
 .navbar-brand:hover {
     background-color: rgba(0,25,70, 0.50);
-    transition: 1s;
+    
 }
 
 .my-nav-icon {
@@ -180,6 +180,33 @@ nav {
 
 /* =================== MAIN STYLES ================== */
 
+
+#splash-vid-cont {
+    height: calc(100vh - 89px);
+    
+}
+
+#splashvid {
+    height: calc(100vh - 89px);
+    width: 100%;
+    display: block;
+    object-fit: fill;
+    
+}
+
+#splash-img-cont {
+    display: none;
+    height: calc(100vh - 89px);
+	background-image: url('../img/purple-splash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin-bottom: 0;
+    
+}
+
+
 .splash-img-div {
     height: calc(100vh - 89px);
 	background-image: url('../img/purple-splash.jpg');
@@ -233,7 +260,7 @@ nav {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: 1s ease;
+    transition: .3s ease;
     background-color: #001946;
 }
 
@@ -277,7 +304,7 @@ nav {
     display: block;
     padding-left: 0;
     padding-right: 0;
-    background-image: url(../img/filler.png);
+    background-image: url(../img/blog1.jpeg);
     background-position: center;
     background-size: cover, cover;
     background-repeat: no-repeat;
@@ -301,7 +328,7 @@ nav {
     display: block;
     padding-left: 0;
     padding-right: 0;
-    background-image: url(../img/filler.png);
+    background-image: url(../img/blog2.jpeg);
     background-position: center center;
     background-size: cover, cover;
     background-repeat: no-repeat;
@@ -321,7 +348,7 @@ nav {
     display: block;
     padding-left: 0;
     padding-right: 0;
-    background-image: url(../img/filler.png);
+    background-image: url(../img/blog3.jpeg);
     background-position: center center;
     background-size: cover, cover;
     background-repeat: no-repeat;
@@ -341,7 +368,7 @@ nav {
     display: block;
     padding-left: 0;
     padding-right: 0;
-    background-image: url(../img/filler.png);
+    background-image: url(../img/blog4.jpeg);
     background-position: center center;
     background-size: cover, cover;
     background-repeat: no-repeat;
@@ -361,7 +388,7 @@ nav {
     display: block;
     padding-left: 0;
     padding-right: 0;
-    background-image: url(../img/filler.png);
+    background-image: url(../img/blog5.jpeg);
     background-position: center;
     background-size: cover, cover;
     background-repeat: no-repeat;
@@ -375,6 +402,14 @@ nav {
     color: silver;
     
 }
+
+.feed-cont {
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+
+/* M E D I A  G R I D */
 
 .media-cont {
     margin-bottom: 24px;
@@ -398,22 +433,41 @@ nav {
     padding:0;
 }
 
+.img-1-col {
+    background-image: url('../img/assets/1%20(1).jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-2-col {
+    background-image: url('../img/assets/1.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-3-col {
+    background-image: url('../img/assets/2.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    padding-left: 0;
+    padding-right: 0;
+}
+/*
 .img-1 {
     height: 100%;
     
 }
-
-.img-1-col {
-    padding: 0;
-    height: 250px;
-/*
-    background-image: url('../img/controller.jpg_large');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 200px;
 */
-}
 
 .video-col {
     padding: 0;

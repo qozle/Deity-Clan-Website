@@ -15,4 +15,13 @@ $(document).ready(function() {
     $('.modal-list-link').click(function() {
         $('.menu-modal').modal('toggle');
     })
+    
+    var splashVid = document.getElementById('splashvid');
+    splashVid.addEventListener('ended', function() {
+        $('#splash-img-cont').fadeIn('slow');
+        $('#splash-vid-cont').hide();
     });
+    
+
+    });
+

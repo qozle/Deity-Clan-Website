@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
     <head>
         <title>Deity Clan | Home</title>
@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="css/style.css">
         
         <link rel="icon" href="img/deitylogo1.png">
-        <script src="js/custom.js"></script>
+        
         
         
     </head>
@@ -26,10 +26,18 @@
     <body>
         <?php include 'header-template.html'?>
         
+        <!-- S P L A S H  V I D E O  A N D  I M A G E -->
+        <div id='splash-vid-cont'>
+            <video src='img/assets/vid1.mp4' autoplay='true' muted='true' preload='metadata' id='splashvid'></video>
+        </div>
         
-
-
-
+        <div id='splash-img-cont'>
+            <div id='header-text-div'>
+                <h1 class="deity-font-2 d-inline display-1">DEITY</h1>
+                <h1 class="clan-font-2 d-inline display-1">CLAN</h1>
+            </div>
+        </div>
+        
         <!-- M A I N   C O N T E N T -->
         
         
@@ -53,7 +61,7 @@
                 ?>
                 
                 <!-- B L O G  I T E M  1 -->    
-                <?php echo "<a href='blog/index.php/".$posts[0]['post_name']."' class='col-sm-6 blog-item-1'>";?>
+                <?php echo "<a href='blog/index.php/".$posts[0]['post_name']."' class='col-sm-8 blog-item-1'>";?>
                     <h2 class="blog-title"><?php echo $posts[0]['post_title']?></h2>
                     <?php foreach(get_the_category($posts[0]['ID']) as $category) {
                         echo "<p class='blog-category'>".$category->name."</p>";};?>
@@ -61,8 +69,13 @@
                     <div class='overlay'></div>
                 <?php echo "</a>";?>
                 
+                <!-- T W I T T E R  F E E D -->
+                <div class='col-sm-4 feed-cont'>
+                    <a class="twitter-timeline" data-height=300 data-dnt="true" data-theme="dark" data-cards="true" href="https://twitter.com/deitygclan?ref_src=twsrc%5Etfw">Tweets by deitygclan</a> <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                
                 <!-- B L O G  I T E M  2 -->
-                <?php echo "<a href='blog/index.php/".$posts[1]['post_name']."' class='col-sm-6 blog-item-2'>";?>
+                <?php echo "<a href='blog/index.php/".$posts[1]['post_name']."' class='col-sm-4 blog-item-2'>";?>
                     <h2 class="blog-title"><?php echo $posts[1]['post_title']?></h2>
                     <?php foreach(get_the_category($posts[1]['ID']) as $category) {
                         echo "<p class='blog-category'>".$category->name."</p>";};?>
@@ -70,8 +83,9 @@
                     <div class='overlay'></div>
                 <?php echo "</a>";?>
                 
+                
                 <!-- B L O G  I T E M  3 -->
-                <?php echo "<a href='blog/index.php/".$posts[2]['post_name']."' class='col-sm-4 col-lg-12 blog-item-3'>";?>
+                <?php echo "<a href='blog/index.php/".$posts[2]['post_name']."' class='col-sm-8 blog-item-3'>";?>
                     <h3 class="blog-title"><?php echo $posts[2]['post_title']?></h3>
                     <?php foreach(get_the_category($posts[2]['ID']) as $category) {
                         echo "<p class='blog-category'>".$category->name."</p>";};?>
@@ -80,7 +94,7 @@
                 <?php echo "</a>";?>
                 
                 <!-- B L O G  I T E M  4 -->
-                <?php echo "<a href='blog/index.php/".$posts[3]['post_name']."' class='col-sm-4 col-lg-6 blog-item-4'>";?>
+                <?php echo "<a href='blog/index.php/".$posts[3]['post_name']."' class='col-sm-6 blog-item-4'>";?>
                 <h3 class="blog-title"><?php echo $posts[3]['post_title']?></h3>
                 <?php foreach(get_the_category($posts[3]['ID']) as $category) {
                     echo "<p class='blog-category'>".$category->name."</p>";};?>    
@@ -89,13 +103,15 @@
                 <?php echo "</a>";?>
                 
                 <!-- B L O G  I T E M  5 -->
-                <?php echo "<a href='blog/index.php/".$posts[4]['post_name']."' class='col-sm-4 col-lg-6 blog-item-5'>";?>
+                <?php echo "<a href='blog/index.php/".$posts[4]['post_name']."' class='col-sm-6 blog-item-5'>";?>
                     <h3 class="blog-title"><?php echo $posts[4]['post_title']?></h3>
                     <?php foreach(get_the_category($posts[4]['ID']) as $category) {
                         echo "<p class='blog-category'>".$category->name."</p>";};?>
                 <p class='blog-date'><?php echo get_the_time('F j, Y', $posts[4]['ID']);?></p>
                     <div class='overlay'></div>
-                <?php echo "</a>";?> 
+                <?php echo "</a>";?>
+                
+               
                 </div>
             </div>
                 
@@ -106,62 +122,47 @@
             
             
     	<div class="container" style="margin-top: 60px;margin-bottom:60px;border: 2px solid rgba(142,142,142,.25);border-radius:5px;background-color: rgba(209,209,209,.08);">
-            <h4 class="text-center" style="color:white;padding-bottom:20px;padding-top:4px;">Highlights</h4>
+            <h4 class="text-center" style="color:white;padding-bottom:12px;padding-top:12px;">Highlights</h4>
             <div class="row">
-                
-                
-                <div class="col-12 col-sm-6 yt-col">
-                    <div class="embed-responsive embed-responsive-16by9 media">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1YTaiaraFoE?modestbranding=1"></iframe> 
-                      
-                    </div>
-                </div>
-                
-                <div class="col-12 col-sm-6 yt-col">
-                    <div class="embed-responsive embed-responsive-16by9 media">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gkdJH7BMqkA?modestbranding=1"></iframe> 
-                      
-                    </div>
-                </div>
-                
-                <div class="col-sm-6 img-1-col">
-                    <img src="img/controller.jpg_large" class='img-fluid img-1'>
-                </div>
-                
-                <div class="col-sm-6" style="color:white;padding-top:75px;">
-                    More images here.
-                    
-                </div>
-            
-                <div class="col-12 col-sm-6 col-lg-4 video-col">
+                <!-- Video 1 -->
+                <div class="col-12 order-1 col-sm-6 yt-col">
                     <div class="embed-responsive embed-responsive-16by9">
-                      <video src="/Deity-Clan-Website/vids/1.mp4" controls></video>
+                      <video src="img/assets/vid3.mp4" controls></video>
                     </div>
                 </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 video-col">
+                <!-- Image 1 -->
+                <div class="col-12 order-2 col-sm-4 order-sm-4 img-1-col"></div>
+                <!-- Video 2 -->
+                <div class="col-12 order-3 col-sm-6 order-sm-2 yt-col">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <video src="img/assets/vid2.mp4" controls></video>
+                    </div>
+                </div>
+                
+                <!-- Image 2 -->
+                <div class="col-12 order-4 col-sm-4 order-sm-5 img-2-col"></div>
+                <!-- Video 3 -->
+                <div class="col-12 order-5 col-sm-6 order-sm-6 video-col">
                     <div class="embed-responsive embed-responsive-16by9">
                       <video src="/Deity-Clan-Website/vids/2.mp4" controls></video>
                     </div>
                 </div>
-            
-                <div class="col-12 col-sm-6 col-lg-4 video-col">
+                <!-- Image 3 -->
+                <div class="col-12 order-6 col-sm-4 order-sm-3 img-3-col"></div>
+                <!-- Video 4 -->
+                <div class="col-12 order-7 col-sm-6 order-sm-7 video-col">
                     <div class="embed-responsive embed-responsive-16by9">
                       <video src="/Deity-Clan-Website/vids/3.mp4" controls></video>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-4 video-col">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <video src="/Deity-Clan-Website/vids/4.mp4" controls></video>
-                    </div>
-                </div>
+                
             </div>
         </div>
 
      
 
        <?php include 'footer-template.html'?>
-        </div>
+        <script src="js/custom.js"></script>
     </body>
 </html>    

@@ -26,13 +26,12 @@
 
     <body>
        <?php include 'header-template.html'?>
+        <?php include 'secondary-header-template.html'?>
 
 
         <!-- M A I N   C O N T E N T -->
-      
-        
-        <h1 class='display-2' id="teams-heading">Explore the Teams</h1>
-           <!-- T E A M S  G R I D  -->
+        <h1 class='display-2' id="teams-heading">Deity Clan's Teams</h1>
+        <!-- T E A M S  G R I D  -->
         <div class="container teams-container">
             <div class="row teams-row">
                 

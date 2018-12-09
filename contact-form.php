@@ -25,6 +25,7 @@
 
     <body>
         <?php include 'header-template.html'?>
+        <?php include 'secondary-header-template.html'?>
         
         <!-- s e c o n d a r y  h e a d e r 
         <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">

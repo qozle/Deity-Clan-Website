@@ -54,6 +54,22 @@
                 
             </div>
         </div>
+        
+        <div class='container' id='explore-cont'>
+            <div class='row' id='explore-row'>
+                <div class='col-4 explore-col'>
+                    <a href='#' class='explore-link'><h2>Overwatch</h2></a>
+                </div>
+                
+                <div class='col-4 explore-col'>
+                    <a href='#' class='explore-link'><h2>All Teams</h2></a>
+                </div>
+                
+                <div class='col-4 explore-col'>
+                    <a href='#' class='explore-link'><h2>Fortnite</h2></a>
+                </div>
+            </div>
+        </div>
 
 
         <?php include 'footer-template.html'?>
