@@ -35,69 +35,132 @@
     color: #d1d1d1;
     border-bottom: 1px solid rgba(209,209,209,.1);
     padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 0;
+    font-size: .95em;
+    text-align: justify;
+    
 }
 
 .roster-heading {
     text-align: center;
     font-family: 'Bugfast';
     color: #003391;
-    padding-top: 32px;
-    padding-bottom: 16px;
-}
-
-.player-link {
-    position: absolute;
-    top: 55px;
-    bottom: 16px;
-    left: 9px;
-    right: 9px;
-    font-family: "Abolition Regular";
-    font-size: 1.3rem;
-    padding-left: 10px;
-    padding-top: 50px;
-    transition: .3s;
-}
-
-.player-link:hover {
-    text-decoration: none;
-}
-
-.player-arrow {
-    padding-left: 5px;
+    padding-top: 16px;
+    padding-bottom: 32px;
 }
 
 .players-row {
     border: 1px solid rgba(209,209,209,.1);
     border-radius: 10px;
+    margin: 0;
 }
 
 .player-col {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.player-link {
+    
+}
+
+.img-txt-cont {
+    display: block;
+    margin: auto;
+    
+}
+
+.player-image {
+    
+}
+
+.player-p {
+    
+}
+
+
+
+
+
+/*
+.player-col {
+    height: 250px;
+    padding-left: 0;
+    padding-right: 0;
     border-radius: 10px;
+}
+
+.player-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 16px;
+    border-radius: 10px;
+    
+}
+
+.player-link-1 {
+    background-image: url('../img/team-members/Member_Calling_Card_Ghost3.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.player-link-2 {
+    background-image: url('../img/team-members/Member_Calling_Card_Nukem3.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.player-link-3 {
+    background-image: url('../img/team-members/Member_Calling_Card_Warrior3.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.player-link-4 {
+    background-image: url('../img/filler.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.player-link:hover, player-link-1:hover {
+    text-decoration: none;
+}
+
+.player-link-p {
+
+    padding-top: 75px;
+    padding-left: 35px;
+    font-family: "Abolition Regular";
+    font-size: 1.3rem;
+    transition: .3s;
+    margin-bottom: 0;
+}
+
+.player-link-p-1 {
+    
 }
 
 .player-img-1 {
     
 }
 
-.player-col-2 {
-    
-}
-
-.player-col-3 {
-    
-}
-
 .player-img {
-    width: 100px;
-    height: 100px;
-    
+
 }
+
+.player-arrow {
+    padding-left: 5px;
+}
+*/
 
 /* E X P L O R E  M E N U */
 
@@ -112,14 +175,14 @@
 .explore-col {
     text-align: center;
     width: 200px;
-    height: 200px;
+    height: 100px;
     padding-top: 80px;
     background-color: #0e0f0f;
     border: 1px solid rgba(209,209,209,.1);
     font-family: 'Abolition Regular';
     color: #003391;
     margin-bottom: 24px;
-    transition: .3s;
+    transition: 0s;
 }
 
 .explore-link {
@@ -128,7 +191,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding-top: 75px;
+    padding-top: 25px;
     
 }
 
@@ -148,24 +211,34 @@
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-
+    
+    .player-image {
+        max-height: 238px;
+        display: block;
+        margin: auto;
+    }
+    
+    .team-intro-text {
+        min-height: 527px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-    
+    .team-intro-text {
+        min-height: 0;
+    }
 
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-    
-
+  
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-   
+    
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/

@@ -21,7 +21,20 @@ $(document).ready(function() {
         $('#splash-img-cont').fadeIn('slow');
         $('#splash-vid-cont').hide();
     });
-    
+   twttr.ready( function(twttr){
+       twttr.events.bind('rendered',function (event) { 
 
+    var tgt = event.target;
+
+    $(tgt).contents().find(".timeline-Widget").css({  
+        "border":"none",
+        "border-radius":"0px",
+        "max-width":"100%"
     });
+
+  });
+
+});    
+
+});
 

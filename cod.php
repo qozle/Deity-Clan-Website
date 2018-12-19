@@ -36,21 +36,76 @@
             <h1 class="display-5 team-intro-heading-1">Deity<i class="team-intro-heading-2" style="color:#003391;">CLAN | </i><i class="team-intro-heading-2">Call of Duty</i></h1>
             <p class="team-intro-text">Deity Clan was formed by asdl;fasdf in the year asl;kdf;laskdf of our lord.  They are really cool and everyone likes them.  They have lots of great content and are the next up and coming big team in esports.  They will smash the fortenite scene just like you will smash all the like buttons everywhere forever.  Ok this is enough fluff text.  Actually, after looking at this for a while, I'm realizing that I'm going to need a lot more filler text here.  I could think of a whole bunch of things to wirte- I could just put some lorem ipsum right here right now but honestly I can type so fast that this isn't so bad.  IT's harder to think of things to type, IU think, though maybe if I recite something I will start thinking faster than I am typing.  I guess my attention is split btween typing and thinking about what the hell I'm going to say so it's like going between two different modes, which is different from speaking I guess, but it can also be a little challenging to just start talking and...not stop?  like not leave any space or time or delays inbetween words and phrases.  Omk maybe this'll be good enough.</p>
             <h1 class="display-4 roster-heading">Roster</h1>
+            
             <div class='row players-row'>                
-                <div class='col-sm-12 col-lg-12 player-col'>
-                    <img src="img/team-members/Member_Calling_Card_Ghost3.png" class="img-fluid player-img-1">
-                    <a href="#" class="player-link player-link-1">Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></a>
+                
+                <div class='col-sm-6 player-col'>
+                    <a class='player-link' href='#'>
+                        <div class='img-txt-cont'>
+                        <img src='img/team-members/Member_Calling_Card_Ghost3.png' class='player-image img-fluid'>
+                        <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
+                        </div>
+                    </a>
                 </div>
-                <div class='col-sm-6 col-lg-6 player-col'>
-                    <img src="img/team-members/Member_Calling_Card_Nukem3.png" class="img-fluid">
-                    <a href="#" class="player-link">Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></a>
+                
+                <div class='col-sm-6 player-col'>
+                    <a class='player-link' href='#'>
+                        <div class='img-txt-cont'>
+                        <img src='img/team-members/Member_Calling_Card_Nukem3.png' class='player-image img-fluid'>
+                        <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
+                        </div>
+                    </a>
                 </div>
-                <div class='col-sm-6 col-lg-6 player-col'>
-                    <img src="img/filler.png" class="img-fluid"><a href="#" class="player-link">Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></a>
+                
+                <div class='col-sm-6 player-col'>
+                    <a class='player-link' href='#'>
+                        <div class='img-txt-cont'>
+                        <img src='img/team-members/Member_Calling_Card_Warrior3.png' class='player-image img-fluid'>
+                        <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
+                        </div>
+                    </a>
                 </div>
-                <div class='col-sm-6 col-lg-6 player-col'>
-                    <img src="img/team-members/Member_Calling_Card_Warrior3.png" class="img-fluid"><a href="#" class="player-link">Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></a>
+                
+                <div class='col-sm-6 player-col'>
+                    <a class='player-link' href='#'>
+                        <div class='img-txt-cont'>
+                        <img src='img/filler.png' class='player-image img-fluid'>
+                        <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
+                        </div>
+                    </a>
                 </div>
+
+                
+                
+                
+                
+                
+                
+                <!--
+                <div class='col-sm-6 player-col player-col-1'>
+                    <a href="#" class="player-link player-link-1">
+                        <p class="player-link-p player-link-p-1">*Team Captain*<br>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow player-arrow-1"></i></p>
+                    </a>
+                </div>
+                
+                <div class='col-sm-6 player-col player-col-2'>
+                    <a href="#" class="player-link player-link-2">
+                        <p class='player-link-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
+                    </a>
+                </div>
+                
+                <div class='col-sm-6 player-col player-col-3'>
+                    <a href="#" class="player-link player-link-3">
+                        <p class='player-link-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
+                    </a>
+                </div>
+                
+                <div class='col-sm-6 player-col player-col-4'>
+                    <a href="#" class="player-link player-link-4">
+                        <p class='player-link-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
+                    </a>
+                </div>
+-->
                 
             </div>
         </div>
