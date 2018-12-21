@@ -39,7 +39,7 @@
             <h1 class="display-4 roster-heading">Roster</h1>
             <div class='row players-row'>                
                 <div class='col-sm-6 player-col'>
-                    <a class='player-link' href='#'>
+                    <a class='player-link' href='player-profiles/Liro-profile.php'>
                         <div class='img-txt-cont'>
                             <img src='img/team-members/Member_Calling_Card_Liro3.png' class='player-image img-fluid'>
                             <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i>
@@ -51,7 +51,7 @@
                 </div>
                 
                 <div class='col-sm-6 player-col'>
-                    <a class='player-link' href='#'>
+                    <a class='player-link' href='player-profiles/WolfEye-profile.php'>
                         <div class='img-txt-cont'>
                             <img src='img/team-members/Member_Calling_Card_Wolf_Eye3.png' class='player-image img-fluid'>
                             <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
@@ -60,7 +60,7 @@
                 </div>
                 
                 <div class='col-sm-6 player-col'>
-                    <a class='player-link' href='#'>
+                    <a class='player-link' href='player-profiles/XCite-profile.php'>
                         <div class='img-txt-cont'>
                             <img src='img/team-members/Member_Calling_Card_Xcite3.png' class='player-image img-fluid'>
                             <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
@@ -69,6 +69,22 @@
                 </div>
                 
                 
+            </div>
+        </div>
+        
+        <div class='container' id='explore-cont'>
+            <div class='row' id='explore-row'>
+                <div class='col-4 explore-col'>
+                    <a href='cod.php' class='explore-link'><h2>Call of Duty</h2></a>
+                </div>
+                
+                <div class='col-4 explore-col'>
+                    <a href='teams-page.php' class='explore-link'><h2>All Teams</h2></a>
+                </div>
+                
+                <div class='col-4 explore-col'>
+                    <a href='nba2k.php' class='explore-link'><h2>NBA 2K</h2></a>
+                </div>
             </div>
         </div>
 

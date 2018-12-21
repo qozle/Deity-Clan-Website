@@ -40,7 +40,7 @@
             <div class='row players-row'>                
                 
                 <div class='col-sm-6 player-col'>
-                    <a class='player-link' href='#'>
+                    <a class='player-link' href='player-profiles/Ghost-profile.php'>
                         <div class='img-txt-cont'>
                             <img src='img/team-members/Member_Calling_Card_Ghost3.png' class='player-image img-fluid'>
                             <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i>
@@ -52,7 +52,7 @@
                 </div>
                 
                 <div class='col-sm-6 player-col'>
-                    <a class='player-link' href='#'>
+                    <a class='player-link' href='player-profiles/Nukem-profile.php'>
                         <div class='img-txt-cont'>
                             <img src='img/team-members/Member_Calling_Card_Nukem3.png' class='player-image img-fluid'>
                             <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
@@ -61,7 +61,7 @@
                 </div>
                 
                 <div class='col-sm-6 player-col'>
-                    <a class='player-link' href='#'>
+                    <a class='player-link' href='player-profiles/Warrior-profile.php'>
                         <div class='img-txt-cont'>
                             <img src='img/team-members/Member_Calling_Card_Warrior3.png' class='player-image img-fluid'>
                             <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
@@ -70,7 +70,7 @@
                 </div>
                 
                 <div class='col-sm-6 player-col'>
-                    <a class='player-link' href='#'>
+                    <a class='player-link' href='player-profiles/Warrior-profile.php'>
                         <div class='img-txt-cont'>
                             <img src='img/filler.png' class='player-image img-fluid'>
                             <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
@@ -84,15 +84,15 @@
         <div class='container' id='explore-cont'>
             <div class='row' id='explore-row'>
                 <div class='col-4 explore-col'>
-                    <a href='#' class='explore-link'><h2>Overwatch</h2></a>
+                    <a href='overwatch.php' class='explore-link'><h2>Overwatch</h2></a>
                 </div>
                 
                 <div class='col-4 explore-col'>
-                    <a href='#' class='explore-link'><h2>All Teams</h2></a>
+                    <a href='teams-page.php' class='explore-link'><h2>All Teams</h2></a>
                 </div>
                 
                 <div class='col-4 explore-col'>
-                    <a href='#' class='explore-link'><h2>Fortnite</h2></a>
+                    <a href='fortnite.php' class='explore-link'><h2>Fortnite</h2></a>
                 </div>
             </div>
         </div>
