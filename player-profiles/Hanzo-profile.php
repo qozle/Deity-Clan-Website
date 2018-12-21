@@ -15,10 +15,10 @@
         <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/profile-template.css">
-        <link rel="icon" href="img/deitylogo1.png">
-        <script src="js/custom.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/profile-template.css">
+        <link rel="icon" href="../img/deitylogo1.png">
+        <script src="../js/custom.js"></script>
         
         
     </head>
@@ -26,11 +26,11 @@
     <body>
         <?php 
             define('WP_USE_THEMES', false);
-            require('blog/wp-blog-header.php');
+            require('../blog/wp-blog-header.php');
         ?>
         
-        <?php include 'header-template.html'?>
-        <?php include 'secondary-header-template.html'?>
+        <?php include '../header-template.html'?>
+        <?php include '../secondary-header-template.html'?>
 
 
 
@@ -39,21 +39,27 @@
         <div class="container-fluid" style="margin-top: 20px; text-align: center;">
             <div class="row">
                 <div class="col">
-                    <h3 class="info">GHOST</h3>
+                    <img class="calling-card" src="../img/team-members/Member_Calling_Card_Hanzo3.png" alt="Hanzo">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h3 class="info">HANZO</h3>
                     <p class="heading">GAMER HANDLE</p>
                 </div>
             </div>
             <hr>
              <div class="row">
                 <div class="col">
-                    <h3 class="info">JULISS MARTINEZ</h3>
+                    <h3 class="info">LUIS</h3>
                     <p class="heading">PLAYER NAME</p>
                 </div>
             </div>
             <hr>
              <div class="row">
                 <div class="col">
-                    <h3 class="info">FORTNITE</h3>
+                    <h3 class="info">OVERWATCH</h3>
                     <p class="heading">GAME</p>
                 </div>
             </div>

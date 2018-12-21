@@ -40,10 +40,10 @@
                 </div>
                 <div class='col-sm-6 team-info-col'>
                     <ul class='team-members-list'>The Team:
-                        <li class='team-members-list-item'><a href='#' class='team-member-link'>Ghost *CAPTAIN*</a></li>
-                        <li class='team-members-list-item'><a href='#' class='team-member-link'>KillSwitch</a></li>
-                        <li class='team-members-list-item'><a href='#' class='team-member-link'>Nukem</a></li>
-                        <li class='team-members-list-item'><a href='#' class='team-member-link'>Warrior</a></li>
+                        <li class='team-members-list-item'><a href='player-profiles/Ghost-profile.php' class='team-member-link'>Ghost *CAPTAIN*</a></li>
+                        <li class='team-members-list-item'><a href='player-profiles/KillSwitch-profile.php' class='team-member-link'>KillSwitch</a></li>
+                        <li class='team-members-list-item'><a href='player-profiles/Nukem-profile.php' class='team-member-link'>Nukem</a></li>
+                        <li class='team-members-list-item'><a href='player-profiles/Warrior-profile.pp' class='team-member-link'>Warrior</a></li>
                     </ul>
                 </div>
                 
@@ -52,9 +52,9 @@
                 </div>
                 <div class='col-sm-6 team-info-col'>
                     <ul class='team-members-list'>The Team:
-                        <li class='team-members-list-item'><a href='#' class='team-member-link'>Liro *CAPTAIN*</a></li>
-                        <li class='team-members-list-item'><a href='#' class='team-member-link'>WolfEye</a></li>
-                        <li class='team-members-list-item'><a href='#' class='team-member-link'>XCite</a></li>
+                        <li class='team-members-list-item'><a href='player-profiles/Liro-profile.php' class='team-member-link'>Liro *CAPTAIN*</a></li>
+                        <li class='team-members-list-item'><a href='player-profiles/WolfEye-profile.php' class='team-member-link'>WolfEye</a></li>
+                        <li class='team-members-list-item'><a href='player-profiles/XCite-profile.php' class='team-member-link'>XCite</a></li>
                     </ul>
                 </div>
                 
@@ -64,8 +64,8 @@
                 </div>
                 <div class='col-sm-6 team-info-col'>
                     <ul class='team-members-list'>The Team:
-                        <li class='team-members-list-item'><a href='#' class='team-member-link'>Restart</a></li>
-                        <li class='team-members-list-item'><a href='#' class='team-member-link'>CStack</a></li>
+                        <li class='team-members-list-item'><a href='player-profiles/Restart-profile.php' class='team-member-link'>Restart</a></li>
+                        <li class='team-members-list-item'><a href='player-profiles/CStack-profile.php' class='team-member-link'>CStack</a></li>
                     </ul>
                 </div>
                 
@@ -74,7 +74,7 @@
                 </div>
                 <div class='col-sm-6 team-info-col'>
                     <ul class='team-members-list'>The Team:
-                        <li class='team-members-list-item'><a href='#' class='team-member-link'>Ace</a></li>
+                        <li class='team-members-list-item'><a href='player-profiles/Ace-profile.php' class='team-member-link'>Ace</a></li>
                     </ul>
                 </div>
                 
@@ -83,8 +83,8 @@
                 </div>
                 <div class='col-sm-6 team-info-col'>
                     <ul class='team-members-list'>The Team:
-                        <li class='team-members-list-item'><a href='#' class='team-member-link'>Hanzo</a></li>
-                        <li class='team-members-list-item'><a href='#' class='team-member-link'>Re-Call</a></li>
+                        <li class='team-members-list-item'><a href='player-profiles/Hanzo-profile.php' class='team-member-link'>Hanzo</a></li>
+                        <li class='team-members-list-item'><a href='player-profiles/Re-Call-profile.php' class='team-member-link'>Re-Call</a></li>
                     </ul>
                 </div>
             </div>
