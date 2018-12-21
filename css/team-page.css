@@ -58,8 +58,10 @@
 }
 
 .player-col {
-    margin-top: 16px;
+    margin-top: 0;
     margin-bottom: 16px;
+    border-radius: 10px;
+   
 }
 
 .player-link {
@@ -67,8 +69,10 @@
 }
 
 .img-txt-cont {
+    position: relative; 
     display: block;
     margin: auto;
+    
     
 }
 
@@ -76,91 +80,13 @@
     
 }
 
-.player-p {
-    
-}
 
-
-
-
-
-/*
-.player-col {
-    height: 250px;
-    padding-left: 0;
-    padding-right: 0;
-    border-radius: 10px;
-}
-
-.player-link {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 16px;
-    border-radius: 10px;
-    
-}
-
-.player-link-1 {
-    background-image: url('../img/team-members/Member_Calling_Card_Ghost3.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.player-link-2 {
-    background-image: url('../img/team-members/Member_Calling_Card_Nukem3.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.player-link-3 {
-    background-image: url('../img/team-members/Member_Calling_Card_Warrior3.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.player-link-4 {
-    background-image: url('../img/filler.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.player-link:hover, player-link-1:hover {
-    text-decoration: none;
-}
-
-.player-link-p {
-
-    padding-top: 75px;
-    padding-left: 35px;
-    font-family: "Abolition Regular";
-    font-size: 1.3rem;
-    transition: .3s;
-    margin-bottom: 0;
-}
-
-.player-link-p-1 {
-    
-}
-
-.player-img-1 {
-    
-}
-
-.player-img {
-
-}
 
 .player-arrow {
-    padding-left: 5px;
+    margin-left: 4px;
 }
-*/
+
+
 
 /* E X P L O R E  M E N U */
 
@@ -221,6 +147,15 @@
     .team-intro-text {
         min-height: 527px;
     }
+    
+    .player-p {
+        position: absolute;
+        top: 100px;
+        right: 60%;
+        font-family: 'Abolition Regular';
+        font-size: 1.4em
+        
+    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -228,21 +163,47 @@
     .team-intro-text {
         min-height: 0;
     }
+    
+    .player-p {
+        position: absolute;
+        top: 50px;
+        right: 50%;
+        font-size: 1.1em;
+        font-family: 'Abolition Regular';
+    }
 
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-  
+    .player-p {
+        position: absolute;
+        top: 80px;
+        right: 60%;
+        font-family: 'Abolition Regular';
+        font-size: 1.2em;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    
+    .player-p {
+        position: absolute;
+        top: 100px;
+        right: 60%;
+        font-size: 1.6em; 
+        font-family: 'Abolition Regular';
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-   
+   .player-p {
+       position: absolute;
+       top: 100px;
+       right: 60%;
+       font-family: 'Abolition Regular';
+       font-size: 1.8em
+    }
 
 }

@@ -42,8 +42,8 @@
                 <div class='col-sm-6 player-col'>
                     <a class='player-link' href='#'>
                         <div class='img-txt-cont'>
-                        <img src='img/team-members/Member_Calling_Card_Ghost3.png' class='player-image img-fluid'>
-                        <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
+                            <img src='img/team-members/Member_Calling_Card_Ghost3.png' class='player-image img-fluid'>
+                            <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
                         </div>
                     </a>
                 </div>
@@ -51,8 +51,8 @@
                 <div class='col-sm-6 player-col'>
                     <a class='player-link' href='#'>
                         <div class='img-txt-cont'>
-                        <img src='img/team-members/Member_Calling_Card_Nukem3.png' class='player-image img-fluid'>
-                        <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
+                            <img src='img/team-members/Member_Calling_Card_Nukem3.png' class='player-image img-fluid'>
+                            <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
                         </div>
                     </a>
                 </div>
@@ -60,8 +60,8 @@
                 <div class='col-sm-6 player-col'>
                     <a class='player-link' href='#'>
                         <div class='img-txt-cont'>
-                        <img src='img/team-members/Member_Calling_Card_Warrior3.png' class='player-image img-fluid'>
-                        <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
+                            <img src='img/team-members/Member_Calling_Card_Warrior3.png' class='player-image img-fluid'>
+                            <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
                         </div>
                     </a>
                 </div>
@@ -69,43 +69,11 @@
                 <div class='col-sm-6 player-col'>
                     <a class='player-link' href='#'>
                         <div class='img-txt-cont'>
-                        <img src='img/filler.png' class='player-image img-fluid'>
-                        <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
+                            <img src='img/filler.png' class='player-image img-fluid'>
+                            <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
                         </div>
                     </a>
                 </div>
-
-                
-                
-                
-                
-                
-                
-                <!--
-                <div class='col-sm-6 player-col player-col-1'>
-                    <a href="#" class="player-link player-link-1">
-                        <p class="player-link-p player-link-p-1">*Team Captain*<br>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow player-arrow-1"></i></p>
-                    </a>
-                </div>
-                
-                <div class='col-sm-6 player-col player-col-2'>
-                    <a href="#" class="player-link player-link-2">
-                        <p class='player-link-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
-                    </a>
-                </div>
-                
-                <div class='col-sm-6 player-col player-col-3'>
-                    <a href="#" class="player-link player-link-3">
-                        <p class='player-link-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
-                    </a>
-                </div>
-                
-                <div class='col-sm-6 player-col player-col-4'>
-                    <a href="#" class="player-link player-link-4">
-                        <p class='player-link-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
-                    </a>
-                </div>
--->
                 
             </div>
         </div>
