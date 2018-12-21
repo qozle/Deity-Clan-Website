@@ -42,7 +42,10 @@
                     <a class='player-link' href='#'>
                         <div class='img-txt-cont'>
                             <img src='img/team-members/Member_Calling_Card_Liro3.png' class='player-image img-fluid'>
-                            <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i></p>
+                            <p class='player-p'>Explore profile<i class="fas fa-long-arrow-alt-right player-arrow"></i>
+                            <br>
+                                *Team Captain*
+                            </p>
                         </div>
                     </a>
                 </div>
