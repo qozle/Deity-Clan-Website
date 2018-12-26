@@ -44,10 +44,10 @@
         <!-- B L O G  P O S T S -->
         
          
-        <div class="container" style="margin-top: 60px;border: 2px solid rgba(142,142,142,.25);border-radius:5px;background-color: #0e0b0b;">
+        <div class="container news-container">
             <div class="row">
                 <div class="col-sm-12" style="padding-left:0;padding-right:0;">
-                    <h4 class="text-center" style="color:white;padding-bottom:15px;padding-top:4px;margin-bottom:0;background-color: rgba(209,209,209,.08);">Latest News</h4>
+                    <h4 class="text-center news-header">Latest News</h4>
                 </div>
             </div>
                 
@@ -121,8 +121,13 @@
         <!-- M E D I A  G R I D -->
             
             
-    	<div class="container" style="margin-top: 60px;margin-bottom:60px;border: 2px solid rgba(142,142,142,.25);border-radius:5px;background-color: rgba(209,209,209,.08);">
-            <h4 class="text-center" style="color:white;padding-bottom:12px;padding-top:12px;">Highlights</h4>
+    	<div class="container highlights-container">
+            <div class="row">
+                <div class="col-sm-12" style="padding-left:0;padding-right:0;">
+                    <h4 class="text-center news-header">Highlights</h4>
+                </div>
+            </div>
+            
             <div class="row">
                 <!-- Video 1 -->
                 <div class="col-12 order-1 col-sm-6 yt-col">

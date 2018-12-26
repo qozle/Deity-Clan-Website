@@ -260,13 +260,28 @@ nav {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .3s ease;
+    transition: .1s ease;
     background-color: #001946;
 }
 
 .overlay:hover {
     opacity: .35;
     
+}
+
+.news-container {
+    margin-top: 60px;
+    border: 2px solid rgba(142,142,142,.25);
+    border-radius:5px;
+    background-color: #0e0b0b;
+}
+
+.news-header {
+    color:white;
+    padding-bottom:15px;
+    padding-top:4px;
+    margin-bottom:0;
+    background-color: rgba(209,209,209,.08);
 }
 
 .blog-title {
@@ -411,6 +426,14 @@ nav {
 
 /* M E D I A  G R I D */
 
+.highlights-container {
+    margin-top: 60px;
+    margin-bottom:60px;
+    border: 2px solid rgba(142,142,142,.25);
+    border-radius:5px;
+    background-color: rgba(209,209,209,.08);
+}
+
 .media-cont {
     margin-bottom: 24px;
 }
@@ -489,7 +512,7 @@ footer {
 .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
     color: #fff;
     text-align: center;
-    padding-bottom: 24px;
+    padding-bottom: 12mpx;
     
 }
 
@@ -511,13 +534,12 @@ footer {
     padding: 0;
     padding-bottom: 3px;
     font-size: 1.5rem;
-    
     border-bottom: 1px solid rgba(209,209,209,0.15);
     
 }
 
 .footer-blog-div {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     
 }
 
@@ -639,7 +661,7 @@ input[type=submit]:hover {
     padding-bottom: 16px;
     padding-top: 12px;
     border-top: 1px solid rgba(209,209,209,0.15);
-    margin-top: 32px;
+    margin-top: 0;
     width: 95%;
     display: block;
 }
@@ -809,6 +831,22 @@ input[type=submit]:hover {
     .navbar {
         padding-right: 16px;
     }   
+    
+    .news-container {
+        width: 100%;
+        margin-left: none;
+        margin-right: none;
+        border-left: none;
+        border-right: none;
+    }
+    
+    .highlights-container {
+        width: 100%;
+        margin-left: none;
+        margin-right: none;
+        border-left: none;
+        border-right: none;
+    }
 
 }
 
@@ -816,6 +854,22 @@ input[type=submit]:hover {
 @media (min-width: 576px) and (max-width: 767.98px) {
     .navbar {
         padding-right: 16px;
+    }
+    
+    .news-container {
+        width: 100%;
+        margin-left: none;
+        margin-right: none;
+        border-left: none;
+        border-right: none;
+    }
+    
+    .highlights-container {
+        width: 100%;
+        margin-left: none;
+        margin-right: none;
+        border-left: none;
+        border-right: none;
     }
 
 }

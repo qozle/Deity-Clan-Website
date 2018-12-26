@@ -39,7 +39,8 @@
                     <a class="teams-link" href="/Deity-Clan-Website/cod.php">Call of Duty</a>
                 </div>
                 <div class='col-sm-6 team-info-col'>
-                    <ul class='team-members-list'>The Team:
+                    <a href="/Deity-Clan-Website/cod.php">
+                        <ul class='team-members-list'><a href='/Deity-Clan-Website/cod.php' class='team-info-title-link'>Call of Duty</a>
                         <li class='team-members-list-item'><a href='player-profiles/Ghost-profile.php' class='team-member-link'>Ghost *CAPTAIN*</a></li>
                         <li class='team-members-list-item'><a href='player-profiles/KillSwitch-profile.php' class='team-member-link'>KillSwitch</a></li>
                         <li class='team-members-list-item'><a href='player-profiles/Nukem-profile.php' class='team-member-link'>Nukem</a></li>
@@ -51,7 +52,7 @@
                     <a class="teams-link" href="/Deity-Clan-Website/fortnite.php">Fortnite</a>
                 </div>
                 <div class='col-sm-6 team-info-col'>
-                    <ul class='team-members-list'>The Team:
+                    <ul class='team-members-list'><a class='team-info-title-link' href='/Deity-Clan-Website/fortnite.php'>Fortnite</a>
                         <li class='team-members-list-item'><a href='player-profiles/Liro-profile.php' class='team-member-link'>Liro *CAPTAIN*</a></li>
                         <li class='team-members-list-item'><a href='player-profiles/WolfEye-profile.php' class='team-member-link'>WolfEye</a></li>
                         <li class='team-members-list-item'><a href='player-profiles/XCite-profile.php' class='team-member-link'>XCite</a></li>
@@ -63,7 +64,7 @@
                     <a class="teams-link" href="/Deity-Clan-Website/nba2k.php">NBA2K</a>
                 </div>
                 <div class='col-sm-6 team-info-col'>
-                    <ul class='team-members-list'>The Team:
+                    <ul class='team-members-list'><a class='team-info-title-link' href='/Deity-Clan-Website/nba2k.php'>NBA2K</a>
                         <li class='team-members-list-item'><a href='player-profiles/Restart-profile.php' class='team-member-link'>Restart</a></li>
                         <li class='team-members-list-item'><a href='player-profiles/CStack-profile.php' class='team-member-link'>CStack</a></li>
                     </ul>
@@ -73,7 +74,7 @@
                     <a class="teams-link" href="/Deity-Clan-Website/ssb.php">Super Smash Bros</a>
                 </div>
                 <div class='col-sm-6 team-info-col'>
-                    <ul class='team-members-list'>The Team:
+                    <ul class='team-members-list'><a class='team-info-title-link' href='/Deity-Clan-Website/ssb.php'>Super Smash Brothers</a>
                         <li class='team-members-list-item'><a href='player-profiles/Ace-profile.php' class='team-member-link'>Ace</a></li>
                     </ul>
                 </div>
@@ -82,7 +83,7 @@
                     <a class="teams-link" href="/Deity-Clan-Website/overwatch.php">Overwatch</a>
                 </div>
                 <div class='col-sm-6 team-info-col'>
-                    <ul class='team-members-list'>The Team:
+                    <ul class='team-members-list'><a class='team-info-title-link' href='/Deity-Clan-Website/overwatch.php'>Overwatch</a>
                         <li class='team-members-list-item'><a href='player-profiles/Hanzo-profile.php' class='team-member-link'>Hanzo</a></li>
                         <li class='team-members-list-item'><a href='player-profiles/Re-Call-profile.php' class='team-member-link'>Re-Call</a></li>
                     </ul>
