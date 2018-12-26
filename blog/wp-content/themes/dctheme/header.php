@@ -16,7 +16,7 @@
 
         <!-- O U R  C S S -->
         <!-- Custom styles for this template -->
-        <link rel="stylesheet" href="https://deityclan.01014.org/css/style.css">
+        <link rel="stylesheet" href="/Deity-Clan-Website/css/style.css">
         <link href="<?php echo get_bloginfo('template_directory'); ?>/blog.css" rel="stylesheet">
         
         
@@ -29,8 +29,8 @@
 
     
             <nav class="navbar navbar-expand-lg sticky-top pl-0">
-                <a class="navbar-brand m-0" href="https://deityclan.01014.org">
-                    <img src="https://deityclan.01014.org/img/deitylogo1.png" width=75px>
+                <a class="navbar-brand m-0" href="/Deity-Clan-Website/">
+                    <img src="/Deity-Clan-Website/img/deitylogo1.png" width=75px>
                     <span class="navbar-text">
                         <p class="deity-font-1 align-text-middle">DEITY</p>
                         <p class="clan-font-1 align-text-middle">CLAN</p>
@@ -42,15 +42,15 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto align-text-middle pb-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="https://deityclan.01014.org">HOME<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/Deity-Clan-Website/">HOME<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://deityclan.01014.org/blog/">NEWS</a>
+                            <a class="nav-link" href="/Deity-Clan-Website/blog/">NEWS</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Teams</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="https://deityclan.01014.org/fortnite.php">Fortnite</a>
+                                <a class="dropdown-item" href="/Deity-Clan-Website/fortnite.php">Fortnite</a>
                                 <a class="dropdown-item" href="#">Black Ops 4</a>
                                 <a class="dropdown-item" href="#">Overwatch</a>
                             </div>
@@ -62,7 +62,7 @@
                             <a class="nav-link" href="#">MEDIA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://deityclan.01014.org/contact-form.php">CONTACT</a>
+                            <a class="nav-link" href="/Deity-Clan-Website/contact-form.php">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -84,27 +84,27 @@
                             <ul class="modal-list">
 
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="https://deityclan.01014.org">HOME</a>
+                                    <a class="modal-list-link" href="/Deity-Clan-Website/">HOME</a>
                                 </li>
 
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="https://deityclan.01014.org/blog/" >NEWS</a>                                        
+                                    <a class="modal-list-link" href="/Deity-Clan-Website/blog/" >NEWS</a>                                        
                                 </li>
 
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="https://deityclan.01014.org/teams-page.php">TEAMS</a>                                        
+                                    <a class="modal-list-link" href="/Deity-Clan-Website/teams-page.php">TEAMS</a>                                        
                                 </li>
 
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="https://deityclan.01014.org/#">MATCHES AND STATS</a>                                        
+                                    <a class="modal-list-link" href="#">MATCHES AND STATS</a>                                        
                                 </li>
 
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="https://deityclan.01014.org/media.php">MEDIA</a>                                        
+                                    <a class="modal-list-link" href="#">MEDIA</a>                                        
                                 </li>
 
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="https://deityclan.01014.org/contact-form.php">CONTACT</a>                                        
+                                    <a class="modal-list-link" href="/Deity-Clan-Website/contact-form.php">CONTACT</a>                                        
                                 </li>
                       
                             </ul>

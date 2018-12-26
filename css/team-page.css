@@ -1,0 +1,209 @@
+.jumbotron {
+	background-image: url('../img/keyboard-gamer.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain contain;
+    height:350px;
+    width: 100%;
+    padding: 0;
+}
+
+
+/* T E A M  G R I D */
+
+.players-cont {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.team-intro-heading-1 {
+    text-align: center;
+    font-family: 'Bugfast';
+    color: #003391;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(209,209,209,.1);
+    padding-bottom: 10px;
+}
+
+.team-intro-heading-2 {
+    text-align: center;
+    font-family: Helvetica;
+    color: #fff;
+}
+
+.team-intro-text {
+    color: #d1d1d1;
+    border-bottom: 1px solid rgba(209,209,209,.1);
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 0;
+    font-size: .95em;
+    text-align: justify;
+    
+}
+
+.roster-heading {
+    text-align: center;
+    font-family: 'Bugfast';
+    color: #003391;
+    padding-top: 16px;
+    padding-bottom: 32px;
+}
+
+.players-row {
+    border: 1px solid rgba(209,209,209,.1);
+    border-radius: 10px;
+    margin: 0;
+}
+
+.player-col {
+    margin-top: 0;
+    margin-bottom: 16px;
+    border-radius: 10px;
+   
+}
+
+.player-link {
+    
+}
+
+.img-txt-cont {
+    position: relative; 
+    display: block;
+    margin: auto;
+    
+    
+}
+
+.player-image {
+    
+}
+
+
+
+.player-arrow {
+    margin-left: 4px;
+}
+
+
+
+/* E X P L O R E  M E N U */
+
+#explore-cont {
+    
+}
+
+#explore-row {
+    
+}
+
+.explore-col {
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    padding-top: 80px;
+    background-color: #0e0f0f;
+    border: 1px solid rgba(209,209,209,.1);
+    font-family: 'Abolition Regular';
+    color: #003391;
+    margin-bottom: 24px;
+    transition: 0s;
+}
+
+.explore-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 25px;
+    
+}
+
+.explore-link:hover {
+    text-decoration: none;
+}
+
+.explore-col:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+    background-color: #0e0A0A;
+    z-index: 1000000;
+}
+
+
+/* M E D I A  Q U E R Y  F U N  . . . */
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    
+    .player-image {
+        max-height: 238px;
+        display: block;
+        margin: auto;
+    }
+    
+    .team-intro-text {
+        min-height: 527px;
+    }
+    
+    .player-p {
+        position: absolute;
+        top: 100px;
+        right: 60%;
+        font-family: 'Abolition Regular';
+        font-size: 1.4em
+        
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .team-intro-text {
+        min-height: 0;
+    }
+    
+    .player-p {
+        position: absolute;
+        top: 50px;
+        right: 50%;
+        font-size: 1.1em;
+        font-family: 'Abolition Regular';
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .player-p {
+        position: absolute;
+        top: 80px;
+        right: 60%;
+        font-family: 'Abolition Regular';
+        font-size: 1.2em;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .player-p {
+        position: absolute;
+        top: 100px;
+        right: 60%;
+        font-size: 1.6em; 
+        font-family: 'Abolition Regular';
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+   .player-p {
+       position: absolute;
+       top: 100px;
+       right: 60%;
+       font-family: 'Abolition Regular';
+       font-size: 1.8em
+    }
+
+}

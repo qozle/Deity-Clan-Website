@@ -69,12 +69,12 @@ nav {
 }
 
 .navbar-brand {
-    transition: 1s;
+    transition: .3s;
 }
 
 .navbar-brand:hover {
     background-color: rgba(0,25,70, 0.50);
-    transition: 1s;
+    
 }
 
 .my-nav-icon {
@@ -180,19 +180,46 @@ nav {
 
 /* =================== MAIN STYLES ================== */
 
-.jumbotron {
+
+#splash-vid-cont {
+    height: calc(100vh - 89px);
+    
+}
+
+#splashvid {
+    height: calc(100vh - 89px);
+    width: 100%;
+    display: block;
+    object-fit: fill;
+    
+}
+
+#splash-img-cont {
+    display: none;
+    height: calc(100vh - 89px);
 	background-image: url('../img/purple-splash.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height:700px;
     padding: 0;
+    margin-bottom: 0;
+    
 }
 
-.jumbotron div {
-    padding-top: 50px;
+
+.splash-img-div {
+    height: calc(100vh - 89px);
+	background-image: url('../img/purple-splash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin-bottom: 0;
 }
 
+#header-text-div {
+    text-align: center;
+}
 
 .deity-font-1 {
 	font: 2rem 'Bugfast';
@@ -233,13 +260,28 @@ nav {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: 1s ease;
+    transition: .1s ease;
     background-color: #001946;
 }
 
 .overlay:hover {
     opacity: .35;
     
+}
+
+.news-container {
+    margin-top: 60px;
+    border: 2px solid rgba(142,142,142,.25);
+    border-radius:5px;
+    background-color: #0e0b0b;
+}
+
+.news-header {
+    color:white;
+    padding-bottom:15px;
+    padding-top:4px;
+    margin-bottom:0;
+    background-color: rgba(209,209,209,.08);
 }
 
 .blog-title {
@@ -376,6 +418,22 @@ nav {
     
 }
 
+.feed-cont {
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+
+/* M E D I A  G R I D */
+
+.highlights-container {
+    margin-top: 60px;
+    margin-bottom:60px;
+    border: 2px solid rgba(142,142,142,.25);
+    border-radius:5px;
+    background-color: rgba(209,209,209,.08);
+}
+
 .media-cont {
     margin-bottom: 24px;
 }
@@ -398,22 +456,41 @@ nav {
     padding:0;
 }
 
+.img-1-col {
+    background-image: url('../img/assets/1%20(1).jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-2-col {
+    background-image: url('../img/assets/1.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-3-col {
+    background-image: url('../img/assets/2.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    padding-left: 0;
+    padding-right: 0;
+}
+/*
 .img-1 {
     height: 100%;
     
 }
-
-.img-1-col {
-    padding: 0;
-    height: 250px;
-/*
-    background-image: url('../img/controller.jpg_large');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 200px;
 */
-}
 
 .video-col {
     padding: 0;
@@ -435,6 +512,7 @@ footer {
 .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
     color: #fff;
     text-align: center;
+    padding-bottom: 12mpx;
     
 }
 
@@ -456,13 +534,12 @@ footer {
     padding: 0;
     padding-bottom: 3px;
     font-size: 1.5rem;
-    
-    border-bottom: 1px solid rgba(209,209,209,0.1);
+    border-bottom: 1px solid rgba(209,209,209,0.15);
     
 }
 
 .footer-blog-div {
-    margin-bottom: 2px;
+    margin-bottom: 20px;
     
 }
 
@@ -471,7 +548,7 @@ footer {
     border-radius: 10px;
     background-color: #001946;
     font-family: 'Abolition Regular';
-    font-size: 1.1em;
+    font-size: .9em;
     padding: 4px;
     margin-bottom: 0;
     display: inline-block;
@@ -481,7 +558,6 @@ footer {
 }
 
 .footer-blog-link {
-    color: blue;
 }
 
 .footer-blog-link:hover {
@@ -489,7 +565,7 @@ footer {
 }
 
 .footer-blog-title {
-    font-size:.9em;
+    font-size: .95em;
     margin-bottom: 0;
     font-weight: bold;
 }
@@ -519,7 +595,7 @@ footer {
 
 .footer-link {
     font-family: 'Abolition Regular';
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     
 }
 
@@ -583,18 +659,16 @@ input[type=submit]:hover {
     text-align: center;
     margin-bottom: 0;
     padding-bottom: 16px;
-    border-top: 1px solid rgba(209,209,209,0.05);
-    padding-top: 5px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(209,209,209,0.15);
+    margin-top: 0;
     width: 95%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
 }
 
 .social-list-item {
     display: inline;
-    padding-right: 25px;
+    padding-right: 5px;
     color: #fff;
 }
 
@@ -757,6 +831,22 @@ input[type=submit]:hover {
     .navbar {
         padding-right: 16px;
     }   
+    
+    .news-container {
+        width: 100%;
+        margin-left: none;
+        margin-right: none;
+        border-left: none;
+        border-right: none;
+    }
+    
+    .highlights-container {
+        width: 100%;
+        margin-left: none;
+        margin-right: none;
+        border-left: none;
+        border-right: none;
+    }
 
 }
 
@@ -764,6 +854,22 @@ input[type=submit]:hover {
 @media (min-width: 576px) and (max-width: 767.98px) {
     .navbar {
         padding-right: 16px;
+    }
+    
+    .news-container {
+        width: 100%;
+        margin-left: none;
+        margin-right: none;
+        border-left: none;
+        border-right: none;
+    }
+    
+    .highlights-container {
+        width: 100%;
+        margin-left: none;
+        margin-right: none;
+        border-left: none;
+        border-right: none;
     }
 
 }

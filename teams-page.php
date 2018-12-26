@@ -26,157 +26,78 @@
 
     <body>
        <?php include 'header-template.html'?>
+        <?php include 'secondary-header-template.html'?>
 
 
         <!-- M A I N   C O N T E N T -->
-        <?php
-                $number_of_posts = 5;
-                $args = array( 'numberposts' => $number_of_posts );
-                $posts = wp_get_recent_posts( $args );
-                
-                ?>
-        
-        <h1 class='display-2' id="teams-heading">Explore the Teams</h1>
-           <!-- T E A M S  G R I D  -->
+        <h1 class='display-2' id="teams-heading">Deity Clan's Teams</h1>
+        <!-- T E A M S  G R I D  -->
         <div class="container teams-container">
             <div class="row teams-row">
+                
                 <div class="col-sm-6 teams-col">
-                    <a class="teams-link" href="/fortnite.php">Fortnite</a>
+                    <a class="teams-link" href="/Deity-Clan-Website/cod.php">Call of Duty</a>
                 </div>
+                <div class='col-sm-6 team-info-col'>
+                    <a href="/Deity-Clan-Website/cod.php">
+                        <ul class='team-members-list'><a href='/Deity-Clan-Website/cod.php' class='team-info-title-link'>Call of Duty</a>
+                        <li class='team-members-list-item'><a href='player-profiles/Ghost-profile.php' class='team-member-link'>Ghost *CAPTAIN*</a></li>
+                        <li class='team-members-list-item'><a href='player-profiles/KillSwitch-profile.php' class='team-member-link'>KillSwitch</a></li>
+                        <li class='team-members-list-item'><a href='player-profiles/Nukem-profile.php' class='team-member-link'>Nukem</a></li>
+                        <li class='team-members-list-item'><a href='player-profiles/Warrior-profile.pp' class='team-member-link'>Warrior</a></li>
+                    </ul>
+                </div>
+                
                 <div class="col-sm-6 teams-col">
-                    <a class="teams-link" href="#">Call of Duty</a>
+                    <a class="teams-link" href="/Deity-Clan-Website/fortnite.php">Fortnite</a>
                 </div>
-                <div class="col-sm-4 teams-col">
-                    <a class="teams-link" href="#">NBA2K</a>
+                <div class='col-sm-6 team-info-col'>
+                    <ul class='team-members-list'><a class='team-info-title-link' href='/Deity-Clan-Website/fortnite.php'>Fortnite</a>
+                        <li class='team-members-list-item'><a href='player-profiles/Liro-profile.php' class='team-member-link'>Liro *CAPTAIN*</a></li>
+                        <li class='team-members-list-item'><a href='player-profiles/WolfEye-profile.php' class='team-member-link'>WolfEye</a></li>
+                        <li class='team-members-list-item'><a href='player-profiles/XCite-profile.php' class='team-member-link'>XCite</a></li>
+                    </ul>
                 </div>
-                <div class="col-sm-4 teams-col">
-                    <a class="teams-link" href="#">Super Smash Bros</a>
+                
+                
+                <div class="col-sm-6 teams-col">
+                    <a class="teams-link" href="/Deity-Clan-Website/nba2k.php">NBA2K</a>
                 </div>
-                <div class="col-sm-4 teams-col">
-                    <a class="teams-link" href="#">Overwatch</a>
+                <div class='col-sm-6 team-info-col'>
+                    <ul class='team-members-list'><a class='team-info-title-link' href='/Deity-Clan-Website/nba2k.php'>NBA2K</a>
+                        <li class='team-members-list-item'><a href='player-profiles/Restart-profile.php' class='team-member-link'>Restart</a></li>
+                        <li class='team-members-list-item'><a href='player-profiles/CStack-profile.php' class='team-member-link'>CStack</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-sm-6 teams-col">
+                    <a class="teams-link" href="/Deity-Clan-Website/ssb.php">Super Smash Bros</a>
+                </div>
+                <div class='col-sm-6 team-info-col'>
+                    <ul class='team-members-list'><a class='team-info-title-link' href='/Deity-Clan-Website/ssb.php'>Super Smash Brothers</a>
+                        <li class='team-members-list-item'><a href='player-profiles/Ace-profile.php' class='team-member-link'>Ace</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-sm-6 teams-col">
+                    <a class="teams-link" href="/Deity-Clan-Website/overwatch.php">Overwatch</a>
+                </div>
+                <div class='col-sm-6 team-info-col'>
+                    <ul class='team-members-list'><a class='team-info-title-link' href='/Deity-Clan-Website/overwatch.php'>Overwatch</a>
+                        <li class='team-members-list-item'><a href='player-profiles/Hanzo-profile.php' class='team-member-link'>Hanzo</a></li>
+                        <li class='team-members-list-item'><a href='player-profiles/Re-Call-profile.php' class='team-member-link'>Re-Call</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-
+        <?php
+            $number_of_posts = 5;
+            $args = array( 'numberposts' => $number_of_posts );
+            $posts = wp_get_recent_posts( $args );
+        ?>
         <!-- F O O T E R -->
         
-        <footer>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-4 footer-col-1">
-                        <h6 class="footer-h">Recent News</h6>
-                        <div class="footer-blog-div">
-                            <?php echo "<a href='blog/index.php/".$posts[0]['post_name']."' class='footer-blog-link'>";?>
-                            <p class="footer-blog-title"><?php echo $posts[0]['post_title']?></p>
-                            <?php echo "</a>";?>
-                            <?php foreach(get_the_category($posts[0]['ID']) as $category) {
-                                echo "<p class='footer-blog-category'>".$category->name."</p>";};?>
-                            <p class='footer-blog-date'><?php echo get_the_time('F j, Y', $posts[0]['ID']);?></p>
-                        </div>
-                        <div class="footer-blog-div">
-                            <?php echo "<a href='blog/index.php/".$posts[1]['post_name']."' class='footer-blog-link'>";?>
-                            <p class="footer-blog-title"><?php echo $posts[1]['post_title']?></p>
-                            <?php echo "</a>";?>
-                            <?php foreach(get_the_category($posts[1]['ID']) as $category) {
-                                echo "<p class='footer-blog-category'>".$category->name."</p>";};?>
-                            <p class='footer-blog-date'><?php echo get_the_time('F j, Y', $posts[1]['ID']);?></p>
-                        </div>
-                        <div class="footer-blog-div">
-                            <?php echo "<a href='blog/index.php/".$posts[2]['post_name']."' class='footer-blog-link'>";?>
-                            <p class="footer-blog-title"><?php echo $posts[2]['post_title']?></p>
-                            <?php echo "</a>";?>
-                            <?php foreach(get_the_category($posts[2]['ID']) as $category) {
-                                echo "<p class='footer-blog-category'>".$category->name."</p>";};?>
-                            <p class='footer-blog-date'><?php echo get_the_time('F j, Y', $posts[0]['ID']);?></p>
-                        </div>
-                    </div>
-                    
-                <div class="col-sm-4 footer-col-3">
-                    <h6 class="footer-h">Useful Links</h6>
-                    <ul class="footer-ul">
-                        <li class="footer-li-item">
-                            <a class="footer-link" href="#">Back to Top</a>
-                        </li>
-                        <li class="footer-li-item">
-                            <a class="footer-link" href="/Deity-Clan-Website/blog">News</a>
-                        </li>
-                        <li class="footer-li-item">
-                            <a class="footer-link" href="/Deity-Clan-Website/teams-page.php">Teams</a>
-                        </li>
-                        <li class="footer-li-item">
-                            <a class="footer-link" href="#">Matches/Stats</a>
-                        </li>
-                        <li class="footer-li-item">
-                            <a class="footer-link" href="#">Media</a>
-                        </li>
-                        <li class="footer-li-item">
-                            <a class="footer-link" href="/Deity-Clan-Website/contact-form.php">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-4 footer-col-4">
-                    <h6 class="footer-h">Contact</h6>
-                    <form action="#" id="contact-form">
-                        
-                        <input type="text" class="contact-form-text" id="fname" name="firstname" placeholder="First Name">
-
-                       
-                        <input type="text" class="contact-form-text" id="lname" name="lastname" placeholder="Last Name">
-
-                        
-                        <input type="text" class="contact-form-text" id="email" name="email" placeholder="Email">
-
-                        
-                        <textarea id="subject" name="subject" placeholder="Tell us what you need!" class="contact-form-textarea"></textarea>
-
-                        <input class="contact-form-submit" type="submit" value="Submit">
-                    </form>
-                </div>
-                </div>
-            </div>
-            
-                
-                
-            <!-- F O O T E R  S O C I A L  M E D I A -->
-       
-            <ul class="footer-social-list">
-                <li class="social-list-item">
-                    <a class="social-list-link" href="#facebook" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                        <p class="fab fa-facebook"></p>
-                    </a>
-                </li>
-                <li class="social-list-item">
-                    <a class="social-list-link" href="#twitter" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                        <p class="fab fa-twitter"></p>
-                    </a>
-                </li>
-                <li class="social-list-item">
-                    <a class="social-list-link" href="#instagram" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                        <p class="fab fa-instagram"></p>
-                    </a>
-                </li>
-                <li class="social-list-item">
-                    <a class="social-list-link" href="#youtube" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                        <p class="fab fa-youtube"></p>
-                    </a>
-                </li>
-                <li class="social-list-item">
-                    <a class="social-list-link" href="#twitch" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                        <p class="fab fa-twitch"></p>
-                    </a>
-                </li>
-                <li class="social-list-item">
-                    <a class="social-list-link" href="#steam" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                        <p class="fab fa-steam"></p>
-                    </a>
-                </li>
-                
-            </ul>
-            <p id="copyright"><i class="fa fa-copyright" aria-hidden="true"></i>   2018  01014 Web Solutions</p>
-            
-                
-            
-        </footer> 
+        <?php include 'footer-template.html'?>
     </body>
 </html>    

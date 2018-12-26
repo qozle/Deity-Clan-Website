@@ -15,4 +15,26 @@ $(document).ready(function() {
     $('.modal-list-link').click(function() {
         $('.menu-modal').modal('toggle');
     })
+    
+    var splashVid = document.getElementById('splashvid');
+    splashVid.addEventListener('ended', function() {
+        $('#splash-img-cont').fadeIn('slow');
+        $('#splash-vid-cont').hide();
     });
+   twttr.ready( function(twttr){
+       twttr.events.bind('rendered',function (event) { 
+
+    var tgt = event.target;
+
+    $(tgt).contents().find(".timeline-Widget").css({  
+        "border":"none",
+        "border-radius":"0px",
+        "max-width":"100%"
+    });
+
+  });
+
+});    
+
+});
+

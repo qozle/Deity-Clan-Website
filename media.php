@@ -25,6 +25,7 @@
 
     <body>
         <?php include 'header-template.html'?>
+        <?php include 'secondary-header-template.html'?>
         
 
 
@@ -57,25 +58,25 @@
             
                 <div class="col-12 col-sm-6 col-lg-4 video-col">
                     <div class="embed-responsive embed-responsive-16by9">
-                      <video src="vids/1.mp4" controls></video>
+                      <video src="/Deity-Clan-Website/vids/1.mp4" controls></video>
                     </div>
                 </div>
 
                 <div class="col-12 col-sm-6 col-lg-4 video-col">
                     <div class="embed-responsive embed-responsive-16by9">
-                      <video src="vids/2.mp4" controls></video>
+                      <video src="/Deity-Clan-Website/vids/2.mp4" controls></video>
                     </div>
                 </div>
             
                 <div class="col-12 col-sm-6 col-lg-4 video-col">
                     <div class="embed-responsive embed-responsive-16by9">
-                      <video src="vids/3.mp4" controls></video>
+                      <video src="/Deity-Clan-Website/vids/3.mp4" controls></video>
                     </div>
                 </div>
 
                 <div class="col-12 col-sm-6 col-lg-4 video-col">
                     <div class="embed-responsive embed-responsive-16by9">
-                      <video src="vids/4.mp4" controls></video>
+                      <video src="/Deity-Clan-Website/vids/4.mp4" controls></video>
                     </div>
                 </div>
             </div>

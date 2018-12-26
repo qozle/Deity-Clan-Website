@@ -20,15 +20,24 @@
 	margin-bottom: 20px;
 }
 
+.calling-card {
+	width: 700px;
+}
+
 hr {
 	border-color: #003391;
 }
 
 
 @media (max-width: 553px) {
-	.jumbotron{
+	.jumbotron {
 		height: auto;
 		width: auto;
 	}
 }
 
+@media (max-width: 768px) {
+	.calling-card {
+		width: 100%;
+	}
+}
