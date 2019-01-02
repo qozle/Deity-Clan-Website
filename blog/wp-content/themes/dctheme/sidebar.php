@@ -10,11 +10,14 @@
             </ol>
           </div>
           <div class="sidebar-module">
-            <h6 class="blog-sidebar-header">Elsewhere</h6>
+            <h6 class="blog-sidebar-header">Social Media</h6>
             <ol class="list-unstyled">
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Facebook</a></li>
+                <li><a href="https://www.instagram.com/DeityGClan/">Instagram</a></li>
+                <li><a href="https://twitter.com/DeityGClan">Twitter</a></li>
+                <li><a href="https://www.twitch.tv/DeityClan">Twitch</a></li>
+                <li><a href="https://www.facebook.com/DeityGClan/">Facebook</a></li>
+                <li><a href="https://www.youtube.com/channel/UCChSRNxkgCfhS_YG4j-5wqw">Youtube</a></li>
+                
             </ol>
           </div>
         </div><!-- /.blog-sidebar -->

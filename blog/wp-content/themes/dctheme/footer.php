@@ -2,28 +2,27 @@
 
     <footer>
             <div class="container-fluid">
-                <div class="row">
+                <div class="row footer-row">
                     
                 <div class="col-sm-6 footer-col-3">
                     <h6 class="footer-h">Useful Links</h6>
                     <ul class="footer-ul">
                         <li class="footer-li-item">
-                            <a class="footer-link" href="/Deity-Clan-Website/">Home</a>
+                            <a class="footer-link" href="/">Home</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="/Deity-Clan-Website/blog/">News</a>
+                            <a class="footer-link" href="/blog/">News</a>
                         </li>
                         <li class="footer-li-item">
-                            <a class="footer-link" href="/Deity-Clan-Website/teams-page.php">Team Info</a>
+                            <a class="footer-link" href="/teams-page.php">Team Info</a>
                         </li>
+<!--
                         <li class="footer-li-item">
-                            <a class="footer-link" href="">Matches/Stats</a>
+                            <a class="footer-link" href="/media.php">Media</a>
                         </li>
+-->
                         <li class="footer-li-item">
-                            <a class="footer-link" href="">Media</a>
-                        </li>
-                        <li class="footer-li-item">
-                            <a class="footer-link" href="/Deity-Clan-Contact/contact-form.php">Contact</a>
+                            <a class="footer-link" href="/contact-form.php">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -54,36 +53,30 @@
            
                 <ul class="footer-social-list">
                     <li class="social-list-item">
-                        <a class="social-list-link" href="#facebook" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                        <a class="social-list-link" href="https://www.facebook.com/DeityGClan/" target="_blank" style="padding-right: 10px; font-size: 100%;">
                             <p class="fab fa-facebook"></p>
                         </a>
                     </li>
                     <li class="social-list-item">
-                        <a class="social-list-link" href="#twitter" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                        <a class="social-list-link" href="https://twitter.com/DeityGClan" target="_blank" style="padding-right: 10px; font-size: 100%;">
                             <p class="fab fa-twitter"></p>
                         </a>
                     </li>
                     <li class="social-list-item">
-                        <a class="social-list-link" href="#instagram" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                        <a class="social-list-link" href="https://www.instagram.com/DeityGClan/" target="_blank" style="padding-right: 10px; font-size: 100%;">
                             <p class="fab fa-instagram"></p>
                         </a>
                     </li>
                     <li class="social-list-item">
-                        <a class="social-list-link" href="#youtube" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                        <a class="social-list-link" href="https://www.youtube.com/channel/UCChSRNxkgCfhS_YG4j-5wqw" target="_blank" style="padding-right: 10px; font-size: 100%;">
                             <p class="fab fa-youtube"></p>
                         </a>
                     </li>
                     <li class="social-list-item">
-                        <a class="social-list-link" href="#twitch" target="_blank" style="padding-right: 10px; font-size: 100%;">
+                        <a class="social-list-link" href="https://www.twitch.tv/DeityClan" target="_blank" style="padding-right: 10px; font-size: 100%;">
                             <p class="fab fa-twitch"></p>
                         </a>
-                    </li>
-                    <li class="social-list-item">
-                        <a class="social-list-link" href="#steam" target="_blank" style="padding-right: 10px; font-size: 100%;">
-                            <p class="fab fa-steam"></p>
-                        </a>
-                    </li>
-                    
+                    </li>                    
                 </ul>
                 <p id="copyright"><i class="fa fa-copyright" aria-hidden="true"></i>   2018  01014 Web Solutions</p>
                 

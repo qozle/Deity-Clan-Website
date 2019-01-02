@@ -9,46 +9,15 @@
 }
 
 
-/* T E A M  G R I D */
-
-.players-cont {
-    margin-top: 50px;
-    margin-bottom: 20px;
+.err-msg {
+    color: red;
+    font-family: 'Arial';
 }
 
-.players-heading {
+#result {
     text-align: center;
-    font-family: 'Bugfast';
-    color: #003391;
+    color: silver;
+    font-size: 2em;
+    padding-top: 24px;
+    font-family: helvecta;
 }
-
-.players-row {
-    border: 1px solid rgba(209,209,209,.1);
-}
-
-.player-col {
-    padding-left: 0;
-    padding-right: 0;
-    
-}
-
-.player-img {
-    width: 100px;
-    height: 100px;
-    
-}
-
-.player-info-list {
-    list-style: none;
-    color: #003391;
-    padding-left: 5px;
-    font-family: "Abolition Regular";
-    font-size: 1.1rem;
-    background-color: rgba(0,25,70,.15);
-    
-}
-
-.player-info-list-item {
-    
-}
-

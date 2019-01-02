@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Deity Clan | Home</title>
+        <title>Deity Clan | News</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
@@ -16,9 +16,19 @@
 
         <!-- O U R  C S S -->
         <!-- Custom styles for this template -->
-        <link rel="stylesheet" href="/Deity-Clan-Website/css/style.css">
+        <link rel="stylesheet" href="/css/style.css">
         <link href="<?php echo get_bloginfo('template_directory'); ?>/blog.css" rel="stylesheet">
         
+        <!-- F A V E  I C O N  -->
+         <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/img/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/img/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
         
     </head>
 
@@ -29,8 +39,8 @@
 
     
             <nav class="navbar navbar-expand-lg sticky-top pl-0">
-                <a class="navbar-brand m-0" href="/Deity-Clan-Website/">
-                    <img src="/Deity-Clan-Website/img/deitylogo1.png" width=75px>
+                <a class="navbar-brand m-0" href="/">
+                    <img src="http://deityclan.01014.org/img/deitylogo1.png" width=75px>
                     <span class="navbar-text">
                         <p class="deity-font-1 align-text-middle">DEITY</p>
                         <p class="clan-font-1 align-text-middle">CLAN</p>
@@ -42,27 +52,29 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto align-text-middle pb-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="/Deity-Clan-Website/">HOME<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/">HOME<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Deity-Clan-Website/blog/">NEWS</a>
+                            <a class="nav-link" href="/blog/">NEWS</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Teams</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="/Deity-Clan-Website/fortnite.php">Fortnite</a>
-                                <a class="dropdown-item" href="#">Black Ops 4</a>
-                                <a class="dropdown-item" href="#">Overwatch</a>
+                                <a class="dropdown-item" href="/teams-page.php">All Teams</a>
+                                <a class="dropdown-item" href="/cod.php">Call of Duty</a>
+                                <a class="dropdown-item" href="/fortnite.php">Fortnite</a>
+                                <a class="dropdown-item" href="/nba2k.php">NBA2K</a>
+                                <a class="dropdown-item" href="/ssb.php">Super Smash Bros</a>
+                                <a class="dropdown-item" href="/overwatch.php">Overwatch</a>
                             </div>
                           </li>
+<!--
                         <li class="nav-item">
-                            <a class="nav-link" href="#">MATCHES AND STATS</a>
+                            <a class="nav-link" href="/media.php">MEDIA</a>
                         </li>
+-->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">MEDIA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Deity-Clan-Website/contact-form.php">CONTACT</a>
+                            <a class="nav-link" href="/contact-form.php">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -84,27 +96,27 @@
                             <ul class="modal-list">
 
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/Deity-Clan-Website/">HOME</a>
+                                    <a class="modal-list-link" href="/">HOME</a>
                                 </li>
 
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/Deity-Clan-Website/blog/" >NEWS</a>                                        
+                                    <a class="modal-list-link" href="/blog/" >NEWS</a>                                        
                                 </li>
 
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/Deity-Clan-Website/teams-page.php">TEAMS</a>                                        
+                                    <a class="modal-list-link" href="/teams-page.php">TEAMS</a>                                        
                                 </li>
 
+                              
+
+<!--
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">MATCHES AND STATS</a>                                        
+                                    <a class="modal-list-link" href="/media.php">MEDIA</a>                                        
                                 </li>
+-->
 
                                 <li class="modal-list-item">
-                                    <a class="modal-list-link" href="#">MEDIA</a>                                        
-                                </li>
-
-                                <li class="modal-list-item">
-                                    <a class="modal-list-link" href="/Deity-Clan-Website/contact-form.php">CONTACT</a>                                        
+                                    <a class="modal-list-link" href="/contact-form.php">CONTACT</a>                                        
                                 </li>
                       
                             </ul>
@@ -121,17 +133,7 @@
 
 
         <!--  H E A D E R -->
-        <style>
-        .jumbotron {
-	       background-image: url('../img/keyboard-gamer.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain contain;
-            height:350px;
-            width: 100%;
-            padding: 0;
-            }
-        </style>
+        
             <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
                 <div class="container" style="text-align: center;">
                     <h1 class="deity-font-2 d-inline display-1">DEITY</h1>

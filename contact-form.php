@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Deity Clan | Home</title>
+        <title>Deity Clan | Contact</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
@@ -17,8 +17,20 @@
         <!-- O U R  C S S -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/contact-form.css">
-        <link rel="icon" href="img/deitylogo1.png">
         <script src="js/custom.js"></script>
+        
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/img/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/img/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        
+        
         
         
     </head>
@@ -35,6 +47,72 @@
             </div>
         </div> -->
 
+
+      <?php 
+                    // define some variables
+                    $firstNameErr = $lastNameErr = $emailErr = "";
+                    $firstname = $lastname = $email = $subject = "";
+                    $firstname_ok = $lastname_ok = $email_ok = $subject_ok = false;
+                    
+                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                        if (empty($_POST["firstname"])) {
+                        $firstNameErr = "First name is required";
+                      } else {
+                        $name = test_input($_POST["firstname"]);
+                        // check if name only contains letters and whitespace
+                        if (!preg_match("/^[a-zA-Z ]*$/",$firstname)) {
+                          $nameErr = "Only letters and white space allowed"; 
+                        } else {
+                            $firstname_ok = true;
+                        }
+                      }
+                        
+                     
+                      if (empty($_POST["lastname"])) {
+                          $lastNameErr = "Last name is required";
+                      } else {
+                          $name = test_input($_POST["lastname"]);
+                        // check if name only contains letters and whitespace
+                        if (!preg_match("/^[a-zA-Z ]*$/",$lastname)) {
+                          $nameErr = "Only letters and white space allowed"; 
+                        } else {
+                            $lastname_ok = true;
+                        }
+                      }
+
+                      if (empty($_POST["email"])) {
+                          $emailErr = "Email is required";
+                      } else {
+                          $email = test_input($_POST["email"]);
+                        // check if e-mail address is well-formed
+                        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                          $emailErr = "Invalid email format"; 
+                        } else {
+                            $email_ok = true;
+                        }
+                      }
+
+                      if (empty($_POST["subject"])) {
+                        $comment = "";
+                      } else {
+                        $subject = test_input($_POST["subject"]);
+                          $subject_ok = true;
+                      }
+                    }
+                    
+                    function test_input($data) {
+                      $data = trim($data);
+                      $data = stripslashes($data);
+                      $data = htmlspecialchars($data);
+                      return $data;
+                    }
+                    ?>
+
+                    
+
+        
+        
+        
 <style>
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -58,6 +136,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: 11px;
     margin-right: auto;
     display: block;
     width: 90%;
@@ -79,24 +158,56 @@ input[type=submit]:hover {
     #fname, #lname, #subject {
         outline: none ;
     }
+    
+    #subject {
+        margin-left: 11px;
+    }
 </style>
 
 
-<div class="container">        
-    <h1 class="display-3" style="text-align: center;color:#d1d1d1;font-family: 'Abolition Regular';width: 90%;">Let Us Know</h1>
-<form action="#">
+
     
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+        
+        <div class="container">        
+            <h1 class="display-3" style="text-align: center;color:#d1d1d1;font-family: 'Abolition Regular';width: 90%;">Let Us Know</h1>
+             <p class='err-msg'>
+                '*' marks required fields.
+            </p>
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" style="display:block; margin-left: auto; margin-right: auto;" method='post'>
 
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <span class="err-msg">* <?php echo $firstNameErr;?></span>
+                    <input type="text" id='fname' name="firstname" placeholder="First Name" value="<?php echo $firstname;?>">
+                <br>
+                <span class="err-msg">* <?php echo $lastNameErr;?></span>
+                    <input type="text" id='lname' name="lastname" placeholder="Last Name" value="<?php echo $lastname;?>">
+                <br>
+                <span class="err-msg">* <?php echo $emailErr;?></span>
+                    <input type="text" id=email name="email" placeholder="Email" value="<?php echo $email;?>">
+                <br>
 
-    <input type="submit" value="Submit">
-</form>
+               
+
+                <textarea id="subject" name="subject" placeholder="Write something here..." value="<?php echo $subject;?>"></textarea>
+
+            <input type="submit" id='submit' value="Submit">
+            </form>
+             <?php 
+            if ($_SERVER["REQUEST_METHOD"] == "POST" && $firstname_ok == true && $lastname_ok == true && $email_ok == true && $subject_ok == true) {
+                include 'php-contact-form-ex.php';
+            }?>
         </div>
+        
+        
+        
+        
+        
+        
+        
+        
+
     
-    
-   <?php include 'footer-template.html'?>
+   <?php include 'footer-contact.html'?>
     </body>
 </html>  

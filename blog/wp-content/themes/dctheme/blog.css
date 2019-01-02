@@ -12,15 +12,15 @@ Balls.  Ballsacks.  Is that one word?  Boobies.  8008135.  Guess where this was 
 
 @font-face {
     font-family: 'Abolition Regular';
-        src: url('/Deity-Clan-Website/fonts/abolition-regular-webfont.eot');
-        src: url('/Deity-Clan-Website/fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
-             url('/Deity-Clan-Website/fonts/abolition-regular-webfont.woff') format('woff'),
-             url('/Deity-Clan-Website/fonts/abolition-regular-webfont.ttf') format('truetype');
+        src: url('/fonts/abolition-regular-webfont.eot');
+        src: url('/fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+             url('/fonts/abolition-regular-webfont.woff') format('woff'),
+             url('/fonts/abolition-regular-webfont.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Bugfast';
-        src: url('/Deity-Clan-Website/fonts/bugfast.otf');
+        src: url('/fonts/bugfast.otf');
 }
 
 
@@ -92,7 +92,7 @@ h6, .h6 {
 
 
 .jumbotron {
-	background-image: url('/Deity-Clan-Website/img/keyboard-gamer.jpg');
+	background-image: url('http://deityclan.01014.org/img/keyboard-gamer.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover cover;
@@ -223,6 +223,20 @@ h6, .h6 {
     padding-left: 16px;
     padding-right: 16px;
     color: #999;
+}
+
+.footer-li-item {
+    margin-bottom: 6px;
+}
+
+.footer-link {
+    font-size: 1.7em;
+    font-family: 'Abolition Regular';
+}
+
+
+#contact-form {
+    margin-bottom: 24px;
 }
 
 

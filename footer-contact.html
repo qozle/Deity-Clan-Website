@@ -8,7 +8,7 @@
         <footer>
             <div class="container-fluid">
                 <div class="row footer-row">
-                    <div class="col-sm-4 footer-col-1">
+                    <div class="col-sm-6 footer-col-1">
                         <h6 class="footer-h">Recent News</h6>
                         <div class="footer-blog-div">
                             <?php echo "<a href='blog/index.php/".$posts[0]['post_name']."' class='footer-blog-link'>";?>
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                     
-                <div class="col-sm-4 footer-col-3">
+                <div class="col-sm-6 footer-col-3">
                     <h6 class="footer-h">Useful Links</h6>
                     <ul class="footer-ul">
                         <li class="footer-li-item">
@@ -58,87 +58,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-4 footer-col-4">
-                    <h6 class="footer-h">Contact</h6>
-                    
-                     <?php 
-                    // define some variables
-                    $firstNameErr = $lastNameErr = $emailErr = "";
-                    $firstname = $lastname = $email = $subject = "";
-                    $firstname_ok = $lastname_ok = $email_ok = $subject_ok = false;
-                    
-                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                        if (empty($_POST["firstname"])) {
-                        $firstNameErr = "First name is required";
-                      } else {
-                        $name = test_input($_POST["firstname"]);
-                        // check if name only contains letters and whitespace
-                        if (!preg_match("/^[a-zA-Z ]*$/",$firstname)) {
-                          $nameErr = "Only letters and white space allowed"; 
-                        } else {
-                            $firstname_ok = true;
-                        }
-                      }
-                        
-                     
-                      if (empty($_POST["lastname"])) {
-                          $lastNameErr = "Last name is required";
-                      } else {
-                          $name = test_input($_POST["lastname"]);
-                        // check if name only contains letters and whitespace
-                        if (!preg_match("/^[a-zA-Z ]*$/",$lastname)) {
-                          $nameErr = "Only letters and white space allowed"; 
-                        } else {
-                            $lastname_ok = true;
-                        }
-                      }
-
-                      if (empty($_POST["email"])) {
-                          $emailErr = "Email is required";
-                      } else {
-                          $email = test_input($_POST["email"]);
-                        // check if e-mail address is well-formed
-                        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                          $emailErr = "Invalid email format"; 
-                        } else {
-                            $email_ok = true;
-                        }
-                      }
-
-                      if (empty($_POST["subject"])) {
-                        $comment = "";
-                      } else {
-                        $subject = test_input($_POST["subject"]);
-                          $subject_ok = true;
-                      }
-                    }
-                    
-                    function test_input($data) {
-                      $data = trim($data);
-                      $data = stripslashes($data);
-                      $data = htmlspecialchars($data);
-                      return $data;
-                    }
-                    ?>
-                    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method='post' id="contact-form">
-                        
-                        <span class="err-msg">* <?php echo $firstNameErr;?></span>
-                        <input type="text" class="contact-form-text" id="fname" name="firstname" placeholder="First Name" value="<?php echo $firstname;?>">
-                        <br>
-                        <span class="err-msg">* <?php echo $lastNameErr;?></span>
-                        <input type="text" id='lname' class='contact-form-text' name="lastname" placeholder="Last Name" value="<?php echo $lastname;?>">
-                        <br>
-                        <span class="err-msg">* <?php echo $emailErr;?></span>
-                        <input type="text" class='contact-form-text' id=email name="email" placeholder="Email" value="<?php echo $email;?>">
-                        <br>
-                        <textarea class='contact-form-textarea' id="subject" name="subject" placeholder="Write something here..." value="<?php echo $subject;?>"></textarea>
-                        <input class="contact-form-submit" type="submit" value="Submit">
-                    </form>
-                    <?php 
-            if ($_SERVER["REQUEST_METHOD"] == "POST" && $firstname_ok == true && $lastname_ok == true && $email_ok == true && $subject_ok == true) {
-                include 'php-contact-form-ex.php';
-            }?>
-                </div>
+                
                 </div>
             </div>
             
@@ -174,7 +94,7 @@
                 </li>
                 
             </ul>
-            <p id="copyright"><i class="fa fa-copyright" aria-hidden="true"></i>   2018  <a href="https://01014.org">01014</a></p>
+            <p id="copyright"><i class="fa fa-copyright" aria-hidden="true"></i>   2018  01014 Web Solutions</p>
             
                 
             

@@ -17,13 +17,36 @@
         <!-- O U R  C S S -->
         <link rel="stylesheet" href="css/style.css">
         
-        <link rel="icon" href="img/deitylogo1.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/img/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/img/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+        
+        
+        
         
         
         
     </head>
 
     <body>
+        <div class="preloader">
+            <div class="lds-css ng-scope">
+                <div style="margin:auto;margin-top: 200px;" class="lds-double-ring">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <h1 class="preloader-text">L O A D I N G . . .</h1>
+        </div>
+        <div class="the-entire-page">
+        <div class='the-entire-page'>
         <?php include 'header-template.html'?>
         
         <!-- S P L A S H  V I D E O  A N D  I M A G E -->
@@ -149,7 +172,7 @@
                 <!-- Video 3 -->
                 <div class="col-12 order-5 col-sm-6 order-sm-6 video-col">
                     <div class="embed-responsive embed-responsive-16by9">
-                      <video src="/Deity-Clan-Website/vids/2.mp4" controls></video>
+                      <video src="/vids/2.mp4" controls></video>
                     </div>
                 </div>
                 <!-- Image 3 -->
@@ -157,7 +180,7 @@
                 <!-- Video 4 -->
                 <div class="col-12 order-7 col-sm-6 order-sm-7 video-col">
                     <div class="embed-responsive embed-responsive-16by9">
-                      <video src="/Deity-Clan-Website/vids/3.mp4" controls></video>
+                      <video src="/vids/3.mp4" controls></video>
                     </div>
                 </div>
 
@@ -169,5 +192,6 @@
 
        <?php include 'footer-template.html'?>
         <script src="js/custom.js"></script>
+        </div>
     </body>
 </html>    

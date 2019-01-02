@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Deity Clan | Home</title>
+        <title>Deity Clan | NBA2K</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
@@ -17,9 +17,20 @@
         <!-- O U R  C S S -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/team-page.css">       
-        <link rel="icon" href="img/deitylogo1.png">
         <script src="js/custom.js"></script>
         <script src="js/fortnite.js"></script>
+        
+        
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/img/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/img/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
         
         
     </head>
@@ -35,7 +46,15 @@
         <!-- P L A Y E R S  G R I D -->
         <div class="container players-cont">
             <h1 class="display-5 team-intro-heading-1">Deity<i class="team-intro-heading-2" style="color:#003391;">CLAN | </i><i class="team-intro-heading-2">NBA 2K</i></h1>
-            <p class="team-intro-text">Deity Clan was formed by asdl;fasdf in the year asl;kdf;laskdf of our lord.  They are really cool and everyone likes them.  They have lots of great content and are the next up and coming big team in esports.  They will smash the fortenite scene just like you will smash all the like buttons everywhere forever.  Ok this is enough fluff text.  Actually, after looking at this for a while, I'm realizing that I'm going to need a lot more filler text here.  I could think of a whole bunch of things to wirte- I could just put some lorem ipsum right here right now but honestly I can type so fast that this isn't so bad.  IT's harder to think of things to type, IU think, though maybe if I recite something I will start thinking faster than I am typing.  I guess my attention is split btween typing and thinking about what the hell I'm going to say so it's like going between two different modes, which is different from speaking I guess, but it can also be a little challenging to just start talking and...not stop?  like not leave any space or time or delays inbetween words and phrases.  Omk maybe this'll be good enough.</p>
+            <p class="team-intro-text">This is some filler text for the NBA2K team.  I'd actually prefer that someone else write this because I'm not too sure what to say about the team, though I could probably come up with some generic copy if I had to.  Someone has to!  So what should go here?  Here's some example text from another e-sports website:
+            <br><br>
+            The Fnatic Fortnite Team is made up of some of the most talented Fortnite players in the world. With several high-ranking positions on the global leaderboards since the fall of 2017 the Fnatic Fortnite Team has cemented their position within the constantly growing competitive scene of the world’s largest Battle Royale game.
+            <br><br>
+            Let us introduce the support genius Christoffer ”Jarl” Jensen who is currently placed top 20 on the global leaderboards and is one of the finest Fortnite players to have emerged from the Danish Fortnite community. He is joined by Giorgio ”Pow3r” Calandrelli the fastest growing Fortnite player in Italy who has showcased an impressive skillset since he set out on his Fortnite journey in the spring of 2018. Finally the roster features Erikas "ErycTriceps" Vaitkevicius one of the strongest players with a next level sense of mechanical play within the game.
+            <br><br>
+            As a fourth addition Derman "Motor" Özdemir joins Fnatic to strengthen the roster ahead of 2019. His impressive performances in the professional scene has granted him a position among Europe's finest Fortnite players.
+            Hungry, focused and viciously effective the Fnatic Fortnite Team heads towards the World Cup with one intention – to place the black and orange at the number one position.
+            </p>
             <h1 class="display-4 roster-heading">Roster</h1>
             <div class='row players-row'>                
                 

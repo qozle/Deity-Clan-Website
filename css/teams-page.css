@@ -43,11 +43,15 @@
     padding-top: 70px;
     transition: .3s;
     border-bottom: 1px solid rgba(209,209,209,0.1);
-    
+    z-index: 10;
 }
+
 
 .teams-col:hover {
     background-color: darkblue;
+    transform: scaleX(1.05);
+    z-index: 101;
+    
 }
 
 .teams-link {
@@ -59,10 +63,7 @@
     padding-top: 50px;
 }
 
-.teams-link:hover {
-    text-decoration: none;
-    
-}
+
 
 .team-info-col {
     background-color: #0b0e0e;
@@ -71,7 +72,7 @@
     padding: 0;
     padding-bottom: 8px;
     border-bottom: 1px solid rgba(209,209,209,0.05);
-    text-decoration: underline blue;
+    
 }
 
 .team-members-list {
@@ -92,14 +93,16 @@
 
 .team-member-link {
     color: blue;
+    text-decoration: none;
+    
 }
 
 .team-info-title-link {
-    text-decoration: none;
+    text-decoration: underline rgba(209,209,209,0.2);
     color: blue;
 }
 
 .team-info-title-link:hover {
-    
+    text-decoration: underline rgba(209,209,209,0.2);
 }
 
